@@ -18,6 +18,34 @@
 - Matheus Alves Pimenta /          Scrum Team
 
 ---
-## Backlogs
+## Sprint Pim-4
+
+---
+
+### Sprint 01: (31/08/2024)
+1.	Diagrama de caso de uso/Classe
+2.	10 Heurística
+3.	Revisão regras de negócios
+4.	Atualizações do protótipo
+
+---
+
+### Sprint 02:
+1.	Banco de dados
+2.	Inicialização do Desktop
+
+---
+
+### Sprint 03:
+1.	Interação entre o BD e o Desktop
+2.	Inicialização da WEB e Mobile
+
+---
+
+### Sprint 04:
+1.	Interação entre o BD e WEB/Mobile
+2.	Reajuste das coisas pendentes
+
+---
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00FF00&height=120&section=footer"/>
