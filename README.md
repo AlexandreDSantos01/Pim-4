@@ -27,6 +27,14 @@
 3.	Revisão regras de negócios
 4.	Atualizações do protótipo
 
+#### Backlogs Sprint 01
+1.	Monta o diagrama de caso de uso do sistema inteiro.
+2.	Depois criar todas as classes que vem do caso de uso.
+3.	Cada um achar as 10 heurística do nosso protótipo do figma
+Link: https://www.figma.com/design/Og9OfwfuyNAKpgbauDTYXm/Untitled?node-id=0-1&t=gf8xILgSRTEcHUvp-1
+4.	Reunião para gente definir as regras de negócios e as atualizações do protótipo.
+
+
 ---
 
 ### Sprint 02:
