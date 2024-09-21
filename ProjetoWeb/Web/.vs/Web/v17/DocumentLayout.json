@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\",
+  "WorkspaceRootPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|d:\\faculoficial\\pim-4\\projetoweb\\web\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\web\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|d:\\faculoficial\\pim-4\\projetoweb\\web\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\web\\web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|solutionrelative:web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|d:\\faculoficial\\pim-4\\projetoweb\\web\\web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|solutionrelative:web\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\web\\web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|solutionrelative:web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|d:\\faculoficial\\pim-4\\projetoweb\\web\\web\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|solutionrelative:web\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|d:\\faculoficial\\pim-4\\projetoweb\\web\\web\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB964FEC-EA5C-4AAE-B960-4421231BA7C8}|Web\\Web.csproj|solutionrelative:web\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\web\\web\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA6BDF-B647-4203-ACDA-C29F3D751DEA}|Web\\Web.csproj|solutionrelative:web\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "Web\\Program.cs",
-              "ToolTip": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Program.cs",
-              "RelativeToolTip": "Web\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAADwv2UAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T19:44:13.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Web\\appsettings.Development.json",
-              "ToolTip": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\appsettings.Development.json",
-              "RelativeToolTip": "Web\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-17T19:39:27.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\appsettings.json",
-              "RelativeDocumentMoniker": "Web\\appsettings.json",
-              "ToolTip": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\appsettings.json",
-              "RelativeToolTip": "Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-17T19:36:36.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Data\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "Web\\Data\\AppDBContext.cs",
-              "ToolTip": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Data\\AppDBContext.cs",
-              "RelativeToolTip": "Web\\Data\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:29:37.129Z",
+              "WhenOpened": "2024-09-21T21:52:36.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Web\\Models\\Produto.cs",
-              "ToolTip": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Models\\Produto.cs",
-              "RelativeToolTip": "Web\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAWAAAAAAAAAA==",
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Web\\Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Web\\Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:23:22.96Z",
+              "WhenOpened": "2024-09-21T19:47:45.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAADwv0YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T19:26:37.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T19:24:46.638Z",
               "EditorCaption": ""
             }
           ]

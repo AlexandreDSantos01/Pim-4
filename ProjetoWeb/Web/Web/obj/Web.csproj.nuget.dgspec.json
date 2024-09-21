@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj": {}
+    "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj": {}
   },
   "projects": {
-    "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj": {
+    "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\xande\\.nuget\\packages\\",
-        "outputPath": "D:\\FaculOficial\\Pim-4\\ProjetoWeb\\Web\\Web\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\Alexandre Not\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\Web\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\VS community\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\xande\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre Not\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -58,6 +67,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -71,6 +84,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.8, 8.0.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.8, 8.0.8]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.8, 8.0.8]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,7 +106,12 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
