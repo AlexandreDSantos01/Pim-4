@@ -1,0 +1,347 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\funcionario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\funcionario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\funcionario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\funcionario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\migrations\\20240924044036_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\migrations\\20240924044036_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\migrations\\projetowebcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\migrations\\projetowebcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\data\\projetowebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\data\\projetowebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\funcionario\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\funcionario\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\funcionario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\funcionario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\funcionario\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\funcionario\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|c:\\users\\alexandre not\\documents\\pim-4\\projetoweb\\projetoweb\\projetoweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D467CB2-F04A-4555-B743-7FFFECB76DDB}|ProjetoWeb\\ProjetoWeb.csproj|solutionrelative:projetoweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ProjetoWeb\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\appsettings.Development.json",
+              "RelativeToolTip": "ProjetoWeb\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-24T16:22:48.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Funcionario\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Edit.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Funcionario\\Edit.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T03:33:08.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Details.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Funcionario\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Details.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Funcionario\\Details.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T03:33:02.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Create.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Funcionario\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Create.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Funcionario\\Create.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAC8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T03:32:46.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjetoWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\appsettings.json",
+              "RelativeToolTip": "ProjetoWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-24T02:22:22.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Models\\Funcionario.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Models\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Models\\Funcionario.cs",
+              "RelativeToolTip": "ProjetoWeb\\Models\\Funcionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:28:55.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Funcionario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Index.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Funcionario\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T03:26:48.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240924163100_InitialCreateV2.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs",
+              "RelativeToolTip": "ProjetoWeb\\Migrations\\20240924163100_InitialCreateV2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:31:01.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240924044036_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924044036_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Migrations\\20240924044036_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924044036_InitialCreate.cs",
+              "RelativeToolTip": "ProjetoWeb\\Migrations\\20240924044036_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:40:36.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Funcionario\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Funcionario\\Delete.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Funcionario\\Delete.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwCMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T03:33:22.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjetoWebContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\ProjetoWebContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Migrations\\ProjetoWebContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\ProjetoWebContextModelSnapshot.cs",
+              "RelativeToolTip": "ProjetoWeb\\Migrations\\ProjetoWebContextModelSnapshot.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:43:27.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjetoWebContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Data\\ProjetoWebContext.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Data\\ProjetoWebContext.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Data\\ProjetoWebContext.cs",
+              "RelativeToolTip": "ProjetoWeb\\Data\\ProjetoWebContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:15:15.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240924043631_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs",
+              "RelativeToolTip": "ProjetoWeb\\Migrations\\20240924043631_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:36:32.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ProjetoWeb\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-24T04:09:53.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Program.cs",
+              "RelativeToolTip": "ProjetoWeb\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:28:28.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACIAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T23:55:11.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Controllers\\FuncionarioController.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Controllers\\FuncionarioController.cs",
+              "RelativeToolTip": "ProjetoWeb\\Controllers\\FuncionarioController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwH4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:51:56.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProjetoWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:29:03.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240924024242_InicalV1.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs",
+              "RelativeToolTip": "ProjetoWeb\\Migrations\\20240924024242_InicalV1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T02:42:42.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProjetoWeb\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProjetoWeb\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T00:39:14.209Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
