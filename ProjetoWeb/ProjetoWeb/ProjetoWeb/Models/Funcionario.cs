@@ -3,6 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoWeb.Models
 {
+    // Enum para representar os tipos de funcionário
+    public enum TipoFuncionario
+    {
+        Jardineiro,
+        Vendedor,
+        Financeiro,
+        Master,
+        Colaborador
+    }
+
     public class Funcionario
     {
         [Key]
@@ -24,6 +34,10 @@ namespace ProjetoWeb.Models
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Salario { get; set; }
+
+        // Novo campo para o tipo de funcionário
+        [Required]
+        public TipoFuncionario Tipo { get; set; }
     }
 
     public class Jardineiro : Funcionario

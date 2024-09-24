@@ -24,10 +24,10 @@ namespace ProjetoWeb.Controllers
         }
 
         // GET: Funcionario/Details/5
-        public async Task<IActionResult> Details(int id) // Mudou para int
+        public async Task<IActionResult> Details(int id)
         {
             var funcionario = await _context.Funcionarios
-                .FirstOrDefaultAsync(m => m.Id == id); // Mudou para int
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (funcionario == null)
             {
                 return NotFound();
@@ -45,7 +45,7 @@ namespace ProjetoWeb.Controllers
         // POST: Funcionario/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Nome,Email,Telefone,Endereco,Salario")] Funcionario funcionario) // ID não é necessário
+        public async Task<IActionResult> Create([Bind("Nome,Email,Telefone,Endereco,Salario,Tipo")] Funcionario funcionario) // Incluindo Tipo
         {
             if (ModelState.IsValid)
             {
@@ -57,9 +57,9 @@ namespace ProjetoWeb.Controllers
         }
 
         // GET: Funcionario/Edit/5
-        public async Task<IActionResult> Edit(int id) // Mudou para int
+        public async Task<IActionResult> Edit(int id)
         {
-            var funcionario = await _context.Funcionarios.FindAsync(id); // Mudou para int
+            var funcionario = await _context.Funcionarios.FindAsync(id);
             if (funcionario == null)
             {
                 return NotFound();
@@ -70,7 +70,7 @@ namespace ProjetoWeb.Controllers
         // POST: Funcionario/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Telefone,Endereco,Salario")] Funcionario funcionario) // Mudou para int
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Email,Telefone,Endereco,Salario,Tipo")] Funcionario funcionario) // Incluindo Tipo
         {
             if (id != funcionario.Id)
             {
@@ -101,10 +101,10 @@ namespace ProjetoWeb.Controllers
         }
 
         // GET: Funcionario/Delete/5
-        public async Task<IActionResult> Delete(int id) // Mudou para int
+        public async Task<IActionResult> Delete(int id)
         {
             var funcionario = await _context.Funcionarios
-                .FirstOrDefaultAsync(m => m.Id == id); // Mudou para int
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (funcionario == null)
             {
                 return NotFound();
@@ -116,9 +116,9 @@ namespace ProjetoWeb.Controllers
         // POST: Funcionario/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id) // Mudou para int
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var funcionario = await _context.Funcionarios.FindAsync(id); // Mudou para int
+            var funcionario = await _context.Funcionarios.FindAsync(id);
             if (funcionario != null)
             {
                 _context.Funcionarios.Remove(funcionario);
@@ -128,7 +128,7 @@ namespace ProjetoWeb.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FuncionarioExists(int id) // Mudou para int
+        private bool FuncionarioExists(int id)
         {
             return _context.Funcionarios.Any(e => e.Id == id);
         }
