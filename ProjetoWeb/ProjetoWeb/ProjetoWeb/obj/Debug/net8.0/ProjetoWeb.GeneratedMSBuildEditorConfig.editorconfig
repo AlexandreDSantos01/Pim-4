@@ -26,6 +26,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Alexandre Not\Documents\Pim-4\ProjetoWeb\ProjetoWeb\ProjetoWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Fornecedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Fornecedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Fornecedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Fornecedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Fornecedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alexandre Not/Documents/Pim-4/ProjetoWeb/ProjetoWeb/ProjetoWeb/Views/Funcionario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

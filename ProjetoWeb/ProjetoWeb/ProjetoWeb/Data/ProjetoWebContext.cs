@@ -16,6 +16,8 @@ public class ProjetoWebContext : DbContext
     public DbSet<Financeiro> Financeiros { get; set; }
     public DbSet<Master> Master { get; set; }
     public DbSet<Colaborador> Colaboradores { get; set; }
+    public DbSet<Fornecedor> Fornecedores { get; set; }
+
 
     // Configurações adicionais para os modelos, se necessário
     protected override void OnModelCreating(ModelBuilder modelBuilder)
