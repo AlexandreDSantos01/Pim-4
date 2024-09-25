@@ -1,0 +1,13 @@
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.csproj.AssemblyReference.cache
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.TelaLogin.resources
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.MenuPrincipal.resources
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.Properties.Resources.resources
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.csproj.GenerateResource.cache
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.csproj.CoreCompileInputs.cache
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\bin\Debug\FazendaUrbana.exe.config
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\bin\Debug\FazendaUrbana.exe
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\bin\Debug\FazendaUrbana.pdb
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.exe
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.pdb
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.Producao.resources
+C:\dev\projetoPim\FazendaUrbana\FazendaUrbana\obj\Debug\FazendaUrbana.Usuario.resources
