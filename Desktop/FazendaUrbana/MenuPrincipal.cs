@@ -90,9 +90,19 @@ namespace FazendaUrbana
         {
             btnUsuario.BackColor = Color.White;
         }
-//foco fim
+        private void btnDesconect_Enter(object sender, EventArgs e)
+        {
+            btnDesconect.BackColor = Color.Red;
+        }
 
-//Entrar áreas inicio
+        private void btnDesconect_Leave(object sender, EventArgs e)
+        {
+            btnDesconect.BackColor = Color.White;
+
+        }
+        //foco fim
+
+        //Entrar áreas inicio
         private void btnProducao_Click(object sender, EventArgs e)
         {
             var menu = new Producao();
@@ -156,6 +166,16 @@ namespace FazendaUrbana
 
             this.Visible = false;
         }
-//Entrar áreas fim
+
+        private void btnDesconect_Click(object sender, EventArgs e)
+        {
+            var menu = new TelaLogin();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
+        //Entrar áreas fim
+
+
     }
 }

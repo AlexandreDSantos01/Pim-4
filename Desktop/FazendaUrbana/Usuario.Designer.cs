@@ -34,22 +34,23 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(646, 27);
+            this.btnVoltar.Location = new System.Drawing.Point(699, 27);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(125, 59);
+            this.btnVoltar.Size = new System.Drawing.Size(89, 35);
             this.btnVoltar.TabIndex = 0;
-            this.btnVoltar.Text = "Voltar Menu";
+            this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnAdduser
             // 
-            this.btnAdduser.Location = new System.Drawing.Point(21, 27);
+            this.btnAdduser.Location = new System.Drawing.Point(12, 27);
             this.btnAdduser.Name = "btnAdduser";
-            this.btnAdduser.Size = new System.Drawing.Size(129, 59);
+            this.btnAdduser.Size = new System.Drawing.Size(140, 35);
             this.btnAdduser.TabIndex = 1;
             this.btnAdduser.Text = "Adicionar Usuário";
             this.btnAdduser.UseVisualStyleBackColor = true;
+            this.btnAdduser.Click += new System.EventHandler(this.btnAdduser_Click);
             // 
             // Usuario
             // 
@@ -58,7 +59,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAdduser);
             this.Controls.Add(this.btnVoltar);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Usuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
             this.ResumeLayout(false);
 

@@ -11,6 +11,7 @@ namespace FazendaUrbana
             InitializeComponent();
         }
 
+        //TRATAMENTO DE CARACTERES E APAGAR
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             int tecla = (int)e.KeyChar;
@@ -21,6 +22,7 @@ namespace FazendaUrbana
                 MessageBox.Show("Digite apenas letras ou números.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+        //FIM TRATAMENTO DE CARACTERES E APAGAR
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
@@ -88,6 +90,11 @@ namespace FazendaUrbana
 
         //Foco fim
         private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
         {
 
         }

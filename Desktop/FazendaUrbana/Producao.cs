@@ -16,5 +16,21 @@ namespace FazendaUrbana
         {
             InitializeComponent();
         }
+
+        private void btnAddproducao_Click(object sender, EventArgs e)
+        {
+            var menu = new RegistrarProducao();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            var menu = new MenuPrincipal();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
     }
 }

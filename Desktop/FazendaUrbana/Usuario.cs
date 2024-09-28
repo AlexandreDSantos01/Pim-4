@@ -24,5 +24,13 @@ namespace FazendaUrbana
 
             this.Visible = false;
         }
+
+        private void btnAdduser_Click(object sender, EventArgs e)
+        {
+            var menu = new CadastroUsuario();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
     }
 }

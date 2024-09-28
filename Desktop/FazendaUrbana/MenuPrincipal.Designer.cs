@@ -37,6 +37,7 @@
             this.btnVenda = new System.Windows.Forms.Button();
             this.btnEstoque = new System.Windows.Forms.Button();
             this.btnProducao = new System.Windows.Forms.Button();
+            this.btnDesconect = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.groupBox1.Controls.Add(this.btnVenda);
             this.groupBox1.Controls.Add(this.btnEstoque);
             this.groupBox1.Controls.Add(this.btnProducao);
-            this.groupBox1.Location = new System.Drawing.Point(58, 51);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(56, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(678, 351);
             this.groupBox1.TabIndex = 0;
@@ -60,7 +62,7 @@
             // btnUsuario
             // 
             this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuario.Location = new System.Drawing.Point(383, 258);
+            this.btnUsuario.Location = new System.Drawing.Point(382, 267);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Size = new System.Drawing.Size(174, 64);
             this.btnUsuario.TabIndex = 7;
@@ -73,7 +75,7 @@
             // btnRelatorio
             // 
             this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.Location = new System.Drawing.Point(122, 258);
+            this.btnRelatorio.Location = new System.Drawing.Point(121, 267);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Size = new System.Drawing.Size(174, 64);
             this.btnRelatorio.TabIndex = 6;
@@ -86,10 +88,10 @@
             // btnCliente
             // 
             this.btnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.Location = new System.Drawing.Point(246, 33);
+            this.btnCliente.Location = new System.Drawing.Point(245, 42);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(174, 64);
-            this.btnCliente.TabIndex = 5;
+            this.btnCliente.TabIndex = 1;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
@@ -99,10 +101,10 @@
             // btnDespesa
             // 
             this.btnDespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDespesa.Location = new System.Drawing.Point(458, 147);
+            this.btnDespesa.Location = new System.Drawing.Point(457, 156);
             this.btnDespesa.Name = "btnDespesa";
             this.btnDespesa.Size = new System.Drawing.Size(174, 64);
-            this.btnDespesa.TabIndex = 4;
+            this.btnDespesa.TabIndex = 5;
             this.btnDespesa.Text = "Despesa";
             this.btnDespesa.UseVisualStyleBackColor = true;
             this.btnDespesa.Click += new System.EventHandler(this.btnDespesa_Click);
@@ -112,10 +114,10 @@
             // btnFornecedor
             // 
             this.btnFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFornecedor.Location = new System.Drawing.Point(458, 33);
+            this.btnFornecedor.Location = new System.Drawing.Point(457, 42);
             this.btnFornecedor.Name = "btnFornecedor";
             this.btnFornecedor.Size = new System.Drawing.Size(174, 64);
-            this.btnFornecedor.TabIndex = 3;
+            this.btnFornecedor.TabIndex = 2;
             this.btnFornecedor.Text = "Fornecedor";
             this.btnFornecedor.UseVisualStyleBackColor = true;
             this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
@@ -125,10 +127,10 @@
             // btnVenda
             // 
             this.btnVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVenda.Location = new System.Drawing.Point(246, 147);
+            this.btnVenda.Location = new System.Drawing.Point(245, 156);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(174, 64);
-            this.btnVenda.TabIndex = 2;
+            this.btnVenda.TabIndex = 4;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = true;
             this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
@@ -138,10 +140,10 @@
             // btnEstoque
             // 
             this.btnEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoque.Location = new System.Drawing.Point(25, 147);
+            this.btnEstoque.Location = new System.Drawing.Point(24, 156);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(174, 64);
-            this.btnEstoque.TabIndex = 1;
+            this.btnEstoque.TabIndex = 3;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = true;
             this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
@@ -151,7 +153,7 @@
             // btnProducao
             // 
             this.btnProducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducao.Location = new System.Drawing.Point(25, 33);
+            this.btnProducao.Location = new System.Drawing.Point(24, 42);
             this.btnProducao.Name = "btnProducao";
             this.btnProducao.Size = new System.Drawing.Size(174, 64);
             this.btnProducao.TabIndex = 0;
@@ -161,12 +163,28 @@
             this.btnProducao.Enter += new System.EventHandler(this.btnProducao_Enter);
             this.btnProducao.Leave += new System.EventHandler(this.btnProducao_Leave);
             // 
+            // btnDesconect
+            // 
+            this.btnDesconect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesconect.Location = new System.Drawing.Point(302, 396);
+            this.btnDesconect.Name = "btnDesconect";
+            this.btnDesconect.Size = new System.Drawing.Size(153, 33);
+            this.btnDesconect.TabIndex = 1;
+            this.btnDesconect.Text = "Desconectar";
+            this.btnDesconect.UseVisualStyleBackColor = true;
+            this.btnDesconect.Click += new System.EventHandler(this.btnDesconect_Click);
+            this.btnDesconect.Enter += new System.EventHandler(this.btnDesconect_Enter);
+            this.btnDesconect.Leave += new System.EventHandler(this.btnDesconect_Leave);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDesconect);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnlyGreen";
@@ -186,5 +204,6 @@
         private System.Windows.Forms.Button btnVenda;
         private System.Windows.Forms.Button btnEstoque;
         private System.Windows.Forms.Button btnProducao;
+        private System.Windows.Forms.Button btnDesconect;
     }
 }

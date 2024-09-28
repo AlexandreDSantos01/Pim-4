@@ -28,12 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnAdddespesa = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(681, 28);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(88, 39);
+            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnAdddespesa
+            // 
+            this.btnAdddespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdddespesa.Location = new System.Drawing.Point(22, 28);
+            this.btnAdddespesa.Name = "btnAdddespesa";
+            this.btnAdddespesa.Size = new System.Drawing.Size(216, 39);
+            this.btnAdddespesa.TabIndex = 4;
+            this.btnAdddespesa.Text = "Adicionar despesa";
+            this.btnAdddespesa.UseVisualStyleBackColor = true;
+            this.btnAdddespesa.Click += new System.EventHandler(this.btnAdddespesa_Click);
+            // 
+            // Despesa
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Despesa";
+            this.Controls.Add(this.btnAdddespesa);
+            this.Controls.Add(this.btnVoltar);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Despesa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "OnlyGreen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnAdddespesa;
     }
 }
