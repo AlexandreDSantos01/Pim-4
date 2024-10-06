@@ -410,6 +410,7 @@
             // 
             // btnVoltarUsuario
             // 
+            this.btnVoltarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarUsuario.Location = new System.Drawing.Point(358, 761);
             this.btnVoltarUsuario.Name = "btnVoltarUsuario";
             this.btnVoltarUsuario.Size = new System.Drawing.Size(133, 48);
@@ -417,9 +418,12 @@
             this.btnVoltarUsuario.Text = "Voltar";
             this.btnVoltarUsuario.UseVisualStyleBackColor = true;
             this.btnVoltarUsuario.Click += new System.EventHandler(this.btnVoltarUsuario_Click);
+            this.btnVoltarUsuario.Enter += new System.EventHandler(this.btnVoltarUsuario_Enter);
+            this.btnVoltarUsuario.Leave += new System.EventHandler(this.btnVoltarUsuario_Leave);
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Location = new System.Drawing.Point(193, 761);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(136, 48);
@@ -427,6 +431,8 @@
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.btnCadastrar.Enter += new System.EventHandler(this.btnCadastrar_Enter);
+            this.btnCadastrar.Leave += new System.EventHandler(this.btnCadastrar_Leave);
             // 
             // CadastroUsuario
             // 

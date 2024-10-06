@@ -28,12 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnAddvenda = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 72);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(776, 366);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Venda";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(703, 12);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(85, 35);
+            this.btnVoltar.TabIndex = 9;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
+            // 
+            // btnAddvenda
+            // 
+            this.btnAddvenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddvenda.Location = new System.Drawing.Point(12, 12);
+            this.btnAddvenda.Name = "btnAddvenda";
+            this.btnAddvenda.Size = new System.Drawing.Size(188, 35);
+            this.btnAddvenda.TabIndex = 10;
+            this.btnAddvenda.Text = "Adicionar venda";
+            this.btnAddvenda.UseVisualStyleBackColor = true;
+            this.btnAddvenda.Click += new System.EventHandler(this.btnAdduser_Click);
+            this.btnAddvenda.Enter += new System.EventHandler(this.btnAddvenda_Enter);
+            this.btnAddvenda.Leave += new System.EventHandler(this.btnAddvenda_Leave);
+            // 
+            // Venda
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Venda";
+            this.Controls.Add(this.btnAddvenda);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "Venda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "OnlyGreen";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnAddvenda;
     }
 }

@@ -32,5 +32,25 @@ namespace FazendaUrbana
 
             this.Visible = false;
         }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void btnAdduser_Enter(object sender, EventArgs e)
+        {
+            btnAdduser.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdduser_Leave(object sender, EventArgs e)
+        {
+            btnAdduser.BackColor = Color.White;
+        }
     }
 }

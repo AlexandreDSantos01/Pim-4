@@ -23,7 +23,7 @@ namespace ProjetoWeb.Controllers
         // GET: Produtos
         public async Task<IActionResult> Index()
         {
-            var produtos = await _context.Produto
+            var produtos = await _context.Produtos
                                          .Include(p => p.Fornecedor) // Inclui o fornecedor nos produtos
                                          .ToListAsync();
             return View(produtos);
@@ -37,7 +37,7 @@ namespace ProjetoWeb.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produto
+            var produto = await _context.Produtos
                 .Include(p => p.Fornecedor) // Inclui o fornecedor nos detalhes
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produto == null)
@@ -86,7 +86,7 @@ namespace ProjetoWeb.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produto.FindAsync(id);
+            var produto = await _context.Produtos.FindAsync(id);
             if (produto == null)
             {
                 return NotFound();
@@ -137,7 +137,7 @@ namespace ProjetoWeb.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produto
+            var produto = await _context.Produtos
                 .Include(p => p.Fornecedor) // Inclui o fornecedor na exclusão
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (produto == null)
@@ -153,10 +153,10 @@ namespace ProjetoWeb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var produto = await _context.Produto.FindAsync(id);
+            var produto = await _context.Produtos.FindAsync(id);
             if (produto != null)
             {
-                _context.Produto.Remove(produto);
+                _context.Produtos.Remove(produto);
             }
 
             await _context.SaveChangesAsync();
@@ -165,7 +165,7 @@ namespace ProjetoWeb.Controllers
 
         private bool ProdutoExists(int id)
         {
-            return _context.Produto.Any(e => e.Id == id);
+            return _context.Produtos.Any(e => e.Id == id);
         }
     }
 }

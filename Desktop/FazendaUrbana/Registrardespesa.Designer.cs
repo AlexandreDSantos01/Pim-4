@@ -1,6 +1,6 @@
 ﻿namespace FazendaUrbana
 {
-    partial class Registrardespesa
+    partial class registrarDespesa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnRegistrardespesa = new System.Windows.Forms.Button();
-            this.txtDataregistro = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtValordespesa = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtQuantidadedespesa = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtValordespesa = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtTipo = new System.Windows.Forms.ComboBox();
+            this.txtDataregistro = new System.Windows.Forms.MaskedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnRegistrardespesa = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,44 +62,57 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registrar despesa";
             // 
-            // btnVoltar
+            // txtTipo
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(375, 366);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(88, 39);
-            this.btnVoltar.TabIndex = 3;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.txtTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipo.FormattingEnabled = true;
+            this.txtTipo.Items.AddRange(new object[] {
+            "Fornecedor",
+            "Internet",
+            "Água",
+            "Luz"});
+            this.txtTipo.Location = new System.Drawing.Point(51, 95);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(267, 33);
+            this.txtTipo.TabIndex = 16;
             // 
-            // btnRegistrardespesa
+            // label5
             // 
-            this.btnRegistrardespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrardespesa.Location = new System.Drawing.Point(120, 366);
-            this.btnRegistrardespesa.Name = "btnRegistrardespesa";
-            this.btnRegistrardespesa.Size = new System.Drawing.Size(216, 39);
-            this.btnRegistrardespesa.TabIndex = 5;
-            this.btnRegistrardespesa.Text = "Registrar despesa";
-            this.btnRegistrardespesa.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Tipo";
             // 
-            // txtDataregistro
+            // label4
             // 
-            this.txtDataregistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataregistro.Location = new System.Drawing.Point(51, 248);
-            this.txtDataregistro.Mask = "00/00/0000";
-            this.txtDataregistro.Name = "txtDataregistro";
-            this.txtDataregistro.Size = new System.Drawing.Size(116, 30);
-            this.txtDataregistro.TabIndex = 9;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(301, 218);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "R$";
             // 
-            // label3
+            // txtValordespesa
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 210);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Data de registro";
+            this.txtValordespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValordespesa.Location = new System.Drawing.Point(345, 215);
+            this.txtValordespesa.Name = "txtValordespesa";
+            this.txtValordespesa.Size = new System.Drawing.Size(122, 30);
+            this.txtValordespesa.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(350, 177);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Valor";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtQuantidadedespesa
             // 
@@ -118,59 +131,50 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Quantidade";
             // 
-            // label1
+            // txtDataregistro
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(350, 210);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 25);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Valor";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtDataregistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataregistro.Location = new System.Drawing.Point(51, 215);
+            this.txtDataregistro.Mask = "00/00/0000";
+            this.txtDataregistro.Name = "txtDataregistro";
+            this.txtDataregistro.Size = new System.Drawing.Size(116, 30);
+            this.txtDataregistro.TabIndex = 9;
             // 
-            // txtValordespesa
+            // label3
             // 
-            this.txtValordespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValordespesa.Location = new System.Drawing.Point(345, 248);
-            this.txtValordespesa.Name = "txtValordespesa";
-            this.txtValordespesa.Size = new System.Drawing.Size(122, 30);
-            this.txtValordespesa.TabIndex = 13;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(46, 177);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Data de registro";
             // 
-            // label4
+            // btnVoltar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(301, 251);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "R$";
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(375, 366);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(88, 39);
+            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
-            // label5
+            // btnRegistrardespesa
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 25);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Tipo";
+            this.btnRegistrardespesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrardespesa.Location = new System.Drawing.Point(81, 366);
+            this.btnRegistrardespesa.Name = "btnRegistrardespesa";
+            this.btnRegistrardespesa.Size = new System.Drawing.Size(241, 39);
+            this.btnRegistrardespesa.TabIndex = 5;
+            this.btnRegistrardespesa.Text = "Registrar despesa";
+            this.btnRegistrardespesa.UseVisualStyleBackColor = true;
+            this.btnRegistrardespesa.Enter += new System.EventHandler(this.btnRegistrardespesa_Enter);
+            this.btnRegistrardespesa.Leave += new System.EventHandler(this.btnRegistrardespesa_Leave);
             // 
-            // txtTipo
-            // 
-            this.txtTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.FormattingEnabled = true;
-            this.txtTipo.Items.AddRange(new object[] {
-            "Fornecedor",
-            "Internet",
-            "Água",
-            "Luz"});
-            this.txtTipo.Location = new System.Drawing.Point(51, 95);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(267, 33);
-            this.txtTipo.TabIndex = 16;
-            // 
-            // Registrardespesa
+            // registrarDespesa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,7 +184,7 @@
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Registrardespesa";
+            this.Name = "registrarDespesa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnlyGreen";
             this.groupBox1.ResumeLayout(false);

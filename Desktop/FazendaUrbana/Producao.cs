@@ -19,7 +19,7 @@ namespace FazendaUrbana
 
         private void btnAddproducao_Click(object sender, EventArgs e)
         {
-            var menu = new RegistrarProducao();
+            var menu = new registrarProducao();
             menu.Show(this);
 
             this.Visible = false;
@@ -31,6 +31,26 @@ namespace FazendaUrbana
             menu.Show(this);
 
             this.Visible = false;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void btnAddproducao_Enter(object sender, EventArgs e)
+        {
+            btnAddproducao.BackColor = Color.LightGreen;
+        }
+
+        private void btnAddproducao_Leave(object sender, EventArgs e)
+        {
+            btnAddproducao.BackColor = Color.White;
         }
     }
 }

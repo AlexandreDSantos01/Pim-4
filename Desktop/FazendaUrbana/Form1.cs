@@ -1,14 +1,24 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace FazendaUrbana
 {
+
     public partial class TelaLogin : Form
     {
         public TelaLogin()
         {
             InitializeComponent();
+        }
+
+        MySqlConnection Conexao;
+
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
+            string bdonlygreen = "datasource=localhost;username=root;password=;database=BancoOnlyGreen";
+            Conexao = new MySqlConnection(bdonlygreen);
         }
 
         //TRATAMENTO DE CARACTERES E APAGAR
@@ -94,9 +104,6 @@ namespace FazendaUrbana
 
         }
 
-        private void TelaLogin_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

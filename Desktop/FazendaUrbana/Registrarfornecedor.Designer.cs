@@ -1,6 +1,6 @@
 ﻿namespace FazendaUrbana
 {
-    partial class Registrarfornecedor
+    partial class registrarFornecedor
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,9 +52,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnRegistrarcliente = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnRegistrarfornecedor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,10 +83,29 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(40, 30);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(735, 535);
+            this.groupBox1.Size = new System.Drawing.Size(723, 564);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registro de fornecedor";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(76, 476);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(617, 67);
+            this.textBox2.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(72, 448);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 25);
+            this.label5.TabIndex = 49;
+            this.label5.Text = "Produtos";
             // 
             // textBox1
             // 
@@ -130,7 +149,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(427, 153);
+            this.textBox4.Location = new System.Drawing.Point(427, 146);
             this.textBox4.MaxLength = 50;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(266, 30);
@@ -248,7 +267,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(422, 362);
+            this.label10.Location = new System.Drawing.Point(422, 366);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 25);
             this.label10.TabIndex = 38;
@@ -308,62 +327,48 @@
             // 
             this.maskedTextBox1.BeepOnError = true;
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(76, 155);
+            this.maskedTextBox1.Location = new System.Drawing.Point(76, 146);
             this.maskedTextBox1.Mask = "(00) 00000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(252, 30);
+            this.maskedTextBox1.Size = new System.Drawing.Size(157, 30);
             this.maskedTextBox1.TabIndex = 3;
             // 
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(479, 585);
+            this.btnVoltar.Location = new System.Drawing.Point(528, 621);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(88, 52);
+            this.btnVoltar.Size = new System.Drawing.Size(88, 36);
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
-            // btnRegistrarcliente
+            // btnRegistrarfornecedor
             // 
-            this.btnRegistrarcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarcliente.Location = new System.Drawing.Point(165, 585);
-            this.btnRegistrarcliente.Name = "btnRegistrarcliente";
-            this.btnRegistrarcliente.Size = new System.Drawing.Size(216, 52);
-            this.btnRegistrarcliente.TabIndex = 1;
-            this.btnRegistrarcliente.Text = "Registrar fornecedor";
-            this.btnRegistrarcliente.UseVisualStyleBackColor = true;
+            this.btnRegistrarfornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarfornecedor.Location = new System.Drawing.Point(117, 621);
+            this.btnRegistrarfornecedor.Name = "btnRegistrarfornecedor";
+            this.btnRegistrarfornecedor.Size = new System.Drawing.Size(284, 36);
+            this.btnRegistrarfornecedor.TabIndex = 1;
+            this.btnRegistrarfornecedor.Text = "Registrar fornecedor";
+            this.btnRegistrarfornecedor.UseVisualStyleBackColor = true;
+            this.btnRegistrarfornecedor.Enter += new System.EventHandler(this.btnregistrarFornecedor_Enter);
+            this.btnRegistrarfornecedor.Leave += new System.EventHandler(this.btnregistrarFornecedor_Leave);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(72, 448);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 25);
-            this.label5.TabIndex = 49;
-            this.label5.Text = "Produtos";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(76, 476);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(265, 30);
-            this.textBox2.TabIndex = 11;
-            // 
-            // Registrarfornecedor
+            // registrarFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 649);
-            this.Controls.Add(this.btnRegistrarcliente);
+            this.ClientSize = new System.Drawing.Size(803, 685);
+            this.Controls.Add(this.btnRegistrarfornecedor);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Registrarfornecedor";
+            this.Name = "registrarFornecedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OnlyGreen";
             this.groupBox1.ResumeLayout(false);
@@ -398,6 +403,6 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnRegistrarcliente;
+        private System.Windows.Forms.Button btnRegistrarfornecedor;
     }
 }

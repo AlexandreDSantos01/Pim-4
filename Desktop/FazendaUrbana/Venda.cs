@@ -16,5 +16,41 @@ namespace FazendaUrbana
         {
             InitializeComponent();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            var menu = new MenuPrincipal();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
+
+        private void btnAdduser_Click(object sender, EventArgs e)
+        {
+            var menu = new registrarVenda();
+            menu.Show(this);
+
+            this.Visible = false;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void btnAddvenda_Enter(object sender, EventArgs e)
+        {
+            btnAddvenda.BackColor = Color.LightGreen;
+        }
+
+        private void btnAddvenda_Leave(object sender, EventArgs e)
+        {
+            btnAddvenda.BackColor = Color.White;
+        }
     }
 }

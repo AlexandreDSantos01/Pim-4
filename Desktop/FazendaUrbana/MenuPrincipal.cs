@@ -10,7 +10,7 @@ namespace FazendaUrbana
         {
             InitializeComponent();
         }
-//foco inicio
+        //foco inicio
         private void btnProducao_Enter(object sender, EventArgs e)
         {
             btnProducao.BackColor = Color.LightGreen;
@@ -156,7 +156,7 @@ namespace FazendaUrbana
             var menu = new Relatorio();
             menu.Show(this);
 
-            this.Visible = false; 
+            this.Visible = false;
         }
 
         private void btnUsuario_Click(object sender, EventArgs e)
@@ -169,13 +169,16 @@ namespace FazendaUrbana
 
         private void btnDesconect_Click(object sender, EventArgs e)
         {
-            var menu = new TelaLogin();
-            menu.Show(this);
+            var resultado = MessageBox.Show("Você tem certeza que deseja se desconectar?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
-            this.Visible = false;
+            if (resultado == DialogResult.OK)
+            {
+                var menu = new TelaLogin();
+                menu.Show(this);
+
+                this.Visible = false;
+            }
         }
         //Entrar áreas fim
-
-
     }
 }

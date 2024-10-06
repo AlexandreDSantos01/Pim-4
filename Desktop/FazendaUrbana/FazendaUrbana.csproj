@@ -149,29 +149,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrarcliente.cs">
+    <Compile Include="registrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrarcliente.Designer.cs">
-      <DependentUpon>Registrarcliente.cs</DependentUpon>
+    <Compile Include="registrarCliente.Designer.cs">
+      <DependentUpon>registrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registrardespesa.cs">
+    <Compile Include="registrarDespesa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrardespesa.Designer.cs">
-      <DependentUpon>Registrardespesa.cs</DependentUpon>
+    <Compile Include="registrarDespesa.Designer.cs">
+      <DependentUpon>registrarDespesa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registrarfornecedor.cs">
+    <Compile Include="registrarEstoque.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrarfornecedor.Designer.cs">
-      <DependentUpon>Registrarfornecedor.cs</DependentUpon>
+    <Compile Include="registrarEstoque.Designer.cs">
+      <DependentUpon>registrarEstoque.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarProducao.cs">
+    <Compile Include="registrarFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarProducao.Designer.cs">
-      <DependentUpon>RegistrarProducao.cs</DependentUpon>
+    <Compile Include="registrarFornecedor.Designer.cs">
+      <DependentUpon>registrarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrarProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrarProducao.Designer.cs">
+      <DependentUpon>registrarProducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrarRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrarRelatorio.Designer.cs">
+      <DependentUpon>registrarRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrarVenda.Designer.cs">
+      <DependentUpon>registrarVenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorio.cs">
       <SubType>Form</SubType>
@@ -197,6 +215,9 @@
     <EmbeddedResource Include="Despesa.resx">
       <DependentUpon>Despesa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estoque.resx">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,20 +242,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Registrarcliente.resx">
-      <DependentUpon>Registrarcliente.cs</DependentUpon>
+    <EmbeddedResource Include="registrarCliente.resx">
+      <DependentUpon>registrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrardespesa.resx">
-      <DependentUpon>Registrardespesa.cs</DependentUpon>
+    <EmbeddedResource Include="registrarDespesa.resx">
+      <DependentUpon>registrarDespesa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrarfornecedor.resx">
-      <DependentUpon>Registrarfornecedor.cs</DependentUpon>
+    <EmbeddedResource Include="registrarEstoque.resx">
+      <DependentUpon>registrarEstoque.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarProducao.resx">
-      <DependentUpon>RegistrarProducao.cs</DependentUpon>
+    <EmbeddedResource Include="registrarFornecedor.resx">
+      <DependentUpon>registrarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrarProducao.resx">
+      <DependentUpon>registrarProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrarRelatorio.resx">
+      <DependentUpon>registrarRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrarVenda.resx">
+      <DependentUpon>registrarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio.resx">
+      <DependentUpon>Relatorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venda.resx">
+      <DependentUpon>Venda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

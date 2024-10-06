@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace FazendaUrbana
 {
-    public partial class Registrarcliente : Form
+    public partial class registrarCliente : Form
     {
-        public Registrarcliente()
+        public registrarCliente()
         {
             InitializeComponent();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            var menu = new Cliente();
-            menu.Show(this);
+            var resultado = MessageBox.Show("Você tem certeza que deseja sair da área de registro de cliente?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
-            this.Visible = false;
+            if (resultado == DialogResult.OK)
+            {
+                var menu = new Cliente();
+                menu.Show(this);
+
+                this.Visible = false;
+            }
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -38,6 +43,31 @@ namespace FazendaUrbana
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void btnRegistrarcliente_Enter(object sender, EventArgs e)
+        {
+            btnRegistrarcliente.BackColor = Color.LightGreen;
+        }
+
+        private void btnRegistrarcliente_Leave(object sender, EventArgs e)
+        {
+            btnRegistrarcliente.BackColor = Color.White;
+        }
+
+        private void btnRegistrarcliente_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

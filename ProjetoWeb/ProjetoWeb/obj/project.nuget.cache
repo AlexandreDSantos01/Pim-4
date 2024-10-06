@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xF3Ye40rkNc=",
+  "dgSpecHash": "VYHJFRy2rWg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb.csproj",
+  "projectFilePath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\ProjetoWeb\\ProjetoWeb\\ProjetoWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexandre Not\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Alexandre Not\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

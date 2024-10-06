@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProjetoWeb.Models;
 
-public class ProjetoWebContext : IdentityDbContext // Mudança de DbContext para IdentityDbContext
+public class ProjetoWebContext : IdentityDbContext
 {
     // Construtor do DbContext
     public ProjetoWebContext(DbContextOptions<ProjetoWebContext> options)
@@ -20,13 +20,16 @@ public class ProjetoWebContext : IdentityDbContext // Mudança de DbContext para
     public DbSet<Fornecedor> Fornecedores { get; set; }
     public DbSet<Produto> Produtos { get; set; }
 
-    // Configurações adicionais para os modelos, se necessário
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        // Aqui você pode adicionar configurações de mapeamento ou restrições (opcional)
-    }
+        // Configurando o relacionamento entre Fornecedor e Produto
+        modelBuilder.Entity<Fornecedor>()
+            .HasMany(f => f.Produtos) // Um fornecedor tem muitos produtos
+            .WithOne(p => p.Fornecedor) // Cada produto pertence a um fornecedor
+            .HasForeignKey(p => p.FornecedorId); // Define a chave estrangeira
 
-    public DbSet<ProjetoWeb.Models.Produto> Produto { get; set; } = default!;
+        // Outras configurações podem ser adicionadas aqui, se necessário
+    }
 }

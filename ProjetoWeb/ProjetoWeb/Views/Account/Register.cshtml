@@ -1,0 +1,32 @@
+﻿@model ProjetoWeb.Models.RegisterViewModel      
+
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+<h2>Registrar</h2>
+
+<form asp-action="Register" method="post">
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label asp-for="ConfirmPassword"></label>
+        <input asp-for="ConfirmPassword" type="password" />
+    </div>
+    <div>
+        <button type="submit">Registrar</button>
+    </div>
+    <div>
+        @Html.ValidationSummary()
+    </div>
+</form>

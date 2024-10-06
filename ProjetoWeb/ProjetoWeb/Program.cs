@@ -28,7 +28,7 @@ builder.Services.AddRazorPages();
 // Configuração do cookie de autenticação
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.LoginPath = "/Account/Login"; // Define a rota de login
+    options.LoginPath = "/Account/Index"; // Define a rota de login
 });
 
 var app = builder.Build();

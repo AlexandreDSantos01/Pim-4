@@ -27,10 +27,30 @@ namespace FazendaUrbana
 
         private void btnAdddespesa_Click(object sender, EventArgs e)
         {
-            var menu = new Registrardespesa();
+            var menu = new registrarDespesa();
             menu.Show(this);
 
             this.Visible = false;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void btnAdddespesa_Enter(object sender, EventArgs e)
+        {
+            btnAdddespesa.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdddespesa_Leave(object sender, EventArgs e)
+        {
+            btnAdddespesa.BackColor = Color.White;
         }
     }
 }

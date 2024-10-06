@@ -327,10 +327,9 @@ namespace ProjetoWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FornecedorId")
-                        .IsUnique();
+                    b.HasIndex("FornecedorId");
 
-                    b.ToTable("Produto");
+                    b.ToTable("Produtos");
                 });
 
             modelBuilder.Entity("ProjetoWeb.Models.Colaborador", b =>
@@ -422,8 +421,8 @@ namespace ProjetoWeb.Migrations
             modelBuilder.Entity("ProjetoWeb.Models.Produto", b =>
                 {
                     b.HasOne("ProjetoWeb.Models.Fornecedor", "Fornecedor")
-                        .WithOne("Produto")
-                        .HasForeignKey("ProjetoWeb.Models.Produto", "FornecedorId")
+                        .WithMany("Produtos")
+                        .HasForeignKey("FornecedorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -432,8 +431,7 @@ namespace ProjetoWeb.Migrations
 
             modelBuilder.Entity("ProjetoWeb.Models.Fornecedor", b =>
                 {
-                    b.Navigation("Produto")
-                        .IsRequired();
+                    b.Navigation("Produtos");
                 });
 #pragma warning restore 612, 618
         }

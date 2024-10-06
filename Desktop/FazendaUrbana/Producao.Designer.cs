@@ -30,42 +30,58 @@
         {
             this.btnAddproducao = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // btnAddproducao
             // 
             this.btnAddproducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddproducao.Location = new System.Drawing.Point(12, 25);
+            this.btnAddproducao.Location = new System.Drawing.Point(12, 12);
             this.btnAddproducao.Name = "btnAddproducao";
-            this.btnAddproducao.Size = new System.Drawing.Size(216, 39);
+            this.btnAddproducao.Size = new System.Drawing.Size(260, 39);
             this.btnAddproducao.TabIndex = 0;
             this.btnAddproducao.Text = "Adicionar produção";
             this.btnAddproducao.UseVisualStyleBackColor = true;
             this.btnAddproducao.Click += new System.EventHandler(this.btnAddproducao_Click);
+            this.btnAddproducao.Enter += new System.EventHandler(this.btnAddproducao_Enter);
+            this.btnAddproducao.Leave += new System.EventHandler(this.btnAddproducao_Leave);
             // 
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(690, 25);
+            this.btnVoltar.Location = new System.Drawing.Point(700, 12);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(88, 39);
             this.btnVoltar.TabIndex = 1;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 72);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(776, 366);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Produção";
             // 
             // Producao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnAddproducao);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Producao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Producao";
+            this.Text = "OnlyGreen";
             this.ResumeLayout(false);
 
         }
@@ -74,5 +90,6 @@
 
         private System.Windows.Forms.Button btnAddproducao;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
