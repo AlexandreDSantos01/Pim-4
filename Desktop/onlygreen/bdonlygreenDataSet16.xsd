@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bdonlygreenDataSet16" targetNamespace="http://tempuri.org/bdonlygreenDataSet16.xsd" xmlns:mstns="http://tempuri.org/bdonlygreenDataSet16.xsd" xmlns="http://tempuri.org/bdonlygreenDataSet16.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bdonlygreenConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bdonlygreenConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.onlygreen.Properties.Settings.GlobalReference.Default.bdonlygreenConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tb_VendaTableAdapter" GeneratorDataComponentClassName="tb_VendaTableAdapter" Name="tb_Venda" UserDataComponentName="tb_VendaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bdonlygreenConnectionString (Settings)" DbObjectName="bdonlygreen.dbo.tb_Venda" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, quantidade, dregistro, valor, nome FROM dbo.tb_Venda</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="quantidade" DataSetColumn="quantidade" />
+              <Mapping SourceColumn="dregistro" DataSetColumn="dregistro" />
+              <Mapping SourceColumn="valor" DataSetColumn="valor" />
+              <Mapping SourceColumn="nome" DataSetColumn="nome" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bdonlygreenDataSet16" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="bdonlygreenDataSet16" msprop:Generator_DataSetName="bdonlygreenDataSet16">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tb_Venda" msprop:Generator_RowEvHandlerName="tb_VendaRowChangeEventHandler" msprop:Generator_RowDeletedName="tb_VendaRowDeleted" msprop:Generator_RowDeletingName="tb_VendaRowDeleting" msprop:Generator_RowEvArgName="tb_VendaRowChangeEvent" msprop:Generator_TablePropName="tb_Venda" msprop:Generator_RowChangedName="tb_VendaRowChanged" msprop:Generator_RowChangingName="tb_VendaRowChanging" msprop:Generator_TableClassName="tb_VendaDataTable" msprop:Generator_RowClassName="tb_VendaRow" msprop:Generator_TableVarName="tabletb_Venda" msprop:Generator_UserTableName="tb_Venda">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="quantidade" msprop:Generator_ColumnPropNameInRow="quantidade" msprop:Generator_ColumnPropNameInTable="quantidadeColumn" msprop:Generator_ColumnVarNameInTable="columnquantidade" msprop:Generator_UserColumnName="quantidade" type="xs:int" />
+              <xs:element name="dregistro" msprop:Generator_ColumnPropNameInRow="dregistro" msprop:Generator_ColumnPropNameInTable="dregistroColumn" msprop:Generator_ColumnVarNameInTable="columndregistro" msprop:Generator_UserColumnName="dregistro" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_UserColumnName="valor" type="xs:double" />
+              <xs:element name="nome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_UserColumnName="nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
