@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Estoques
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Estoque.ToListAsync());
+            return View(await _context.tb_Estoque.ToListAsync());
         }
 
         // GET: Estoques/Details/5
@@ -32,7 +32,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var estoque = await _context.Estoque
+            var estoque = await _context.tb_Estoque
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (estoque == null)
             {
@@ -72,7 +72,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var estoque = await _context.Estoque.FindAsync(id);
+            var estoque = await _context.tb_Estoque.FindAsync(id);
             if (estoque == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var estoque = await _context.Estoque
+            var estoque = await _context.tb_Estoque
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (estoque == null)
             {
@@ -138,10 +138,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var estoque = await _context.Estoque.FindAsync(id);
+            var estoque = await _context.tb_Estoque.FindAsync(id);
             if (estoque != null)
             {
-                _context.Estoque.Remove(estoque);
+                _context.tb_Estoque.Remove(estoque);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace Web.Controllers
 
         private bool EstoqueExists(int id)
         {
-            return _context.Estoque.Any(e => e.Id == id);
+            return _context.tb_Estoque.Any(e => e.Id == id);
         }
     }
 }

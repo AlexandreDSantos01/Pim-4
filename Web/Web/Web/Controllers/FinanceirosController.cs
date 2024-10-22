@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Financeiroes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Financeiro.ToListAsync());
+            return View(await _context.tb_Financeiro.ToListAsync());
         }
 
         // GET: Financeiroes/Details/5
@@ -32,7 +32,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var financeiro = await _context.Financeiro
+            var financeiro = await _context.tb_Financeiro
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (financeiro == null)
             {
@@ -72,7 +72,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var financeiro = await _context.Financeiro.FindAsync(id);
+            var financeiro = await _context.tb_Financeiro.FindAsync(id);
             if (financeiro == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var financeiro = await _context.Financeiro
+            var financeiro = await _context.tb_Financeiro
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (financeiro == null)
             {
@@ -138,10 +138,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var financeiro = await _context.Financeiro.FindAsync(id);
+            var financeiro = await _context.tb_Financeiro.FindAsync(id);
             if (financeiro != null)
             {
-                _context.Financeiro.Remove(financeiro);
+                _context.tb_Financeiro.Remove(financeiro);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace Web.Controllers
 
         private bool FinanceiroExists(int id)
         {
-            return _context.Financeiro.Any(e => e.Id == id);
+            return _context.tb_Financeiro.Any(e => e.Id == id);
         }
     }
 }

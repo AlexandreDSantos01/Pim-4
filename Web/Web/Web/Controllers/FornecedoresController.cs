@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Fornecedors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Fornecedor.ToListAsync());
+            return View(await _context.tb_Fornecedor.ToListAsync());
         }
 
         // GET: Fornecedors/Details/5
@@ -32,7 +32,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedor
+            var fornecedor = await _context.tb_Fornecedor
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (fornecedor == null)
             {
@@ -72,7 +72,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedor.FindAsync(id);
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
             if (fornecedor == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedor
+            var fornecedor = await _context.tb_Fornecedor
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (fornecedor == null)
             {
@@ -138,10 +138,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var fornecedor = await _context.Fornecedor.FindAsync(id);
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
             if (fornecedor != null)
             {
-                _context.Fornecedor.Remove(fornecedor);
+                _context.tb_Fornecedor.Remove(fornecedor);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace Web.Controllers
 
         private bool FornecedorExists(int id)
         {
-            return _context.Fornecedor.Any(e => e.Id == id);
+            return _context.tb_Fornecedor.Any(e => e.Id == id);
         }
     }
 }

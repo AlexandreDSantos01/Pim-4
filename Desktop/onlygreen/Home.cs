@@ -164,6 +164,8 @@ namespace onlygreen
 
         private void Home_Load(object sender, EventArgs e)
         {
+            //this.WindowState = FormWindowState.Maximized;
+           // this.FormBorderStyle = FormBorderStyle.None;
 
         }
     }

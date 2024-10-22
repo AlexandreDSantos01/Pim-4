@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Despesas
         public async Task<IActionResult> Index()
         {
-            var meuDbContext = _context.Despesa.Include(d => d.Fornecedor);
+            var meuDbContext = _context.tb_Despesa.Include(d => d.Fornecedor);
             return View(await meuDbContext.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var despesa = await _context.Despesa
+            var despesa = await _context.tb_Despesa
                 .Include(d => d.Fornecedor)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (despesa == null)
@@ -47,7 +47,7 @@ namespace Web.Controllers
         // GET: Despesas/Create
         public IActionResult Create()
         {
-            ViewData["FornecedorId"] = new SelectList(_context.Fornecedor, "Id", "Id");
+            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id");
             return View();
         }
 
@@ -56,7 +56,7 @@ namespace Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FornecedorId,Tipo,Produto,Quantidade,DRegistro,Valor")] Despesa despesa)
+        public async Task<IActionResult> Create([Bind("Id,pk_idFornecedor,Tipo,Produto,Quantidade,DRegistro,Valor")] Despesa despesa)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +64,7 @@ namespace Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FornecedorId"] = new SelectList(_context.Fornecedor, "Id", "Id", despesa.FornecedorId);
+            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
@@ -76,12 +76,12 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var despesa = await _context.Despesa.FindAsync(id);
+            var despesa = await _context.tb_Despesa.FindAsync(id);
             if (despesa == null)
             {
                 return NotFound();
             }
-            ViewData["FornecedorId"] = new SelectList(_context.Fornecedor, "Id", "Id", despesa.FornecedorId);
+            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
@@ -117,7 +117,7 @@ namespace Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FornecedorId"] = new SelectList(_context.Fornecedor, "Id", "Id", despesa.FornecedorId);
+            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
@@ -129,7 +129,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var despesa = await _context.Despesa
+            var despesa = await _context.tb_Despesa
                 .Include(d => d.Fornecedor)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (despesa == null)
@@ -145,10 +145,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var despesa = await _context.Despesa.FindAsync(id);
+            var despesa = await _context.tb_Despesa.FindAsync(id);
             if (despesa != null)
             {
-                _context.Despesa.Remove(despesa);
+                _context.tb_Despesa.Remove(despesa);
             }
 
             await _context.SaveChangesAsync();
@@ -157,7 +157,7 @@ namespace Web.Controllers
 
         private bool DespesaExists(int id)
         {
-            return _context.Despesa.Any(e => e.Id == id);
+            return _context.tb_Despesa.Any(e => e.Id == id);
         }
     }
 }

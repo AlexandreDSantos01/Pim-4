@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuario.ToListAsync());
+            return View(await _context.tb_Usuario.ToListAsync());
         }
 
         // GET: Usuarios/Details/5
@@ -32,7 +32,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuario
+            var usuario = await _context.tb_Usuario
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -72,7 +72,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await _context.tb_Usuario.FindAsync(id);
             if (usuario == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuario
+            var usuario = await _context.tb_Usuario
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
@@ -138,10 +138,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await _context.tb_Usuario.FindAsync(id);
             if (usuario != null)
             {
-                _context.Usuario.Remove(usuario);
+                _context.tb_Usuario.Remove(usuario);
             }
 
             await _context.SaveChangesAsync();
@@ -150,7 +150,7 @@ namespace Web.Controllers
 
         private bool UsuarioExists(int id)
         {
-            return _context.Usuario.Any(e => e.Id == id);
+            return _context.tb_Usuario.Any(e => e.Id == id);
         }
     }
 }

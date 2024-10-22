@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Producaos
         public async Task<IActionResult> Index()
         {
-            var producoes = await _context.Producao.ToListAsync();
+            var producoes = await _context.tb_Producao.ToListAsync();
             return View(producoes);
 
         }
@@ -34,7 +34,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var producao = await _context.Producao
+            var producao = await _context.tb_Producao
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (producao == null)
             {
@@ -74,7 +74,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var producao = await _context.Producao.FindAsync(id);
+            var producao = await _context.tb_Producao.FindAsync(id);
             if (producao == null)
             {
                 return NotFound();
@@ -125,7 +125,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var producao = await _context.Producao
+            var producao = await _context.tb_Producao
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (producao == null)
             {
@@ -140,10 +140,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var producao = await _context.Producao.FindAsync(id);
+            var producao = await _context.tb_Producao.FindAsync(id);
             if (producao != null)
             {
-                _context.Producao.Remove(producao);
+                _context.tb_Producao.Remove(producao);
             }
 
             await _context.SaveChangesAsync();
@@ -152,7 +152,7 @@ namespace Web.Controllers
 
         private bool ProducaoExists(int id)
         {
-            return _context.Producao.Any(e => e.Id == id);
+            return _context.tb_Producao.Any(e => e.Id == id);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Vendas
         public async Task<IActionResult> Index()
         {
-            var meuDbContext = _context.Venda.Include(v => v.Cliente).Include(v => v.Estoque);
+            var meuDbContext = _context.tb_Venda.Include(v => v.Cliente).Include(v => v.Estoque);
             return View(await meuDbContext.ToListAsync());
         }
 
@@ -33,7 +33,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var venda = await _context.Venda
+            var venda = await _context.tb_Venda
                 .Include(v => v.Cliente)
                 .Include(v => v.Estoque)
                 .FirstOrDefaultAsync(m => m.Id == id);
@@ -48,8 +48,8 @@ namespace Web.Controllers
         // GET: Vendas/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "Id", "Id");
-            ViewData["EstoqueId"] = new SelectList(_context.Estoque, "Id", "Id");
+            ViewData["ClienteId"] = new SelectList(_context.tb_Cliente, "Id", "Id");
+            ViewData["EstoqueId"] = new SelectList(_context.tb_Estoque, "Id", "Id");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "Id", "Id", venda.ClienteId);
-            ViewData["EstoqueId"] = new SelectList(_context.Estoque, "Id", "Id", venda.EstoqueId);
+            ViewData["pk_idCliente"] = new SelectList(_context.tb_Cliente, "Id", "Id", venda.pk_idCliente);
+            ViewData["pk_idEstoque"] = new SelectList(_context.tb_Estoque, "Id", "Id", venda.pk_idEstoque);
             return View(venda);
         }
 
@@ -79,13 +79,13 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var venda = await _context.Venda.FindAsync(id);
+            var venda = await _context.tb_Venda.FindAsync(id);
             if (venda == null)
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "Id", "Id", venda.ClienteId);
-            ViewData["EstoqueId"] = new SelectList(_context.Estoque, "Id", "Id", venda.EstoqueId);
+            ViewData["pk_idCliente"] = new SelectList(_context.tb_Cliente, "Id", "Id", venda.pk_idCliente);
+            ViewData["pk_idEstoque"] = new SelectList(_context.tb_Estoque, "Id", "Id", venda.pk_idEstoque);
             return View(venda);
         }
 
@@ -121,8 +121,8 @@ namespace Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "Id", "Id", venda.ClienteId);
-            ViewData["EstoqueId"] = new SelectList(_context.Estoque, "Id", "Id", venda.EstoqueId);
+            ViewData["pk_idCliente"] = new SelectList(_context.tb_Cliente, "Id", "Id", venda.pk_idCliente);
+            ViewData["pk_idEstoque"] = new SelectList(_context.tb_Estoque, "Id", "Id", venda.pk_idEstoque);
             return View(venda);
         }
 
@@ -134,7 +134,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var venda = await _context.Venda
+            var venda = await _context.tb_Venda
                 .Include(v => v.Cliente)
                 .Include(v => v.Estoque)
                 .FirstOrDefaultAsync(m => m.Id == id);
@@ -151,10 +151,10 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var venda = await _context.Venda.FindAsync(id);
+            var venda = await _context.tb_Venda.FindAsync(id);
             if (venda != null)
             {
-                _context.Venda.Remove(venda);
+                _context.tb_Venda.Remove(venda);
             }
 
             await _context.SaveChangesAsync();
@@ -163,7 +163,7 @@ namespace Web.Controllers
 
         private bool VendaExists(int id)
         {
-            return _context.Venda.Any(e => e.Id == id);
+            return _context.tb_Venda.Any(e => e.Id == id);
         }
     }
 }

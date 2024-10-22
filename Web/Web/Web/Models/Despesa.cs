@@ -1,9 +1,12 @@
-﻿namespace Web.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Web.Models
 {
     public class Despesa
     {
         public int Id { get; set; }
-        public int FornecedorId { get; set; }  // Foreign Key
+        [ForeignKey("Fornecedor")]
+        public int pk_idFornecedor { get; set; }
         public string Tipo { get; set; }
         public string Produto { get; set; }
         public int Quantidade { get; set; }

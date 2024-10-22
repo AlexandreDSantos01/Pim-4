@@ -17,199 +17,199 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web
 build_property.RootNamespace = Web
-build_property.ProjectDir = E:\notbook\Web\Web\Web\
+build_property.ProjectDir = C:\Users\Alexandre Not\Desktop\xande\Pim-4\Web\Web\Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\notbook\Web\Web\Web
+build_property.MSBuildProjectDirectory = C:\Users\Alexandre Not\Desktop\xande\Pim-4\Web\Web\Web
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/notbook/Web/Web/Web/Views/Clientes/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Clientes/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Clientes/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Clientes/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Clientes/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Despesas/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Despesas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Despesas/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Despesas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Despesas/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Despesas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Despesas/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Despesas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Despesas/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Despesas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Estoques/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Estoques/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Estoques/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Estoques/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Estoques/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Estoques/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Estoques/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Estoques/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Estoques/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Estoques/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Financeiros/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Financeiros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZWlyb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Financeiros/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Financeiros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZWlyb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Financeiros/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Financeiros/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZWlyb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Financeiros/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Financeiros/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZWlyb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Financeiros/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Financeiros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZWlyb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Fornecedores/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Fornecedores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Fornecedores/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Fornecedores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Fornecedores/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Fornecedores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Fornecedores/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Fornecedores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Fornecedores/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Fornecedores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Home/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Home/Privacy.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Producoes/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Producoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjb2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Producoes/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Producoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjb2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Producoes/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Producoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjb2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Producoes/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Producoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjb2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Producoes/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Producoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjb2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Shared/Error.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Usuarios/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Usuarios/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Usuarios/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Usuarios/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Usuarios/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Vendas/Create.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Vendas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Vendas/Delete.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Vendas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Vendas/Details.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Vendas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Vendas/Edit.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Vendas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Vendas/Index.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Vendas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/_ViewImports.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/_ViewStart.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/notbook/Web/Web/Web/Views/Shared/_Layout.cshtml]
+[C:/Users/Alexandre Not/Desktop/xande/Pim-4/Web/Web/Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lzldzk1rll

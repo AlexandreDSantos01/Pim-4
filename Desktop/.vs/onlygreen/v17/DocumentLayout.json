@@ -1,48 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\notbook\\Desktop\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|e:\\notbook\\desktop\\onlygreen\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\producao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\producao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|E:\\notbook\\Desktop\\onlygreen\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,128 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Cliente.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Cliente.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Cliente.cs",
-              "RelativeToolTip": "onlygreen\\Cliente.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowEgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:26:03.668Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Estoque.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Estoque.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Estoque.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Estoque.cs",
-              "RelativeToolTip": "onlygreen\\Estoque.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:25:53.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Financeiro.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Financeiro.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Financeiro.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Financeiro.cs",
-              "RelativeToolTip": "onlygreen\\Financeiro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:25:44.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Form1.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Form1.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Form1.cs",
-              "RelativeToolTip": "onlygreen\\Form1.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:25:39.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Home.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Home.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Home.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Home.cs",
-              "RelativeToolTip": "onlygreen\\Home.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:25:31.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Venda.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Venda.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Venda.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Venda.cs",
-              "RelativeToolTip": "onlygreen\\Venda.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:25:17.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Despesa.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Despesa.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Despesa.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Despesa.cs",
-              "RelativeToolTip": "onlygreen\\Despesa.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAjwEwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:24:59.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Usuario.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Usuario.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Usuario.cs",
-              "RelativeToolTip": "onlygreen\\Usuario.cs",
-              "ViewState": "AgIAABoBAAAAAAAAAAAjwCoBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:24:19.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Fornecedor.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Fornecedor.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Fornecedor.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Fornecedor.cs",
-              "RelativeToolTip": "onlygreen\\Fornecedor.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAjwEQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:23:36.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Producao.cs",
-              "DocumentMoniker": "E:\\notbook\\Desktop\\onlygreen\\Producao.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Producao.cs",
-              "ToolTip": "E:\\notbook\\Desktop\\onlygreen\\Producao.cs",
-              "RelativeToolTip": "onlygreen\\Producao.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:15:26.856Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
