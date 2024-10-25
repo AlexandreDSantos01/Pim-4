@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Web.csproj": {}
+    "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Web.csproj": {
+    "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\Alexandre Not\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexandre Not\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

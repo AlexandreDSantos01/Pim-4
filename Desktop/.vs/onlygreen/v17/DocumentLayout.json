@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\desktop\\onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\desktop\\onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF65B3AF-EAE2-4C0F-B609-070964162B6F}|onlygreen\\onlygreen.csproj|solutionrelative:onlygreen\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Desktop\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,31 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Despesa.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\onlygreen\\Despesa.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Despesa.cs",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\onlygreen\\Despesa.cs",
-              "RelativeToolTip": "onlygreen\\Despesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T22:59:46.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Despesa.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\onlygreen\\Despesa.cs",
-              "RelativeDocumentMoniker": "onlygreen\\Despesa.cs",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Desktop\\onlygreen\\Despesa.cs [Design]",
-              "RelativeToolTip": "onlygreen\\Despesa.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T23:13:50.447Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
