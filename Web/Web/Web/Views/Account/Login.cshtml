@@ -1,0 +1,42 @@
+﻿@model Web.Models.UserLogin
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="Ulogar"></label>
+        <input asp-for="Ulogar" class="form-control" />
+        <span asp-validation-for="Ulogar" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Senha"></label>
+        <input asp-for="Senha" type="password" class="form-control" />
+        <span asp-validation-for="Senha" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Entrar</button>
+</form>
+
+<div>
+    @* Para exibir mensagens de erro gerais de login *@
+    @if (ViewData.ModelState.TryGetValue("", out var entry) && entry.Errors.Any())
+    {
+        <div class="alert alert-danger">
+            @foreach (var error in entry.Errors)
+            {
+                <p>@error.ErrorMessage</p>
+            }
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
