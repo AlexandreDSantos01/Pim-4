@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\vendas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\vendas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\vendas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\vendas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +27,8 @@
       "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\controllers\\despesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre not\\desktop\\xande\\pim-4\\web\\web\\web\\views\\despesas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\despesas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,52 +52,52 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Vendas\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Vendas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Vendas\\Edit.cshtml",
-              "RelativeToolTip": "Web\\Views\\Vendas\\Edit.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBUAAAAsAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Edit.cshtml*",
+              "RelativeToolTip": "Web\\Views\\Despesas\\Edit.cshtml*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T16:37:34.6Z",
+              "WhenOpened": "2024-10-24T23:24:48.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Vendas\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Vendas\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Vendas\\Create.cshtml*",
-              "RelativeToolTip": "Web\\Views\\Vendas\\Create.cshtml*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBQAAABjAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Details.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Details.cshtml*",
+              "RelativeToolTip": "Web\\Views\\Despesas\\Details.cshtml*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T16:37:09.621Z",
+              "WhenOpened": "2024-10-24T23:24:33.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VendasController.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Controllers\\VendasController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\VendasController.cs",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Controllers\\VendasController.cs*",
-              "RelativeToolTip": "Web\\Controllers\\VendasController.cs*",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwHsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T16:35:31.269Z",
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Delete.cshtml*",
+              "RelativeToolTip": "Web\\Views\\Despesas\\Delete.cshtml*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T23:22:03.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Venda.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Models\\Venda.cs",
-              "RelativeDocumentMoniker": "Web\\Models\\Venda.cs",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Models\\Venda.cs",
-              "RelativeToolTip": "Web\\Models\\Venda.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T15:04:11.924Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Create.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Create.cshtml*",
+              "RelativeToolTip": "Web\\Views\\Despesas\\Create.cshtml*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T23:21:53.443Z",
               "EditorCaption": ""
             },
             {
@@ -112,35 +108,22 @@
               "RelativeDocumentMoniker": "Web\\Models\\Despesa.cs",
               "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Models\\Despesa.cs",
               "RelativeToolTip": "Web\\Models\\Despesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T14:53:57.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Edit.cshtml",
-              "RelativeToolTip": "Web\\Views\\Despesas\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBEAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T14:57:00.142Z",
+              "WhenOpened": "2024-10-24T23:13:26.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Create.cshtml",
-              "RelativeToolTip": "Web\\Views\\Despesas\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAAvAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Despesas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Views\\Despesas\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\Despesas\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T14:56:39.592Z",
+              "WhenOpened": "2024-10-24T23:07:55.86Z",
               "EditorCaption": ""
             },
             {
@@ -151,7 +134,7 @@
               "RelativeDocumentMoniker": "Web\\Controllers\\DespesasController.cs",
               "ToolTip": "C:\\Users\\Alexandre Not\\Desktop\\xande\\Pim-4\\Web\\Web\\Web\\Controllers\\DespesasController.cs",
               "RelativeToolTip": "Web\\Controllers\\DespesasController.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJ4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T14:54:51.13Z",
               "EditorCaption": ""
