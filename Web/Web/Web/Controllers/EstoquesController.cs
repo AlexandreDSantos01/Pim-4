@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
@@ -18,13 +17,21 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Estoques
+        // GET: Estoques (HTML View)
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Estoque.ToListAsync());
         }
 
-        // GET: Estoques/Details/5
+        // GET: api/Estoques (JSON API)
+        [HttpGet("api/Estoques")]
+        public async Task<IActionResult> GetEstoquesJson()
+        {
+            var estoques = await _context.tb_Estoque.ToListAsync();
+            return Json(estoques);
+        }
+
+        // GET: Estoques/Details/5 (HTML View)
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,15 +49,20 @@ namespace Web.Controllers
             return View(estoque);
         }
 
-        // GET: Estoques/Create
-        public IActionResult Create()
+        // GET: api/Estoques/5 (JSON API)
+        [HttpGet("api/Estoques/{id}")]
+        public async Task<IActionResult> GetEstoqueJson(int id)
         {
-            return View();
+            var estoque = await _context.tb_Estoque.FindAsync(id);
+            if (estoque == null)
+            {
+                return NotFound();
+            }
+
+            return Json(estoque);
         }
 
-        // POST: Estoques/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Estoques/Create (HTML View)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,DColheita,DRegistroProducao,EstimativaProducao,Validade,ValorNutritivo,Preco,Situacao")] Estoque estoque)
@@ -64,88 +76,63 @@ namespace Web.Controllers
             return View(estoque);
         }
 
-        // GET: Estoques/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // POST: api/Estoques (JSON API)
+        [HttpPost("api/Estoques")]
+        public async Task<IActionResult> PostEstoqueJson([FromBody] Estoque estoque)
         {
-            if (id == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                _context.tb_Estoque.Add(estoque);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetEstoqueJson), new { id = estoque.Id }, estoque);
             }
-
-            var estoque = await _context.tb_Estoque.FindAsync(id);
-            if (estoque == null)
-            {
-                return NotFound();
-            }
-            return View(estoque);
+            return BadRequest(ModelState);
         }
 
-        // POST: Estoques/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,DColheita,DRegistroProducao,EstimativaProducao,Validade,ValorNutritivo,Preco,Situacao")] Estoque estoque)
+        // PUT: api/Estoques/5 (JSON API)
+        [HttpPut("api/Estoques/{id}")]
+        public async Task<IActionResult> PutEstoqueJson(int id, [FromBody] Estoque estoque)
         {
             if (id != estoque.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(estoque).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(estoque);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!EstoqueExists(estoque.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(estoque);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!EstoqueExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Estoques/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Estoques/5 (JSON API)
+        [HttpDelete("api/Estoques/{id}")]
+        public async Task<IActionResult> DeleteEstoqueJson(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var estoque = await _context.tb_Estoque
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var estoque = await _context.tb_Estoque.FindAsync(id);
             if (estoque == null)
             {
                 return NotFound();
             }
 
-            return View(estoque);
-        }
-
-        // POST: Estoques/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var estoque = await _context.tb_Estoque.FindAsync(id);
-            if (estoque != null)
-            {
-                _context.tb_Estoque.Remove(estoque);
-            }
-
+            _context.tb_Estoque.Remove(estoque);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
         private bool EstoqueExists(int id)

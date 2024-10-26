@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class UsuariosController : Controller
     {
         private readonly MeuDbContext _context;
@@ -18,13 +19,36 @@ namespace Web.Controllers
             _context = context;
         }
 
+        // GET: api/Usuarios
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        {
+            return await _context.tb_Usuario.ToListAsync();
+        }
+
+        // GET: api/Usuarios/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        {
+            var usuario = await _context.tb_Usuario.FindAsync(id);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return usuario;
+        }
+
         // GET: Usuarios
+        [HttpGet("view")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Usuario.ToListAsync());
         }
 
         // GET: Usuarios/Details/5
+        [HttpGet("view/details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,8 +56,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.tb_Usuario
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var usuario = await _context.tb_Usuario.FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
                 return NotFound();
@@ -43,15 +66,14 @@ namespace Web.Controllers
         }
 
         // GET: Usuarios/Create
+        [HttpGet("view/create")]
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Cpf,Nome,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,TipoUsuario,Situacao,Ulogar,Senha")] Usuario usuario)
         {
@@ -65,6 +87,7 @@ namespace Web.Controllers
         }
 
         // GET: Usuarios/Edit/5
+        [HttpGet("view/edit/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,9 +104,7 @@ namespace Web.Controllers
         }
 
         // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("edit/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Cpf,Nome,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,TipoUsuario,Situacao,Ulogar,Senha")] Usuario usuario)
         {
@@ -116,6 +137,7 @@ namespace Web.Controllers
         }
 
         // GET: Usuarios/Delete/5
+        [HttpGet("view/delete/{id}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,8 +145,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.tb_Usuario
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var usuario = await _context.tb_Usuario.FirstOrDefaultAsync(m => m.Id == id);
             if (usuario == null)
             {
                 return NotFound();
@@ -134,7 +155,7 @@ namespace Web.Controllers
         }
 
         // POST: Usuarios/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost("delete/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -142,9 +163,9 @@ namespace Web.Controllers
             if (usuario != null)
             {
                 _context.tb_Usuario.Remove(usuario);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

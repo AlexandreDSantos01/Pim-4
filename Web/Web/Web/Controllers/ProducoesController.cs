@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
@@ -18,15 +17,22 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Producaos
+        // GET: Producoes (HTML View)
         public async Task<IActionResult> Index()
         {
             var producoes = await _context.tb_Producao.ToListAsync();
             return View(producoes);
-
         }
 
-        // GET: Producaos/Details/5
+        // GET: api/Producoes (JSON API)
+        [HttpGet("api/Producoes")]
+        public async Task<IActionResult> GetProducoesJson()
+        {
+            var producoes = await _context.tb_Producao.ToListAsync();
+            return Json(producoes);
+        }
+
+        // GET: Producoes/Details/5 (HTML View)
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,15 +50,26 @@ namespace Web.Controllers
             return View(producao);
         }
 
-        // GET: Producaos/Create
+        // GET: api/Producoes/5 (JSON API)
+        [HttpGet("api/Producoes/{id}")]
+        public async Task<IActionResult> GetProducaoJson(int id)
+        {
+            var producao = await _context.tb_Producao.FindAsync(id);
+            if (producao == null)
+            {
+                return NotFound();
+            }
+
+            return Json(producao);
+        }
+
+        // GET: Producoes/Create (HTML View)
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Producaos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Producoes/Create (HTML View)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,DRegistro,Estimativa")] Producao producao)
@@ -66,90 +83,66 @@ namespace Web.Controllers
             return View(producao);
         }
 
-        // GET: Producaos/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // POST: api/Producoes (JSON API)
+        [HttpPost("api/Producoes")]
+        public async Task<IActionResult> PostProducaoJson([FromBody] Producao producao)
         {
-            if (id == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                _context.tb_Producao.Add(producao);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetProducaoJson), new { id = producao.Id }, producao);
             }
-
-            var producao = await _context.tb_Producao.FindAsync(id);
-            if (producao == null)
-            {
-                return NotFound();
-            }
-            return View(producao);
+            return BadRequest(ModelState);
         }
 
-        // POST: Producaos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,DRegistro,Estimativa")] Producao producao)
+        // PUT: api/Producoes/5 (JSON API)
+        [HttpPut("api/Producoes/{id}")]
+        public async Task<IActionResult> PutProducaoJson(int id, [FromBody] Producao producao)
         {
             if (id != producao.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(producao).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(producao);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProducaoExists(producao.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(producao);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProducaoExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Producaos/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Producoes/5 (JSON API)
+        [HttpDelete("api/Producoes/{id}")]
+        public async Task<IActionResult> DeleteProducaoJson(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var producao = await _context.tb_Producao
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var producao = await _context.tb_Producao.FindAsync(id);
             if (producao == null)
             {
                 return NotFound();
             }
 
-            return View(producao);
-        }
-
-        // POST: Producaos/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var producao = await _context.tb_Producao.FindAsync(id);
-            if (producao != null)
-            {
-                _context.tb_Producao.Remove(producao);
-            }
-
+            _context.tb_Producao.Remove(producao);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
+        // Helper method to check if a production exists
         private bool ProducaoExists(int id)
         {
             return _context.tb_Producao.Any(e => e.Id == id);

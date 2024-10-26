@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
@@ -18,13 +17,21 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Financeiroes
+        // GET: Financeiros (HTML View)
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Financeiro.ToListAsync());
         }
 
-        // GET: Financeiroes/Details/5
+        // GET: api/Financeiros (JSON API)
+        [HttpGet("api/Financeiros")]
+        public async Task<IActionResult> GetFinanceirosJson()
+        {
+            var financeiros = await _context.tb_Financeiro.ToListAsync();
+            return Json(financeiros);
+        }
+
+        // GET: Financeiros/Details/5 (HTML View)
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,15 +49,20 @@ namespace Web.Controllers
             return View(financeiro);
         }
 
-        // GET: Financeiroes/Create
-        public IActionResult Create()
+        // GET: api/Financeiros/5 (JSON API)
+        [HttpGet("api/Financeiros/{id}")]
+        public async Task<IActionResult> GetFinanceiroJson(int id)
         {
-            return View();
+            var financeiro = await _context.tb_Financeiro.FindAsync(id);
+            if (financeiro == null)
+            {
+                return NotFound();
+            }
+
+            return Json(financeiro);
         }
 
-        // POST: Financeiroes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Financeiros/Create (HTML View)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,DRegistro,DiaInicio,DiaFim,ValorVenda,ValorDespesa,ValorLucro")] Financeiro financeiro)
@@ -64,88 +76,63 @@ namespace Web.Controllers
             return View(financeiro);
         }
 
-        // GET: Financeiroes/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // POST: api/Financeiros (JSON API)
+        [HttpPost("api/Financeiros")]
+        public async Task<IActionResult> PostFinanceiroJson([FromBody] Financeiro financeiro)
         {
-            if (id == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                _context.tb_Financeiro.Add(financeiro);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetFinanceiroJson), new { id = financeiro.Id }, financeiro);
             }
-
-            var financeiro = await _context.tb_Financeiro.FindAsync(id);
-            if (financeiro == null)
-            {
-                return NotFound();
-            }
-            return View(financeiro);
+            return BadRequest(ModelState);
         }
 
-        // POST: Financeiroes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DRegistro,DiaInicio,DiaFim,ValorVenda,ValorDespesa,ValorLucro")] Financeiro financeiro)
+        // PUT: api/Financeiros/5 (JSON API)
+        [HttpPut("api/Financeiros/{id}")]
+        public async Task<IActionResult> PutFinanceiroJson(int id, [FromBody] Financeiro financeiro)
         {
             if (id != financeiro.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(financeiro).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(financeiro);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FinanceiroExists(financeiro.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(financeiro);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FinanceiroExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Financeiroes/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Financeiros/5 (JSON API)
+        [HttpDelete("api/Financeiros/{id}")]
+        public async Task<IActionResult> DeleteFinanceiroJson(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var financeiro = await _context.tb_Financeiro
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var financeiro = await _context.tb_Financeiro.FindAsync(id);
             if (financeiro == null)
             {
                 return NotFound();
             }
 
-            return View(financeiro);
-        }
-
-        // POST: Financeiroes/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var financeiro = await _context.tb_Financeiro.FindAsync(id);
-            if (financeiro != null)
-            {
-                _context.tb_Financeiro.Remove(financeiro);
-            }
-
+            _context.tb_Financeiro.Remove(financeiro);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
         private bool FinanceiroExists(int id)

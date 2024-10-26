@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [ApiController]
+    [Route("Clientes")]
     public class ClientesController : Controller
     {
         private readonly MeuDbContext _context;
@@ -19,12 +19,14 @@ namespace Web.Controllers
         }
 
         // GET: Clientes
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Cliente.ToListAsync());
         }
 
         // GET: Clientes/Details/5
+        [HttpGet("Details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,15 +45,14 @@ namespace Web.Controllers
         }
 
         // GET: Clientes/Create
+        [HttpGet("Create")]
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: Clientes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("Create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Cpf,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Situacao")] Cliente cliente)
         {
@@ -65,6 +66,7 @@ namespace Web.Controllers
         }
 
         // GET: Clientes/Edit/5
+        [HttpGet("Edit/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,9 +83,7 @@ namespace Web.Controllers
         }
 
         // POST: Clientes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPost("Edit/{id}")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Cpf,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Situacao")] Cliente cliente)
         {
@@ -116,6 +116,7 @@ namespace Web.Controllers
         }
 
         // GET: Clientes/Delete/5
+        [HttpGet("Delete/{id}")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,7 +135,7 @@ namespace Web.Controllers
         }
 
         // POST: Clientes/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost("Delete/{id}"), ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

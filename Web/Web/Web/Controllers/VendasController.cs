@@ -54,8 +54,6 @@ namespace Web.Controllers
         }
 
         // POST: Vendas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ClienteId,EstoqueId,Nome,Quantidade,DRegistro,Valor")] Venda venda)
@@ -90,8 +88,6 @@ namespace Web.Controllers
         }
 
         // POST: Vendas/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ClienteId,EstoqueId,Nome,Quantidade,DRegistro,Valor")] Venda venda)
@@ -159,6 +155,35 @@ namespace Web.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        // API: Vendas/GetAll
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var vendas = await _context.tb_Venda
+                .Include(v => v.Cliente)
+                .Include(v => v.Estoque)
+                .ToListAsync();
+
+            return Json(vendas);
+        }
+
+        // API: Vendas/GetById/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var venda = await _context.tb_Venda
+                .Include(v => v.Cliente)
+                .Include(v => v.Estoque)
+                .FirstOrDefaultAsync(v => v.Id == id);
+
+            if (venda == null)
+            {
+                return NotFound();
+            }
+
+            return Json(venda);
         }
 
         private bool VendaExists(int id)

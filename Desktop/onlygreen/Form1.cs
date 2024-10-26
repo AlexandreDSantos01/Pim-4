@@ -45,7 +45,7 @@ namespace onlygreen
         {
             string tipoUsuario = null; // Inicializa a variável
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -67,7 +67,7 @@ namespace onlygreen
         // Método para verificar credenciais
         private bool VerificarCredenciais(string login, string senha)
         {
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();

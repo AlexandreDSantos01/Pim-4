@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
@@ -18,13 +17,21 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Fornecedors
+        // GET: Fornecedores (HTML View)
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Fornecedor.ToListAsync());
         }
 
-        // GET: Fornecedors/Details/5
+        // GET: api/Fornecedores (JSON API)
+        [HttpGet("api/Fornecedores")]
+        public async Task<IActionResult> GetFornecedoresJson()
+        {
+            var fornecedores = await _context.tb_Fornecedor.ToListAsync();
+            return Json(fornecedores);
+        }
+
+        // GET: Fornecedores/Details/5 (HTML View)
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,15 +49,20 @@ namespace Web.Controllers
             return View(fornecedor);
         }
 
-        // GET: Fornecedors/Create
-        public IActionResult Create()
+        // GET: api/Fornecedores/5 (JSON API)
+        [HttpGet("api/Fornecedores/{id}")]
+        public async Task<IActionResult> GetFornecedorJson(int id)
         {
-            return View();
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
+            if (fornecedor == null)
+            {
+                return NotFound();
+            }
+
+            return Json(fornecedor);
         }
 
-        // POST: Fornecedors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Fornecedores/Create (HTML View)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Cnpj,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Produtos,Situacao")] Fornecedor fornecedor)
@@ -64,88 +76,63 @@ namespace Web.Controllers
             return View(fornecedor);
         }
 
-        // GET: Fornecedors/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // POST: api/Fornecedores (JSON API)
+        [HttpPost("api/Fornecedores")]
+        public async Task<IActionResult> PostFornecedorJson([FromBody] Fornecedor fornecedor)
         {
-            if (id == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                _context.tb_Fornecedor.Add(fornecedor);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetFornecedorJson), new { id = fornecedor.Id }, fornecedor);
             }
-
-            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
-            if (fornecedor == null)
-            {
-                return NotFound();
-            }
-            return View(fornecedor);
+            return BadRequest(ModelState);
         }
 
-        // POST: Fornecedors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Cnpj,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Produtos,Situacao")] Fornecedor fornecedor)
+        // PUT: api/Fornecedores/5 (JSON API)
+        [HttpPut("api/Fornecedores/{id}")]
+        public async Task<IActionResult> PutFornecedorJson(int id, [FromBody] Fornecedor fornecedor)
         {
             if (id != fornecedor.Id)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(fornecedor).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(fornecedor);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FornecedorExists(fornecedor.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            return View(fornecedor);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FornecedorExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Fornecedors/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // DELETE: api/Fornecedores/5 (JSON API)
+        [HttpDelete("api/Fornecedores/{id}")]
+        public async Task<IActionResult> DeleteFornecedorJson(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var fornecedor = await _context.tb_Fornecedor
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
             if (fornecedor == null)
             {
                 return NotFound();
             }
 
-            return View(fornecedor);
-        }
-
-        // POST: Fornecedors/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
-            if (fornecedor != null)
-            {
-                _context.tb_Fornecedor.Remove(fornecedor);
-            }
-
+            _context.tb_Fornecedor.Remove(fornecedor);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return NoContent();
         }
 
         private bool FornecedorExists(int id)
