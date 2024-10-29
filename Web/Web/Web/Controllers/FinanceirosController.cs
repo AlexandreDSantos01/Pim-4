@@ -8,6 +8,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class FinanceirosController : Controller
     {
         private readonly MeuDbContext _context;
@@ -18,13 +20,14 @@ namespace Web.Controllers
         }
 
         // GET: Financeiros (HTML View)
+        [HttpGet("view")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Financeiro.ToListAsync());
         }
 
         // GET: api/Financeiros (JSON API)
-        [HttpGet("api/Financeiros")]
+        [HttpGet]
         public async Task<IActionResult> GetFinanceirosJson()
         {
             var financeiros = await _context.tb_Financeiro.ToListAsync();
@@ -32,6 +35,7 @@ namespace Web.Controllers
         }
 
         // GET: Financeiros/Details/5 (HTML View)
+        [HttpGet("view/details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -50,7 +54,7 @@ namespace Web.Controllers
         }
 
         // GET: api/Financeiros/5 (JSON API)
-        [HttpGet("api/Financeiros/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetFinanceiroJson(int id)
         {
             var financeiro = await _context.tb_Financeiro.FindAsync(id);
@@ -63,7 +67,7 @@ namespace Web.Controllers
         }
 
         // POST: Financeiros/Create (HTML View)
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,DRegistro,DiaInicio,DiaFim,ValorVenda,ValorDespesa,ValorLucro")] Financeiro financeiro)
         {
@@ -77,7 +81,7 @@ namespace Web.Controllers
         }
 
         // POST: api/Financeiros (JSON API)
-        [HttpPost("api/Financeiros")]
+        [HttpPost]
         public async Task<IActionResult> PostFinanceiroJson([FromBody] Financeiro financeiro)
         {
             if (ModelState.IsValid)
@@ -90,7 +94,7 @@ namespace Web.Controllers
         }
 
         // PUT: api/Financeiros/5 (JSON API)
-        [HttpPut("api/Financeiros/{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> PutFinanceiroJson(int id, [FromBody] Financeiro financeiro)
         {
             if (id != financeiro.Id)
@@ -120,7 +124,7 @@ namespace Web.Controllers
         }
 
         // DELETE: api/Financeiros/5 (JSON API)
-        [HttpDelete("api/Financeiros/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteFinanceiroJson(int id)
         {
             var financeiro = await _context.tb_Financeiro.FindAsync(id);

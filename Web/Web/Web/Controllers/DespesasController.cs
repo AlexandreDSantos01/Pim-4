@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class DespesasController : Controller
     {
         private readonly MeuDbContext _context;
@@ -18,11 +19,31 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Despesas
+        // GET: api/Despesas
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Despesa>>> GetDespesas()
+        {
+            return await _context.tb_Despesa.Include(d => d.Fornecedor).ToListAsync();
+        }
+
+        // GET: api/Despesas/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Despesa>> GetDespesa(int id)
+        {
+            var despesa = await _context.tb_Despesa.Include(d => d.Fornecedor).FirstOrDefaultAsync(m => m.Id == id);
+            if (despesa == null)
+            {
+                return NotFound();
+            }
+            return despesa;
+        }
+
+        // GET: Despesas/Index
+        [HttpGet("Index")]
         public async Task<IActionResult> Index()
         {
-            var meuDbContext = _context.tb_Despesa.Include(d => d.Fornecedor);
-            return View(await meuDbContext.ToListAsync());
+            var despesas = await _context.tb_Despesa.Include(d => d.Fornecedor).ToListAsync();
+            return View(despesas); // Retorna a view com a lista de despesas
         }
 
         // GET: Despesas/Details/5
@@ -33,9 +54,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var despesa = await _context.tb_Despesa
-                .Include(d => d.Fornecedor)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var despesa = await _context.tb_Despesa.Include(d => d.Fornecedor).FirstOrDefaultAsync(m => m.Id == id);
             if (despesa == null)
             {
                 return NotFound();
@@ -47,13 +66,10 @@ namespace Web.Controllers
         // GET: Despesas/Create
         public IActionResult Create()
         {
-            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id");
             return View();
         }
 
         // POST: Despesas/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,pk_idFornecedor,Tipo,Produto,Quantidade,DRegistro,Valor")] Despesa despesa)
@@ -64,7 +80,6 @@ namespace Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
@@ -81,16 +96,13 @@ namespace Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
         // POST: Despesas/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FornecedorId,Tipo,Produto,Quantidade,DRegistro,Valor")] Despesa despesa)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,pk_idFornecedor,Tipo,Produto,Quantidade,DRegistro,Valor")] Despesa despesa)
         {
             if (id != despesa.Id)
             {
@@ -117,7 +129,6 @@ namespace Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["pk_idFornecedor"] = new SelectList(_context.tb_Fornecedor, "Id", "Id", despesa.pk_idFornecedor);
             return View(despesa);
         }
 
@@ -129,9 +140,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var despesa = await _context.tb_Despesa
-                .Include(d => d.Fornecedor)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var despesa = await _context.tb_Despesa.Include(d => d.Fornecedor).FirstOrDefaultAsync(m => m.Id == id);
             if (despesa == null)
             {
                 return NotFound();
@@ -149,9 +158,8 @@ namespace Web.Controllers
             if (despesa != null)
             {
                 _context.tb_Despesa.Remove(despesa);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

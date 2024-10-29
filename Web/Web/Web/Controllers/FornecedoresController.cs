@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +7,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class FornecedoresController : Controller
     {
         private readonly MeuDbContext _context;
@@ -17,21 +18,36 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Fornecedores (HTML View)
+        // GET: api/Fornecedores
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Fornecedor>>> GetFornecedores()
+        {
+            return await _context.tb_Fornecedor.ToListAsync();
+        }
+
+        // GET: api/Fornecedores/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Fornecedor>> GetFornecedor(int id)
+        {
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
+
+            if (fornecedor == null)
+            {
+                return NotFound();
+            }
+
+            return fornecedor;
+        }
+
+        // GET: Fornecedores
+        [HttpGet("view")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Fornecedor.ToListAsync());
         }
 
-        // GET: api/Fornecedores (JSON API)
-        [HttpGet("api/Fornecedores")]
-        public async Task<IActionResult> GetFornecedoresJson()
-        {
-            var fornecedores = await _context.tb_Fornecedor.ToListAsync();
-            return Json(fornecedores);
-        }
-
-        // GET: Fornecedores/Details/5 (HTML View)
+        // GET: Fornecedores/Details/5
+        [HttpGet("view/details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,8 +55,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.tb_Fornecedor
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var fornecedor = await _context.tb_Fornecedor.FirstOrDefaultAsync(m => m.Id == id);
             if (fornecedor == null)
             {
                 return NotFound();
@@ -49,21 +64,15 @@ namespace Web.Controllers
             return View(fornecedor);
         }
 
-        // GET: api/Fornecedores/5 (JSON API)
-        [HttpGet("api/Fornecedores/{id}")]
-        public async Task<IActionResult> GetFornecedorJson(int id)
+        // GET: Fornecedores/Create
+        [HttpGet("view/create")]
+        public IActionResult Create()
         {
-            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
-            if (fornecedor == null)
-            {
-                return NotFound();
-            }
-
-            return Json(fornecedor);
+            return View();
         }
 
-        // POST: Fornecedores/Create (HTML View)
-        [HttpPost]
+        // POST: Fornecedores/Create
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Cnpj,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Produtos,Situacao")] Fornecedor fornecedor)
         {
@@ -76,63 +85,87 @@ namespace Web.Controllers
             return View(fornecedor);
         }
 
-        // POST: api/Fornecedores (JSON API)
-        [HttpPost("api/Fornecedores")]
-        public async Task<IActionResult> PostFornecedorJson([FromBody] Fornecedor fornecedor)
+        // GET: Fornecedores/Edit/5
+        [HttpGet("view/edit/{id}")]
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (ModelState.IsValid)
+            if (id == null)
             {
-                _context.tb_Fornecedor.Add(fornecedor);
-                await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetFornecedorJson), new { id = fornecedor.Id }, fornecedor);
-            }
-            return BadRequest(ModelState);
-        }
-
-        // PUT: api/Fornecedores/5 (JSON API)
-        [HttpPut("api/Fornecedores/{id}")]
-        public async Task<IActionResult> PutFornecedorJson(int id, [FromBody] Fornecedor fornecedor)
-        {
-            if (id != fornecedor.Id)
-            {
-                return BadRequest();
+                return NotFound();
             }
 
-            _context.Entry(fornecedor).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!FornecedorExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // DELETE: api/Fornecedores/5 (JSON API)
-        [HttpDelete("api/Fornecedores/{id}")]
-        public async Task<IActionResult> DeleteFornecedorJson(int id)
-        {
             var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
             if (fornecedor == null)
             {
                 return NotFound();
             }
+            return View(fornecedor);
+        }
 
-            _context.tb_Fornecedor.Remove(fornecedor);
-            await _context.SaveChangesAsync();
+        // POST: Fornecedores/Edit/5
+        [HttpPost("edit/{id}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Cnpj,Telefone,Email,Rua,NRua,Bairro,Cidade,Estado,Cep,Produtos,Situacao")] Fornecedor fornecedor)
+        {
+            if (id != fornecedor.Id)
+            {
+                return NotFound();
+            }
 
-            return NoContent();
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(fornecedor);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!FornecedorExists(fornecedor.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(fornecedor);
+        }
+
+        // GET: Fornecedores/Delete/5
+        [HttpGet("view/delete/{id}")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var fornecedor = await _context.tb_Fornecedor.FirstOrDefaultAsync(m => m.Id == id);
+            if (fornecedor == null)
+            {
+                return NotFound();
+            }
+
+            return View(fornecedor);
+        }
+
+        // POST: Fornecedores/Delete/5
+        [HttpPost("delete/{id}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var fornecedor = await _context.tb_Fornecedor.FindAsync(id);
+            if (fornecedor != null)
+            {
+                _context.tb_Fornecedor.Remove(fornecedor);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         private bool FornecedorExists(int id)

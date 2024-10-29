@@ -1,8 +1,40 @@
 ﻿@model IEnumerable<Web.Models.Usuario>
 
 @{
+
+
     ViewData["Title"] = "Usuários";
 }
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda Urbana</title>
+    <style>
+        body {
+            background-color: #dbead5;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 1px solid #57b1dc;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #470000;
+            font-size: 1em;
+        }
+    </style>
+</head>
 
 <h1>Usuários</h1>
 
@@ -12,9 +44,9 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <!--<th>
                 @Html.DisplayNameFor(model => model.Cpf)
-             </th>
+             </th>-->
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
@@ -30,9 +62,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.NRua)
             </th>
-            <th>
+            <!--<th>
                 @Html.DisplayNameFor(model => model.Bairro)
-            </th>
+            </th>-->
             <th>
                 @Html.DisplayNameFor(model => model.Cidade)
             </th>
@@ -78,9 +110,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NRua)
             </td>
-            <td>
+                <!--<td>
                 @Html.DisplayFor(modelItem => item.Bairro)
-            </td>
+            </td>-->
             <td>
                 @Html.DisplayFor(modelItem => item.Cidade)
             </td>

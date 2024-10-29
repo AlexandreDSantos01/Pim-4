@@ -9,6 +9,8 @@ using System.Collections.Generic;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class AccountController : Controller
     {
         private readonly MeuDbContext _context;
@@ -19,15 +21,14 @@ namespace Web.Controllers
         }
 
         // Método para exibir a página de login (HTML)
-        [HttpGet]
+        [HttpGet("login")]
         public IActionResult Login()
         {
-            return View();
+            return View(); // Retorna a View de Login
         }
 
-        // Método para login via API que retorna HTML
-        [HttpPost]
-        [Route("api/account/login")]
+        // Método para login via API
+        [HttpPost("login")]
         public async Task<IActionResult> LoginApi(UserLogin model)
         {
             if (ModelState.IsValid)
@@ -62,7 +63,7 @@ namespace Web.Controllers
         }
 
         // Método para logout
-        [HttpPost]
+        [HttpPost("logout")]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

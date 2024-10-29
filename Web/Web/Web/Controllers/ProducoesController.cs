@@ -8,6 +8,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProducoesController : Controller
     {
         private readonly MeuDbContext _context;
@@ -17,22 +19,37 @@ namespace Web.Controllers
             _context = context;
         }
 
+        // GET: api/Producoes (JSON API)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Producao>>> GetProducoes()
+        {
+            return await _context.tb_Producao.ToListAsync();
+        }
+
+        // GET: api/Producoes/5 (JSON API)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Producao>> GetProducao(int id)
+        {
+            var producao = await _context.tb_Producao.FindAsync(id);
+
+            if (producao == null)
+            {
+                return NotFound();
+            }
+
+            return producao;
+        }
+
         // GET: Producoes (HTML View)
+        [HttpGet("view")]
         public async Task<IActionResult> Index()
         {
             var producoes = await _context.tb_Producao.ToListAsync();
             return View(producoes);
         }
 
-        // GET: api/Producoes (JSON API)
-        [HttpGet("api/Producoes")]
-        public async Task<IActionResult> GetProducoesJson()
-        {
-            var producoes = await _context.tb_Producao.ToListAsync();
-            return Json(producoes);
-        }
-
         // GET: Producoes/Details/5 (HTML View)
+        [HttpGet("view/details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -40,8 +57,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var producao = await _context.tb_Producao
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var producao = await _context.tb_Producao.FirstOrDefaultAsync(m => m.Id == id);
             if (producao == null)
             {
                 return NotFound();
@@ -50,27 +66,15 @@ namespace Web.Controllers
             return View(producao);
         }
 
-        // GET: api/Producoes/5 (JSON API)
-        [HttpGet("api/Producoes/{id}")]
-        public async Task<IActionResult> GetProducaoJson(int id)
-        {
-            var producao = await _context.tb_Producao.FindAsync(id);
-            if (producao == null)
-            {
-                return NotFound();
-            }
-
-            return Json(producao);
-        }
-
         // GET: Producoes/Create (HTML View)
+        [HttpGet("view/create")]
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: Producoes/Create (HTML View)
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,DRegistro,Estimativa")] Producao producao)
         {
@@ -84,21 +88,21 @@ namespace Web.Controllers
         }
 
         // POST: api/Producoes (JSON API)
-        [HttpPost("api/Producoes")]
-        public async Task<IActionResult> PostProducaoJson([FromBody] Producao producao)
+        [HttpPost]
+        public async Task<IActionResult> PostProducao([FromBody] Producao producao)
         {
             if (ModelState.IsValid)
             {
                 _context.tb_Producao.Add(producao);
                 await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetProducaoJson), new { id = producao.Id }, producao);
+                return CreatedAtAction(nameof(GetProducao), new { id = producao.Id }, producao);
             }
             return BadRequest(ModelState);
         }
 
         // PUT: api/Producoes/5 (JSON API)
-        [HttpPut("api/Producoes/{id}")]
-        public async Task<IActionResult> PutProducaoJson(int id, [FromBody] Producao producao)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutProducao(int id, [FromBody] Producao producao)
         {
             if (id != producao.Id)
             {
@@ -127,8 +131,8 @@ namespace Web.Controllers
         }
 
         // DELETE: api/Producoes/5 (JSON API)
-        [HttpDelete("api/Producoes/{id}")]
-        public async Task<IActionResult> DeleteProducaoJson(int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProducao(int id)
         {
             var producao = await _context.tb_Producao.FindAsync(id);
             if (producao == null)

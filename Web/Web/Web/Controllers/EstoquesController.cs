@@ -8,6 +8,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class EstoquesController : Controller
     {
         private readonly MeuDbContext _context;
@@ -17,21 +19,36 @@ namespace Web.Controllers
             _context = context;
         }
 
+        // GET: api/Estoques (JSON API)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Estoque>>> GetEstoques()
+        {
+            return await _context.tb_Estoque.ToListAsync();
+        }
+
+        // GET: api/Estoques/5 (JSON API)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Estoque>> GetEstoque(int id)
+        {
+            var estoque = await _context.tb_Estoque.FindAsync(id);
+
+            if (estoque == null)
+            {
+                return NotFound();
+            }
+
+            return estoque;
+        }
+
         // GET: Estoques (HTML View)
+        [HttpGet("view")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.tb_Estoque.ToListAsync());
         }
 
-        // GET: api/Estoques (JSON API)
-        [HttpGet("api/Estoques")]
-        public async Task<IActionResult> GetEstoquesJson()
-        {
-            var estoques = await _context.tb_Estoque.ToListAsync();
-            return Json(estoques);
-        }
-
         // GET: Estoques/Details/5 (HTML View)
+        [HttpGet("view/details/{id}")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -39,8 +56,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var estoque = await _context.tb_Estoque
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var estoque = await _context.tb_Estoque.FirstOrDefaultAsync(m => m.Id == id);
             if (estoque == null)
             {
                 return NotFound();
@@ -49,21 +65,15 @@ namespace Web.Controllers
             return View(estoque);
         }
 
-        // GET: api/Estoques/5 (JSON API)
-        [HttpGet("api/Estoques/{id}")]
-        public async Task<IActionResult> GetEstoqueJson(int id)
+        // GET: Estoques/Create (HTML View)
+        [HttpGet("view/create")]
+        public IActionResult Create()
         {
-            var estoque = await _context.tb_Estoque.FindAsync(id);
-            if (estoque == null)
-            {
-                return NotFound();
-            }
-
-            return Json(estoque);
+            return View();
         }
 
         // POST: Estoques/Create (HTML View)
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Quantidade,DColheita,DRegistroProducao,EstimativaProducao,Validade,ValorNutritivo,Preco,Situacao")] Estoque estoque)
         {
@@ -76,22 +86,105 @@ namespace Web.Controllers
             return View(estoque);
         }
 
+        // GET: Estoques/Edit/5 (HTML View)
+        [HttpGet("view/edit/{id}")]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var estoque = await _context.tb_Estoque.FindAsync(id);
+            if (estoque == null)
+            {
+                return NotFound();
+            }
+            return View(estoque);
+        }
+
+        // POST: Estoques/Edit/5 (HTML View)
+        [HttpPost("edit/{id}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Quantidade,DColheita,DRegistroProducao,EstimativaProducao,Validade,ValorNutritivo,Preco,Situacao")] Estoque estoque)
+        {
+            if (id != estoque.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(estoque);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!EstoqueExists(estoque.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(estoque);
+        }
+
+        // GET: Estoques/Delete/5 (HTML View)
+        [HttpGet("view/delete/{id}")]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var estoque = await _context.tb_Estoque.FirstOrDefaultAsync(m => m.Id == id);
+            if (estoque == null)
+            {
+                return NotFound();
+            }
+
+            return View(estoque);
+        }
+
+        // POST: Estoques/Delete/5 (HTML View)
+        [HttpPost("delete/{id}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var estoque = await _context.tb_Estoque.FindAsync(id);
+            if (estoque != null)
+            {
+                _context.tb_Estoque.Remove(estoque);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
         // POST: api/Estoques (JSON API)
-        [HttpPost("api/Estoques")]
-        public async Task<IActionResult> PostEstoqueJson([FromBody] Estoque estoque)
+        [HttpPost]
+        public async Task<ActionResult<Estoque>> PostEstoque([FromBody] Estoque estoque)
         {
             if (ModelState.IsValid)
             {
                 _context.tb_Estoque.Add(estoque);
                 await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetEstoqueJson), new { id = estoque.Id }, estoque);
+                return CreatedAtAction(nameof(GetEstoque), new { id = estoque.Id }, estoque);
             }
             return BadRequest(ModelState);
         }
 
         // PUT: api/Estoques/5 (JSON API)
-        [HttpPut("api/Estoques/{id}")]
-        public async Task<IActionResult> PutEstoqueJson(int id, [FromBody] Estoque estoque)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutEstoque(int id, [FromBody] Estoque estoque)
         {
             if (id != estoque.Id)
             {
@@ -120,8 +213,8 @@ namespace Web.Controllers
         }
 
         // DELETE: api/Estoques/5 (JSON API)
-        [HttpDelete("api/Estoques/{id}")]
-        public async Task<IActionResult> DeleteEstoqueJson(int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteEstoque(int id)
         {
             var estoque = await _context.tb_Estoque.FindAsync(id);
             if (estoque == null)
