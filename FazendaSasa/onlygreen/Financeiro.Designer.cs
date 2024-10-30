@@ -106,10 +106,12 @@
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(115, 36);
-            this.btnVoltar.TabIndex = 47;
+            this.btnVoltar.TabIndex = 5;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
             // label3
             // 
@@ -139,7 +141,7 @@
             this.panel2.Location = new System.Drawing.Point(1130, 190);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(316, 158);
-            this.panel2.TabIndex = 44;
+            this.panel2.TabIndex = 3;
             // 
             // label14
             // 
@@ -159,7 +161,9 @@
             this.txtId.MaxLength = 10;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(76, 28);
-            this.txtId.TabIndex = 4;
+            this.txtId.TabIndex = 0;
+            this.txtId.Enter += new System.EventHandler(this.txtId_Enter);
+            this.txtId.Leave += new System.EventHandler(this.txtId_Leave);
             // 
             // btnSelecionar
             // 
@@ -168,10 +172,12 @@
             this.btnSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(256, 32);
-            this.btnSelecionar.TabIndex = 3;
+            this.btnSelecionar.TabIndex = 1;
             this.btnSelecionar.Text = "Selecionar relatório";
             this.btnSelecionar.UseVisualStyleBackColor = true;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
+            this.btnSelecionar.Enter += new System.EventHandler(this.btnSelecionar_Enter);
+            this.btnSelecionar.Leave += new System.EventHandler(this.btnSelecionar_Leave);
             // 
             // btnDel
             // 
@@ -180,10 +186,12 @@
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(256, 32);
-            this.btnDel.TabIndex = 13;
+            this.btnDel.TabIndex = 2;
             this.btnDel.Text = "Deletar";
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            this.btnDel.Enter += new System.EventHandler(this.btnDel_Enter);
+            this.btnDel.Leave += new System.EventHandler(this.btnDel_Leave);
             // 
             // panel1
             // 
@@ -193,7 +201,7 @@
             this.panel1.Location = new System.Drawing.Point(811, 190);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 158);
-            this.panel1.TabIndex = 43;
+            this.panel1.TabIndex = 2;
             // 
             // btnAdicionar
             // 
@@ -202,10 +210,12 @@
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(212, 78);
-            this.btnAdicionar.TabIndex = 2;
+            this.btnAdicionar.TabIndex = 0;
             this.btnAdicionar.Text = "Adicionar novo relatório\r\n";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            this.btnAdicionar.Enter += new System.EventHandler(this.btnAdicionar_Enter);
+            this.btnAdicionar.Leave += new System.EventHandler(this.btnAdicionar_Leave);
             // 
             // btnLimpar
             // 
@@ -214,10 +224,12 @@
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(212, 31);
-            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.TabIndex = 1;
             this.btnLimpar.Text = "Limpar campos";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.Enter += new System.EventHandler(this.btnLimpar_Enter);
+            this.btnLimpar.Leave += new System.EventHandler(this.btnLimpar_Leave);
             // 
             // btnBuscar
             // 
@@ -226,10 +238,12 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 47);
-            this.btnBuscar.TabIndex = 41;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Enter += new System.EventHandler(this.btnBuscar_Enter);
+            this.btnBuscar.Leave += new System.EventHandler(this.btnBuscar_Leave);
             // 
             // label1
             // 
@@ -247,7 +261,9 @@
             this.txtPesquisar.MaxLength = 50;
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(525, 30);
-            this.txtPesquisar.TabIndex = 40;
+            this.txtPesquisar.TabIndex = 0;
+            this.txtPesquisar.Enter += new System.EventHandler(this.txtPesquisar_Enter);
+            this.txtPesquisar.Leave += new System.EventHandler(this.txtPesquisar_Leave);
             // 
             // groupBox2
             // 
@@ -269,7 +285,7 @@
             this.groupBox2.Location = new System.Drawing.Point(800, 373);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(664, 322);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Relatório";
             // 
@@ -279,7 +295,7 @@
             this.label12.Location = new System.Drawing.Point(423, 192);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 25);
-            this.label12.TabIndex = 55;
+            this.label12.TabIndex = 4;
             this.label12.Text = "R$";
             // 
             // label11
@@ -334,7 +350,7 @@
             this.txtLucro.Name = "txtLucro";
             this.txtLucro.ReadOnly = true;
             this.txtLucro.Size = new System.Drawing.Size(125, 30);
-            this.txtLucro.TabIndex = 49;
+            this.txtLucro.TabIndex = 5;
             // 
             // txtDespesa
             // 
@@ -342,7 +358,7 @@
             this.txtDespesa.Name = "txtDespesa";
             this.txtDespesa.ReadOnly = true;
             this.txtDespesa.Size = new System.Drawing.Size(125, 30);
-            this.txtDespesa.TabIndex = 48;
+            this.txtDespesa.TabIndex = 4;
             // 
             // txtVenda
             // 
@@ -350,7 +366,7 @@
             this.txtVenda.Name = "txtVenda";
             this.txtVenda.ReadOnly = true;
             this.txtVenda.Size = new System.Drawing.Size(125, 30);
-            this.txtVenda.TabIndex = 47;
+            this.txtVenda.TabIndex = 3;
             // 
             // label6
             // 
@@ -368,7 +384,7 @@
             this.txtDregistro.Name = "txtDregistro";
             this.txtDregistro.ReadOnly = true;
             this.txtDregistro.Size = new System.Drawing.Size(126, 30);
-            this.txtDregistro.TabIndex = 45;
+            this.txtDregistro.TabIndex = 2;
             // 
             // label5
             // 
@@ -395,6 +411,8 @@
             this.txtAte.Name = "txtAte";
             this.txtAte.Size = new System.Drawing.Size(126, 30);
             this.txtAte.TabIndex = 1;
+            this.txtAte.Enter += new System.EventHandler(this.txtAte_Enter);
+            this.txtAte.Leave += new System.EventHandler(this.txtAte_Leave);
             // 
             // txtDe
             // 
@@ -403,6 +421,8 @@
             this.txtDe.Name = "txtDe";
             this.txtDe.Size = new System.Drawing.Size(126, 30);
             this.txtDe.TabIndex = 0;
+            this.txtDe.Enter += new System.EventHandler(this.txtDe_Enter);
+            this.txtDe.Leave += new System.EventHandler(this.txtDe_Leave);
             // 
             // tbFinanceiro
             // 
@@ -434,7 +454,7 @@
             this.tbFinanceiro.RowTemplate.Height = 24;
             this.tbFinanceiro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tbFinanceiro.Size = new System.Drawing.Size(728, 533);
-            this.tbFinanceiro.TabIndex = 0;
+            this.tbFinanceiro.TabIndex = 6;
             // 
             // idDataGridViewTextBoxColumn
             // 

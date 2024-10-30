@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnlyGrennMobile.Pages.FornecedorPage"
+             Title="FornecedorPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Lista de Fornecedores" FontSize="24" HorizontalOptions="Center" />
+
+            <CollectionView x:Name="FornecedorCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="CNPJ: {Binding Cnpj}" FontSize="14" />
+                            <Label Text="Telefone: {Binding Telefone}" FontSize="14" />
+                            <Label Text="Email: {Binding Email}" FontSize="14" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

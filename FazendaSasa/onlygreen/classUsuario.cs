@@ -27,4 +27,6 @@ namespace onlygreen
         public string senha;
         public string situacao;
     }
+
+
 }

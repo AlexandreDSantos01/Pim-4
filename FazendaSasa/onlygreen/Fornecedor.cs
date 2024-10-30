@@ -20,7 +20,7 @@ namespace onlygreen
 
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -88,7 +88,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -237,7 +237,7 @@ namespace onlygreen
                 {
                     try
                     {
-                        string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+                        string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                         using (var conectar = new SqlConnection(bdonlygreen))
                         {
                             conectar.Open();
@@ -283,7 +283,7 @@ namespace onlygreen
         private DataTable GetUserDataById(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -311,7 +311,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -363,39 +363,42 @@ namespace onlygreen
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
-            // Atualizar os dados no banco de dados
-            using (var conectar = new SqlConnection(bdonlygreen))
+            if (ValidarCampoFornecedor() == false)
             {
-                conectar.Open();
-                using (var cmd = new SqlCommand("UPDATE tb_Fornecedor SET nome = @nome, cnpj = @cnpj, telefone = @telefone, email = @email, rua = @rua, nrua = @nrua, bairro = @bairro, cidade = @cidade, estado = @estado, cep = @cep, produtos = @produtos, situacao = @situacao  WHERE id = @id", conectar))
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+                // Atualizar os dados no banco de dados
+                using (var conectar = new SqlConnection(bdonlygreen))
                 {
+                    conectar.Open();
+                    using (var cmd = new SqlCommand("UPDATE tb_Fornecedor SET nome = @nome, cnpj = @cnpj, telefone = @telefone, email = @email, rua = @rua, nrua = @nrua, bairro = @bairro, cidade = @cidade, estado = @estado, cep = @cep, produtos = @produtos, situacao = @situacao  WHERE id = @id", conectar))
+                    {
 
-                    cmd.Parameters.AddWithValue("@nome", txtNome.Text);
-                    cmd.Parameters.AddWithValue("@cnpj", txtCNPJ.Text);
-                    cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
-                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-                    cmd.Parameters.AddWithValue("@rua", txtRua.Text);
-                    cmd.Parameters.AddWithValue("@nrua", txtNrua.Text);
-                    cmd.Parameters.AddWithValue("@bairro", txtBairro.Text);
-                    cmd.Parameters.AddWithValue("@cidade", txtCidade.Text);
-                    cmd.Parameters.AddWithValue("@estado", txtEstado.Text);
-                    cmd.Parameters.AddWithValue("@cep", txtCEP.Text);
-                    cmd.Parameters.AddWithValue("@produtos", txtProdutos.Text);
-                    cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
+                        cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                        cmd.Parameters.AddWithValue("@cnpj", txtCNPJ.Text);
+                        cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+                        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@rua", txtRua.Text);
+                        cmd.Parameters.AddWithValue("@nrua", txtNrua.Text);
+                        cmd.Parameters.AddWithValue("@bairro", txtBairro.Text);
+                        cmd.Parameters.AddWithValue("@cidade", txtCidade.Text);
+                        cmd.Parameters.AddWithValue("@estado", txtEstado.Text);
+                        cmd.Parameters.AddWithValue("@cep", txtCEP.Text);
+                        cmd.Parameters.AddWithValue("@produtos", txtProdutos.Text);
+                        cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
 
-                    // Definindo a situação
-                    string situacao = checkAtivo.Checked ? "Ativo" : "Inativo";
-                    cmd.Parameters.AddWithValue("@situacao", situacao);
+                        // Definindo a situação
+                        string situacao = checkAtivo.Checked ? "Ativo" : "Inativo";
+                        cmd.Parameters.AddWithValue("@situacao", situacao);
 
 
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Dados atualizados com sucesso!");
+                        MessageBox.Show("Dados atualizados com sucesso!");
 
-                    var menu = new Fornecedor();
-                    menu.Show(this);
-                    this.Visible = false;
+                        var menu = new Fornecedor();
+                        menu.Show(this);
+                        this.Visible = false;
+                    }
                 }
             }
         }
@@ -408,6 +411,199 @@ namespace onlygreen
         private void check1_CheckedChanged(object sender, EventArgs e)
         {
             CarregarDados();
+        }
+
+
+        //FOCO
+      
+        private void txtPesquisar_Enter(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.LightBlue;
+        }
+
+        private void txtPesquisar_Leave(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.White;
+        }
+
+        private void btnBuscar_Enter(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.LightGreen;
+        }
+
+        private void btnBuscar_Leave(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.White;
+        }
+
+        private void btnAdicionar_Enter(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdicionar_Leave(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.White;
+        }
+
+        private void btnLimpar_Enter(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar_Leave(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.White;
+        }
+
+        private void txtId_Enter(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.LightBlue;
+        }
+
+        private void txtId_Leave(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.White;
+        }
+
+        private void btnSelecionar_Enter(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionar_Leave(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.Orange;
+        }
+
+        private void btnSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.White;
+        }
+
+        private void txtNome_Enter(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.LightBlue;
+        }
+
+        private void txtNome_Leave(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.White;
+        }
+
+        private void txtCNPJ_Enter(object sender, EventArgs e)
+        {
+            txtCNPJ.BackColor = Color.LightBlue;
+        }
+
+        private void txtCNPJ_Leave(object sender, EventArgs e)
+        {
+            txtCNPJ.BackColor = Color.White;
+        }
+
+        private void txtTelefone_Enter(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.LightBlue;
+        }
+
+        private void txtTelefone_Leave(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.White;
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.LightBlue;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.White;
+        }
+
+        private void txtRua_Enter(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.LightBlue;
+        }
+
+        private void txtRua_Leave(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.White;
+        }
+
+        private void txtNrua_Enter(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.LightBlue;
+        }
+
+        private void txtNrua_Leave(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.White;
+        }
+
+        private void txtBairro_Enter(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.LightBlue;
+        }
+
+        private void txtBairro_Leave(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.White;
+        }
+
+        private void txtCidade_Enter(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtCidade_Leave(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.White;
+        }
+
+        private void txtEstado_Enter(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.LightBlue;
+        }
+
+        private void txtEstado_Leave(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.White;
+        }
+
+        private void txtCEP_Enter(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.LightBlue;
+        }
+
+        private void txtCEP_Leave(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.White;
+        }
+
+        private void txtProdutos_Enter(object sender, EventArgs e)
+        {
+            txtProdutos.BackColor = Color.LightBlue;
+        }
+
+        private void txtProdutos_Leave(object sender, EventArgs e)
+        {
+            txtProdutos.BackColor = Color.White;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
         }
     }
 }

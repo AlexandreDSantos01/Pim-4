@@ -47,58 +47,66 @@
             this.groupBox1.Controls.Add(this.senha);
             this.groupBox1.Controls.Add(this.usuario);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 18);
+            this.groupBox1.Location = new System.Drawing.Point(508, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1512, 740);
+            this.groupBox1.Size = new System.Drawing.Size(603, 563);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tela de login";
+            this.groupBox1.Text = "Acessar conta";
             // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(618, 347);
+            this.txtSenha.Location = new System.Drawing.Point(131, 220);
             this.txtSenha.MaxLength = 10;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(322, 34);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.UseSystemPasswordChar = true;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
+            this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
             // 
             // txtLogin
             // 
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.Location = new System.Drawing.Point(618, 243);
+            this.txtLogin.Location = new System.Drawing.Point(131, 116);
             this.txtLogin.MaxLength = 10;
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(322, 34);
             this.txtLogin.TabIndex = 0;
+            this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
+            this.txtLogin.Leave += new System.EventHandler(this.txtLogin_Leave);
             // 
             // btnAjuda
             // 
-            this.btnAjuda.Location = new System.Drawing.Point(662, 541);
+            this.btnAjuda.Location = new System.Drawing.Point(175, 414);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(226, 58);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.Text = "Ajuda";
             this.btnAjuda.UseVisualStyleBackColor = true;
             this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
+            this.btnAjuda.Enter += new System.EventHandler(this.btnAjuda_Enter);
+            this.btnAjuda.Leave += new System.EventHandler(this.btnAjuda_Leave);
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(637, 433);
+            this.btnEntrar.Location = new System.Drawing.Point(148, 291);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(280, 75);
             this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            this.btnEntrar.Enter += new System.EventHandler(this.btnEntrar_Enter);
+            this.btnEntrar.Leave += new System.EventHandler(this.btnEntrar_Leave);
             // 
             // senha
             // 
             this.senha.AutoSize = true;
             this.senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.senha.Location = new System.Drawing.Point(732, 315);
+            this.senha.Location = new System.Drawing.Point(245, 188);
             this.senha.Name = "senha";
             this.senha.Size = new System.Drawing.Size(87, 29);
             this.senha.TabIndex = 1;
@@ -108,7 +116,7 @@
             // 
             this.usuario.AutoSize = true;
             this.usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuario.Location = new System.Drawing.Point(732, 211);
+            this.usuario.Location = new System.Drawing.Point(245, 84);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(103, 29);
             this.usuario.TabIndex = 0;

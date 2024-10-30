@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Asn1.Cmp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8NF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -103,7 +104,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -220,7 +221,7 @@ namespace onlygreen
                 {
                     try
                     {
-                        string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+                        string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                         using (var conectar = new SqlConnection(bdonlygreen))
                         {
                             conectar.Open();
@@ -287,7 +288,7 @@ namespace onlygreen
         private DataTable GetId(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -315,7 +316,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -365,7 +366,14 @@ namespace onlygreen
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            // Pegar e conferir ID
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor, insira um ID válido para alterar.");
+                return;
+            }
+
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             // Atualizar os dados no banco de dados
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -417,6 +425,7 @@ namespace onlygreen
         }
  //IGNORAR
 
+
         private void check1_CheckedChanged(object sender, EventArgs e)
         {
             CarregarDados();
@@ -425,6 +434,190 @@ namespace onlygreen
         private void check2_CheckedChanged(object sender, EventArgs e)
         {
             CarregarDados();
+        }
+
+
+        //FOCO
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
+
+        private void txtPesquisar_Enter(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.LightBlue;
+
+        }
+
+        private void txtPesquisar_Leave(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.White;
+        }
+
+        private void btnBuscar_Enter(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.LightGreen;
+        }
+
+        private void btnBuscar_Leave(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.White;
+        }
+
+        private void btnAdicionar_Enter(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdicionar_Leave(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.White;
+        }
+
+        private void btnLimpar_Enter(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar_Leave(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.White;
+        }
+
+        private void txtId_Enter(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.LightBlue;
+        }
+
+        private void txtId_Leave(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.White;
+        }
+
+        private void btnSelecionar_Enter(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionar_Leave(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.Orange;
+        }
+
+        private void btnSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.White;
+        }
+
+
+        private void txtNome_Enter(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.LightBlue;
+        }
+
+        private void txtNome_Leave(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.White;
+        }
+
+        private void txtCPF_Enter(object sender, EventArgs e)
+        {
+            txtCPF.BackColor = Color.LightBlue;
+        }
+
+        private void txtCPF_Leave(object sender, EventArgs e)
+        {
+            txtCPF.BackColor = Color.White;
+        }
+
+        private void txtTelefone_Enter(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.LightBlue;
+        }
+
+        private void txtTelefone_Leave(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.White;
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.LightBlue;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.White;
+        }
+
+        private void txtRua_Enter(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.LightBlue;
+        }
+
+        private void txtRua_Leave(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.White;
+        }
+
+        private void txtNrua_Enter(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.LightBlue;
+        }
+
+        private void txtNrua_Leave(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.White;
+        }
+
+        private void txtBairro_Enter(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.LightBlue;
+        }
+
+        private void txtBairro_Leave(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.White;
+        }
+
+        private void txtCidade_Enter(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtCidade_Leave(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.White;
+        }
+
+        private void txtEstado_Enter(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.LightBlue;
+        }
+
+        private void txtEstado_Leave(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.White;
+        }
+
+        private void txtCEP_Enter(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.LightBlue;
+        }
+
+        private void txtCEP_Leave(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.White;
         }
     }
 }

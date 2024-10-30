@@ -76,7 +76,6 @@
             this.txtEstimativa = new System.Windows.Forms.MaskedTextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.tbEstoqueBindingSource = new System.Windows.Forms.BindingSource(this.components);
-    
             this.tb_EstoqueTableAdapter1 = new onlygreen.bdonlygreenDataSet13TableAdapters.tb_EstoqueTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEstoque)).BeginInit();
@@ -86,7 +85,6 @@
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEstoqueBindingSource)).BeginInit();
-
             this.SuspendLayout();
             // 
             // groupBox1
@@ -121,7 +119,7 @@
             this.checkEsgotado.Location = new System.Drawing.Point(646, 34);
             this.checkEsgotado.Name = "checkEsgotado";
             this.checkEsgotado.Size = new System.Drawing.Size(109, 24);
-            this.checkEsgotado.TabIndex = 35;
+            this.checkEsgotado.TabIndex = 1;
             this.checkEsgotado.Text = "Esgotado";
             this.checkEsgotado.UseVisualStyleBackColor = true;
             this.checkEsgotado.CheckedChanged += new System.EventHandler(this.checkEsgotado_CheckedChanged);
@@ -133,7 +131,7 @@
             this.checkDisponivel.Location = new System.Drawing.Point(506, 35);
             this.checkDisponivel.Name = "checkDisponivel";
             this.checkDisponivel.Size = new System.Drawing.Size(119, 24);
-            this.checkDisponivel.TabIndex = 34;
+            this.checkDisponivel.TabIndex = 0;
             this.checkDisponivel.Text = "Disponível";
             this.checkDisponivel.UseVisualStyleBackColor = true;
             this.checkDisponivel.CheckedChanged += new System.EventHandler(this.checkDisponivel_CheckedChanged);
@@ -265,7 +263,7 @@
             this.panel2.Location = new System.Drawing.Point(1249, 136);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(242, 192);
-            this.panel2.TabIndex = 29;
+            this.panel2.TabIndex = 5;
             // 
             // btnLimpar2
             // 
@@ -274,10 +272,12 @@
             this.btnLimpar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar2.Name = "btnLimpar2";
             this.btnLimpar2.Size = new System.Drawing.Size(209, 31);
-            this.btnLimpar2.TabIndex = 32;
+            this.btnLimpar2.TabIndex = 3;
             this.btnLimpar2.Text = "Limpar campos";
             this.btnLimpar2.UseVisualStyleBackColor = true;
             this.btnLimpar2.Click += new System.EventHandler(this.btnLimpar2_Click);
+            this.btnLimpar2.Enter += new System.EventHandler(this.btnLimpar2_Enter);
+            this.btnLimpar2.Leave += new System.EventHandler(this.btnLimpar2_Leave);
             // 
             // label14
             // 
@@ -297,7 +297,9 @@
             this.txtId.MaxLength = 5;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(76, 28);
-            this.txtId.TabIndex = 4;
+            this.txtId.TabIndex = 0;
+            this.txtId.Enter += new System.EventHandler(this.txtId_Enter);
+            this.txtId.Leave += new System.EventHandler(this.txtId_Leave);
             // 
             // btnSelecionar
             // 
@@ -306,10 +308,12 @@
             this.btnSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(209, 32);
-            this.btnSelecionar.TabIndex = 3;
+            this.btnSelecionar.TabIndex = 1;
             this.btnSelecionar.Text = "Selecionar produto";
             this.btnSelecionar.UseVisualStyleBackColor = true;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
+            this.btnSelecionar.Enter += new System.EventHandler(this.btnSelecionar_Enter);
+            this.btnSelecionar.Leave += new System.EventHandler(this.btnSelecionar_Leave);
             // 
             // btnSalvar
             // 
@@ -318,10 +322,12 @@
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(209, 32);
-            this.btnSalvar.TabIndex = 13;
+            this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar alteração";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSalvar.Enter += new System.EventHandler(this.btnSalvar_Enter);
+            this.btnSalvar.Leave += new System.EventHandler(this.btnSalvar_Leave);
             // 
             // panel1
             // 
@@ -334,7 +340,7 @@
             this.panel1.Location = new System.Drawing.Point(948, 136);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 192);
-            this.panel1.TabIndex = 28;
+            this.panel1.TabIndex = 4;
             // 
             // btnLimpar
             // 
@@ -343,10 +349,12 @@
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(245, 31);
-            this.btnLimpar.TabIndex = 31;
+            this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "Limpar campos";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.Enter += new System.EventHandler(this.btnLimpar_Enter);
+            this.btnLimpar.Leave += new System.EventHandler(this.btnLimpar_Leave);
             // 
             // btnSalvar2
             // 
@@ -355,10 +363,12 @@
             this.btnSalvar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvar2.Name = "btnSalvar2";
             this.btnSalvar2.Size = new System.Drawing.Size(245, 32);
-            this.btnSalvar2.TabIndex = 14;
+            this.btnSalvar2.TabIndex = 2;
             this.btnSalvar2.Text = "Salvar no estoque";
             this.btnSalvar2.UseVisualStyleBackColor = true;
             this.btnSalvar2.Click += new System.EventHandler(this.btnSalvar2_Click);
+            this.btnSalvar2.Enter += new System.EventHandler(this.btnSalvar2_Enter);
+            this.btnSalvar2.Leave += new System.EventHandler(this.btnSalvar2_Leave);
             // 
             // btnAdicionar
             // 
@@ -367,10 +377,12 @@
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(141, 78);
-            this.btnAdicionar.TabIndex = 2;
+            this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Selecionar novo produto";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
+            this.btnAdicionar.Enter += new System.EventHandler(this.btnAdicionar_Enter);
+            this.btnAdicionar.Leave += new System.EventHandler(this.btnAdicionar_Leave);
             // 
             // label1
             // 
@@ -390,7 +402,9 @@
             this.txtIdproducao.MaxLength = 5;
             this.txtIdproducao.Name = "txtIdproducao";
             this.txtIdproducao.Size = new System.Drawing.Size(67, 28);
-            this.txtIdproducao.TabIndex = 13;
+            this.txtIdproducao.TabIndex = 0;
+            this.txtIdproducao.Enter += new System.EventHandler(this.txtIdproducao_Enter);
+            this.txtIdproducao.Leave += new System.EventHandler(this.txtIdproducao_Leave);
             // 
             // btnVoltar
             // 
@@ -399,10 +413,12 @@
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(150, 35);
-            this.btnVoltar.TabIndex = 26;
+            this.btnVoltar.TabIndex = 7;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
             // btnBuscar
             // 
@@ -411,10 +427,12 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 57);
-            this.btnBuscar.TabIndex = 24;
+            this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Enter += new System.EventHandler(this.btnBuscar_Enter);
+            this.btnBuscar.Leave += new System.EventHandler(this.btnBuscar_Leave);
             // 
             // label8
             // 
@@ -432,7 +450,9 @@
             this.txtPesquisar.MaxLength = 50;
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(742, 30);
-            this.txtPesquisar.TabIndex = 23;
+            this.txtPesquisar.TabIndex = 2;
+            this.txtPesquisar.Enter += new System.EventHandler(this.txtPesquisar_Enter);
+            this.txtPesquisar.Leave += new System.EventHandler(this.txtPesquisar_Leave);
             // 
             // groupBox2
             // 
@@ -455,7 +475,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Size = new System.Drawing.Size(552, 361);
-            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Produto";
             // 
@@ -477,7 +497,7 @@
             this.txtDregistroProducao.Name = "txtDregistroProducao";
             this.txtDregistroProducao.ReadOnly = true;
             this.txtDregistroProducao.Size = new System.Drawing.Size(184, 30);
-            this.txtDregistroProducao.TabIndex = 19;
+            this.txtDregistroProducao.TabIndex = 1;
             // 
             // txtValidade
             // 
@@ -486,7 +506,9 @@
             this.txtValidade.Mask = "00/00/0000";
             this.txtValidade.Name = "txtValidade";
             this.txtValidade.Size = new System.Drawing.Size(184, 30);
-            this.txtValidade.TabIndex = 18;
+            this.txtValidade.TabIndex = 6;
+            this.txtValidade.Enter += new System.EventHandler(this.txtValidade_Enter);
+            this.txtValidade.Leave += new System.EventHandler(this.txtValidade_Leave);
             // 
             // label7
             // 
@@ -505,7 +527,9 @@
             this.txtPreco.MaxLength = 10;
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(186, 30);
-            this.txtPreco.TabIndex = 16;
+            this.txtPreco.TabIndex = 4;
+            this.txtPreco.Enter += new System.EventHandler(this.txtPreco_Enter);
+            this.txtPreco.Leave += new System.EventHandler(this.txtPreco_Leave);
             // 
             // label6
             // 
@@ -524,7 +548,9 @@
             this.txtValornutritivo.MaxLength = 10;
             this.txtValornutritivo.Name = "txtValornutritivo";
             this.txtValornutritivo.Size = new System.Drawing.Size(186, 30);
-            this.txtValornutritivo.TabIndex = 14;
+            this.txtValornutritivo.TabIndex = 5;
+            this.txtValornutritivo.Enter += new System.EventHandler(this.txtValornutritivo_Enter);
+            this.txtValornutritivo.Leave += new System.EventHandler(this.txtValornutritivo_Leave);
             // 
             // label4
             // 
@@ -574,6 +600,8 @@
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(186, 30);
             this.txtQuantidade.TabIndex = 3;
+            this.txtQuantidade.Enter += new System.EventHandler(this.txtQuantidade_Enter);
+            this.txtQuantidade.Leave += new System.EventHandler(this.txtQuantidade_Leave);
             // 
             // txtEstimativa
             // 
@@ -583,7 +611,7 @@
             this.txtEstimativa.Name = "txtEstimativa";
             this.txtEstimativa.ReadOnly = true;
             this.txtEstimativa.Size = new System.Drawing.Size(184, 30);
-            this.txtEstimativa.TabIndex = 2;
+            this.txtEstimativa.TabIndex = 0;
             // 
             // txtNome
             // 
@@ -592,12 +620,11 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(186, 30);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 2;
             // 
             // tbEstoqueBindingSource
             // 
             this.tbEstoqueBindingSource.DataMember = "tb_Estoque";
-
             // 
             // tb_EstoqueTableAdapter1
             // 
@@ -628,7 +655,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbEstoqueBindingSource)).EndInit();
-
             this.ResumeLayout(false);
 
         }

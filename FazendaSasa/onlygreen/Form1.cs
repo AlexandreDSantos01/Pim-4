@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,20 +22,53 @@ namespace onlygreen
         {
             InitializeComponent();
         }
+        private string ObterSituacaoUsuario(string login)
+        {
+            string situacao = string.Empty;
+
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            using (var conectar = new SqlConnection(bdonlygreen))
+            {
+                conectar.Open();
+                string pegarsituacao = "SELECT situacao FROM tb_Usuario WHERE ulogar = @ulogar";
+
+                using (var command = new SqlCommand(pegarsituacao, conectar))
+                {
+                    command.Parameters.AddWithValue("@ulogar", login);
+                    var resultado = command.ExecuteScalar();
+
+                    if (resultado != null)
+                    {
+                        situacao = resultado.ToString();
+                    }
+                }
+            }
+
+            return situacao;
+        }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             string login = txtLogin.Text;
             string senha = txtSenha.Text;
 
+            var situacaoUsuario = ObterSituacaoUsuario(login); // Método que você precisará implementar
+
+            // Verifica se o usuário está ativo
+            if (situacaoUsuario == "Inativo")
+            {
+                MessageBox.Show("Usuário inativo. Acesso negado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; 
+            }
+
             // Método para verificar as credenciais
             if (VerificarCredenciais(login, senha))
             {
-                // Suponha que você tenha uma forma de pegar o tipo de usuário
-                UserSession.TipoUsuario = ObterTipoUsuario(login); // Método que você precisa implementar
+                
+                UserSession.TipoUsuario = ObterTipoUsuario(login); 
                 var menu = new Home();
                 menu.Show(this);
-                this.Hide(); // Oculta o formulário atual
+                this.Hide(); 
             }
             else
             {
@@ -45,7 +79,7 @@ namespace onlygreen
         {
             string tipoUsuario = null; // Inicializa a variável
 
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -67,7 +101,7 @@ namespace onlygreen
         // Método para verificar credenciais
         private bool VerificarCredenciais(string login, string senha)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -111,5 +145,49 @@ namespace onlygreen
         {
             MessageBox.Show("Para recuperação de senha ou cadastro consulte um supervisor.", "Ajuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+        //FOCO
+        private void txtLogin_Enter(object sender, EventArgs e)
+        {
+            txtLogin.BackColor = Color.LightBlue;
+        }
+
+        private void txtLogin_Leave(object sender, EventArgs e)
+        {
+            txtLogin.BackColor = Color.White;
+        }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            txtSenha.BackColor = Color.LightBlue;
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            txtSenha.BackColor = Color.White;
+        }
+
+        private void btnEntrar_Enter(object sender, EventArgs e)
+        {
+            btnEntrar.BackColor = Color.LightGreen;
+        }
+
+        private void btnEntrar_Leave(object sender, EventArgs e)
+        {
+            btnEntrar.BackColor = Color.White;
+        }
+
+        private void btnAjuda_Enter(object sender, EventArgs e)
+        {
+            btnAjuda.BackColor = Color.Red;
+        }
+
+        private void btnAjuda_Leave(object sender, EventArgs e)
+        {
+            btnAjuda.BackColor = Color.White;
+        }
+
+        //FOCO FIM
     }
 }

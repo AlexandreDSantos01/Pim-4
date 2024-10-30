@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\",
+  "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\controllers\\fornecedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\controllers\\fornecedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\controllers\\financeiroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\controllers\\financeiroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\source\\repos\\apiweb\\apiweb\\controllers\\producoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\controllers\\producoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,86 +36,38 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
               "RelativeDocumentMoniker": "ApiWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
               "RelativeToolTip": "ApiWeb\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:43:21.285Z",
+              "WhenOpened": "2024-10-30T17:19:14.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiWeb\\appsettings.json",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\appsettings.json",
-              "RelativeToolTip": "ApiWeb\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T14:43:12.257Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FornecedoresController.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\FornecedoresController.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Controllers\\FornecedoresController.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\FornecedoresController.cs",
-              "RelativeToolTip": "ApiWeb\\Controllers\\FornecedoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Venda.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Venda.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Venda.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Venda.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:33:39.168Z"
+              "WhenOpened": "2024-10-30T16:59:33.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ApiWeb\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Despesa.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Despesa.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Despesa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:44:04.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FinanceirosController.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\FinanceirosController.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Controllers\\FinanceirosController.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\FinanceirosController.cs",
-              "RelativeToolTip": "ApiWeb\\Controllers\\FinanceirosController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAowGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:34:51.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ApiWeb\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ApiWeb\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-29T13:53:56.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProducoesController.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\ProducoesController.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Controllers\\ProducoesController.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\source\\repos\\ApiWeb\\ApiWeb\\Controllers\\ProducoesController.cs",
-              "RelativeToolTip": "ApiWeb\\Controllers\\ProducoesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:35:18.677Z"
+              "WhenOpened": "2024-10-30T16:56:48.533Z"
             }
           ]
         }

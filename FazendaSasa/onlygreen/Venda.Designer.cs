@@ -136,7 +136,7 @@
             this.tbVenda.RowTemplate.Height = 24;
             this.tbVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tbVenda.Size = new System.Drawing.Size(862, 548);
-            this.tbVenda.TabIndex = 42;
+            this.tbVenda.TabIndex = 6;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -214,7 +214,7 @@
             this.groupBox2.Location = new System.Drawing.Point(939, 383);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(482, 312);
-            this.groupBox2.TabIndex = 41;
+            this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Venda";
             // 
@@ -289,7 +289,7 @@
             this.txtRegistro.Name = "txtRegistro";
             this.txtRegistro.ReadOnly = true;
             this.txtRegistro.Size = new System.Drawing.Size(184, 30);
-            this.txtRegistro.TabIndex = 21;
+            this.txtRegistro.TabIndex = 4;
             this.txtRegistro.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtRegistro_MaskInputRejected);
             // 
             // txtValor
@@ -299,6 +299,8 @@
             this.txtValor.Size = new System.Drawing.Size(139, 30);
             this.txtValor.TabIndex = 3;
             this.txtValor.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtValor.Enter += new System.EventHandler(this.txtValor_Enter);
+            this.txtValor.Leave += new System.EventHandler(this.txtValor_Leave);
             // 
             // txtQuantidade
             // 
@@ -307,6 +309,8 @@
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(139, 30);
             this.txtQuantidade.TabIndex = 2;
+            this.txtQuantidade.Enter += new System.EventHandler(this.txtQuantidade_Enter);
+            this.txtQuantidade.Leave += new System.EventHandler(this.txtQuantidade_Leave);
             // 
             // txtNome
             // 
@@ -315,7 +319,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.ReadOnly = true;
             this.txtNome.Size = new System.Drawing.Size(139, 30);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 0;
             // 
             // txtIdcliente
             // 
@@ -323,7 +327,9 @@
             this.txtIdcliente.MaxLength = 10;
             this.txtIdcliente.Name = "txtIdcliente";
             this.txtIdcliente.Size = new System.Drawing.Size(100, 30);
-            this.txtIdcliente.TabIndex = 0;
+            this.txtIdcliente.TabIndex = 1;
+            this.txtIdcliente.Enter += new System.EventHandler(this.txtIdcliente_Enter);
+            this.txtIdcliente.Leave += new System.EventHandler(this.txtIdcliente_Leave);
             // 
             // btnVoltar
             // 
@@ -332,10 +338,12 @@
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(115, 36);
-            this.btnVoltar.TabIndex = 40;
+            this.btnVoltar.TabIndex = 5;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
+            this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
             // label11
             // 
@@ -366,7 +374,7 @@
             this.panel2.Location = new System.Drawing.Point(1217, 160);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(242, 192);
-            this.panel2.TabIndex = 37;
+            this.panel2.TabIndex = 3;
             // 
             // btnDel
             // 
@@ -375,10 +383,12 @@
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(209, 31);
-            this.btnDel.TabIndex = 32;
+            this.btnDel.TabIndex = 3;
             this.btnDel.Text = "Deletar";
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            this.btnDel.Enter += new System.EventHandler(this.btnDel_Enter);
+            this.btnDel.Leave += new System.EventHandler(this.btnDel_Leave);
             // 
             // label14
             // 
@@ -398,7 +408,9 @@
             this.txtId.MaxLength = 5;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(76, 28);
-            this.txtId.TabIndex = 4;
+            this.txtId.TabIndex = 0;
+            this.txtId.Enter += new System.EventHandler(this.txtId_Enter);
+            this.txtId.Leave += new System.EventHandler(this.txtId_Leave);
             // 
             // btnSelecionar
             // 
@@ -407,10 +419,12 @@
             this.btnSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(209, 32);
-            this.btnSelecionar.TabIndex = 3;
+            this.btnSelecionar.TabIndex = 1;
             this.btnSelecionar.Text = "Selecionar venda";
             this.btnSelecionar.UseVisualStyleBackColor = true;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
+            this.btnSelecionar.Enter += new System.EventHandler(this.btnSelecionar_Enter);
+            this.btnSelecionar.Leave += new System.EventHandler(this.btnSelecionar_Leave);
             // 
             // btnSalvar
             // 
@@ -419,10 +433,12 @@
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(209, 32);
-            this.btnSalvar.TabIndex = 13;
+            this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnSalvar.Enter += new System.EventHandler(this.btnSalvar_Enter);
+            this.btnSalvar.Leave += new System.EventHandler(this.btnSalvar_Leave);
             // 
             // panel1
             // 
@@ -435,7 +451,7 @@
             this.panel1.Location = new System.Drawing.Point(916, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 192);
-            this.panel1.TabIndex = 36;
+            this.panel1.TabIndex = 2;
             // 
             // btnLimpar
             // 
@@ -444,10 +460,12 @@
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(245, 31);
-            this.btnLimpar.TabIndex = 31;
+            this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "Limpar campos";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.Enter += new System.EventHandler(this.btnLimpar_Enter);
+            this.btnLimpar.Leave += new System.EventHandler(this.btnLimpar_Leave);
             // 
             // btnAdd
             // 
@@ -456,10 +474,12 @@
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(245, 32);
-            this.btnAdd.TabIndex = 14;
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Enter += new System.EventHandler(this.btnAdd_Enter);
+            this.btnAdd.Leave += new System.EventHandler(this.btnAdd_Leave);
             // 
             // btnSelecionarestoque
             // 
@@ -468,10 +488,12 @@
             this.btnSelecionarestoque.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelecionarestoque.Name = "btnSelecionarestoque";
             this.btnSelecionarestoque.Size = new System.Drawing.Size(141, 78);
-            this.btnSelecionarestoque.TabIndex = 2;
+            this.btnSelecionarestoque.TabIndex = 1;
             this.btnSelecionarestoque.Text = "Selecionar produto ";
             this.btnSelecionarestoque.UseVisualStyleBackColor = true;
             this.btnSelecionarestoque.Click += new System.EventHandler(this.btnSelecionarestoque_Click);
+            this.btnSelecionarestoque.Enter += new System.EventHandler(this.btnSelecionarestoque_Enter);
+            this.btnSelecionarestoque.Leave += new System.EventHandler(this.btnSelecionarestoque_Leave);
             // 
             // label1
             // 
@@ -491,7 +513,9 @@
             this.txtIdestoque.MaxLength = 5;
             this.txtIdestoque.Name = "txtIdestoque";
             this.txtIdestoque.Size = new System.Drawing.Size(67, 28);
-            this.txtIdestoque.TabIndex = 13;
+            this.txtIdestoque.TabIndex = 0;
+            this.txtIdestoque.Enter += new System.EventHandler(this.txtIdestoque_Enter);
+            this.txtIdestoque.Leave += new System.EventHandler(this.txtIdestoque_Leave);
             // 
             // btnBuscar
             // 
@@ -500,10 +524,12 @@
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 57);
-            this.btnBuscar.TabIndex = 34;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Enter += new System.EventHandler(this.btnBuscar_Enter);
+            this.btnBuscar.Leave += new System.EventHandler(this.btnBuscar_Leave);
             // 
             // label8
             // 
@@ -521,7 +547,9 @@
             this.txtPesquisar.MaxLength = 50;
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(742, 30);
-            this.txtPesquisar.TabIndex = 33;
+            this.txtPesquisar.TabIndex = 0;
+            this.txtPesquisar.Enter += new System.EventHandler(this.txtPesquisar_Enter);
+            this.txtPesquisar.Leave += new System.EventHandler(this.txtPesquisar_Leave);
             // 
             // bdonlygreenDataSet15
             // 

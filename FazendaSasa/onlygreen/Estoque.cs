@@ -38,7 +38,7 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDadosEstoque()
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -106,15 +106,13 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
                 conectar.Open();
                 using (SqlCommand cmd = new SqlCommand(
                     "SELECT * FROM tb_Estoque WHERE nome LIKE @pesquisar OR " +
-                    "nome LIKE @pesquisar OR " +
-                    "preco LIKE @pesquisar OR " +
                     "id LIKE @pesquisar", conectar))
                 {
                     cmd.Parameters.AddWithValue("@pesquisar", "%" + pesquisar + "%");
@@ -131,7 +129,7 @@ namespace onlygreen
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -167,7 +165,7 @@ namespace onlygreen
 
         private void btnSalvar2_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
@@ -245,7 +243,7 @@ namespace onlygreen
         private DataTable GetId(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -273,7 +271,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -313,53 +311,106 @@ namespace onlygreen
             }
 
         }
+        private bool ValidarCampoEstoque()
+        {
 
+            if (txtNome.Text == "")
+            {
+                MessageBox.Show("O campo nome é obrigatório.");
+                txtNome.Focus();
+                return true;
+            }
+
+
+            if (txtQuantidade.Text == "")
+            {
+                MessageBox.Show("O campo quantidade é obrigatório.");
+                txtQuantidade.Focus();
+                return true;
+            }
+
+
+
+            if (txtDregistroProducao.Text == "")
+            {
+                MessageBox.Show("O campo registro da produção é obrigatório.");
+                txtDregistroProducao.Focus();
+                return true;
+            }
+
+            if (txtEstimativa.Text == "")
+            {
+                MessageBox.Show("O campo estimativa da colheita é obrigatório.");
+                txtEstimativa.Focus();
+                return true;
+            }
+
+            if (txtPreco.Text == "")
+            {
+                MessageBox.Show("O campo preço é obrigatório.");
+                txtPreco.Focus();
+                return true;
+            }
+
+            if (txtValornutritivo.Text == "")
+            {
+                MessageBox.Show("O campo valor nutritivo é obrigatório.");
+                txtValornutritivo.Focus();
+                return true;
+            }
+
+            if (txtValidade.Text == "")
+            {
+                MessageBox.Show("O campo validade é obrigatório.");
+                txtValidade.Focus();
+                return true;
+            }
+
+            return false;
+        }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
-            using (var conectar = new SqlConnection(bdonlygreen))
-            {
-                conectar.Open();
-                using (var cmd = new SqlCommand("UPDATE tb_Estoque SET quantidade = @quantidade, dregistroProducao = @dregistroProducao, estimativaProducao = @estimativaProducao, validade = @validade, valornutritivo = @valornutritivo, preco = @preco, situacao = @situacao WHERE id = @id", conectar))
+            if (ValidarCampoEstoque() == false)
+            { 
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+                using (var conectar = new SqlConnection(bdonlygreen))
                 {
-                    cmd.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
-                    cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
-                    cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
-                    cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
-
-                    // Define a situação com base na quantidade
-                    string situacao = Convert.ToInt32(txtQuantidade.Text) > 0 ? "Disponível" : "Esgotado";
-                    cmd.Parameters.AddWithValue("@situacao", situacao);
-
-                    DateTime validade;
-                    
-                    if (!DateTime.TryParse(txtValidade.Text, out validade) || validade < DateTime.Today)
+                    conectar.Open();
+                    using (var cmd = new SqlCommand("UPDATE tb_Estoque SET quantidade = @quantidade, dregistroProducao = @dregistroProducao, estimativaProducao = @estimativaProducao, validade = @validade, valornutritivo = @valornutritivo, preco = @preco, situacao = @situacao WHERE id = @id", conectar))
                     {
-                        MessageBox.Show("A data de validade é inválida ou está no passado.");
-                        return;
+                        cmd.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
+                        cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
+                        cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
+                        cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
+
+                        // Define a situação com base na quantidade
+                        string situacao = Convert.ToInt32(txtQuantidade.Text) > 0 ? "Disponível" : "Esgotado";
+                        cmd.Parameters.AddWithValue("@situacao", situacao);
+
+                        DateTime validade;
+
+                        if (!DateTime.TryParse(txtValidade.Text, out validade) || validade < DateTime.Today)
+                        {
+                            MessageBox.Show("A data de validade é inválida ou está no passado.");
+                            return;
+                        }
+
+                        // Adiciona as datas válidas aos parâmetros
+                        cmd.Parameters.AddWithValue("@dregistroProducao", txtDregistroProducao.Text);
+                        cmd.Parameters.AddWithValue("@estimativaProducao", txtEstimativa.Text);
+                        cmd.Parameters.AddWithValue("@validade", validade);
+
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Dados atualizados com sucesso!");
+
+                        var menu = new Estoque();
+                        menu.Show(this);
+                        this.Visible = false;
                     }
-
-                    // Adiciona as datas válidas aos parâmetros
-                    cmd.Parameters.AddWithValue("@dregistroProducao", txtDregistroProducao.Text);
-                    cmd.Parameters.AddWithValue("@estimativaProducao", txtEstimativa.Text);
-                    cmd.Parameters.AddWithValue("@validade", validade);
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Dados atualizados com sucesso!");
-
-                    var menu = new Estoque();
-                    menu.Show(this);
-                    this.Visible = false;
                 }
             }
-        }
-
-
-        private void tbEstoque_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void Limpar()
@@ -392,6 +443,159 @@ namespace onlygreen
         private void checkEsgotado_CheckedChanged(object sender, EventArgs e)
         {
             CarregarDadosEstoque();
+        }
+
+
+        //FOCO
+        
+        private void txtPesquisar_Enter(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.LightBlue;
+        }
+
+        private void txtPesquisar_Leave(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.White;
+        }
+
+        private void btnBuscar_Enter(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.LightGreen;
+        }
+
+        private void btnBuscar_Leave(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.White;
+        }
+
+        private void txtIdproducao_Enter(object sender, EventArgs e)
+        {
+            txtIdproducao.BackColor = Color.LightBlue;
+        }
+
+        private void txtIdproducao_Leave(object sender, EventArgs e)
+        {
+            txtIdproducao.BackColor = Color.White;
+        }
+
+        private void btnAdicionar_Enter(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdicionar_Leave(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar2_Enter(object sender, EventArgs e)
+        {
+            btnSalvar2.BackColor = Color.LightGreen;
+        }
+
+        private void btnSalvar2_Leave(object sender, EventArgs e)
+        {
+            btnSalvar2.BackColor = Color.White;
+        }
+
+        private void btnLimpar_Enter(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar_Leave(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.White;
+        }
+
+        private void txtId_Enter(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.LightBlue;
+        }
+
+        private void txtId_Leave(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.White;
+        }
+
+        private void btnSelecionar_Enter(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionar_Leave(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.Orange;
+        }
+
+        private void btnSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.White;
+        }
+
+        private void btnLimpar2_Enter(object sender, EventArgs e)
+        {
+            btnLimpar2.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar2_Leave(object sender, EventArgs e)
+        {
+            btnLimpar2.BackColor = Color.White;
+        }
+
+        private void txtQuantidade_Enter(object sender, EventArgs e)
+        {
+            txtQuantidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtQuantidade_Leave(object sender, EventArgs e)
+        {
+            txtQuantidade.BackColor = Color.White;
+        }
+
+        private void txtPreco_Enter(object sender, EventArgs e)
+        {
+            txtPreco.BackColor = Color.LightBlue;
+        }
+
+        private void txtPreco_Leave(object sender, EventArgs e)
+        {
+            txtPreco.BackColor = Color.White;
+        }
+
+        private void txtValornutritivo_Enter(object sender, EventArgs e)
+        {
+            txtValornutritivo.BackColor = Color.LightBlue;
+        }
+
+        private void txtValornutritivo_Leave(object sender, EventArgs e)
+        {
+            txtValornutritivo.BackColor = Color.White;
+        }
+
+        private void txtValidade_Enter(object sender, EventArgs e)
+        {
+            txtValidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtValidade_Leave(object sender, EventArgs e)
+        {
+            txtValidade.BackColor = Color.White;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
         }
     }
 }

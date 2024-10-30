@@ -1,8 +1,6 @@
 using ApiWeb.Data;
 using Microsoft.EntityFrameworkCore;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,21 +15,19 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
         builder => builder
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+            .AllowAnyOrigin() // Permite qualquer origem
+            .AllowAnyMethod() // Permite qualquer método (GET, POST, etc.)
+            .AllowAnyHeader()); // Permite qualquer cabeçalho
 });
-
 
 // Configuração do Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
 // Configure o middleware de CORS
-app.UseCors("AllowAllOrigins");
-
-
+app.UseCors("AllowAllOrigins"); // Habilita a política de CORS definida acima
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

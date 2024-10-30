@@ -166,6 +166,96 @@ namespace onlygreen
         {
 
         }
+
+        private void btnUsuario_Enter(object sender, EventArgs e)
+        {
+            btnUsuario.BackColor = Color.LightGreen;
+        }
+
+        private void btnUsuario_Leave(object sender, EventArgs e)
+        {
+            btnUsuario.BackColor = Color.White;
+        }
+
+        private void btnFornecedor_Enter(object sender, EventArgs e)
+        {
+            btnFornecedor.BackColor = Color.LightGreen;
+        }
+
+        private void btnFornecedor_Leave(object sender, EventArgs e)
+        {
+            btnFornecedor.BackColor = Color.White;
+        }
+
+        private void btnDespesa_Enter(object sender, EventArgs e)
+        {
+            btnDespesa.BackColor = Color.LightGreen;
+        }
+
+        private void btnDespesa_Leave(object sender, EventArgs e)
+        {
+            btnDespesa.BackColor = Color.White;
+        }
+
+        private void btnFinanceiro_Enter(object sender, EventArgs e)
+        {
+            btnFinanceiro.BackColor = Color.LightGreen;
+        }
+
+        private void btnFinanceiro_Leave(object sender, EventArgs e)
+        {
+            btnFinanceiro.BackColor = Color.White;
+        }
+
+        private void btnProducao_Enter(object sender, EventArgs e)
+        {
+            btnProducao.BackColor = Color.LightGreen;
+        }
+
+        private void btnProducao_Leave(object sender, EventArgs e)
+        {
+            btnProducao.BackColor = Color.White;
+        }
+
+        private void btnEstoque_Enter(object sender, EventArgs e)
+        {
+            btnEstoque.BackColor = Color.LightGreen;
+        }
+
+        private void btnEstoque_Leave(object sender, EventArgs e)
+        {
+            btnEstoque.BackColor = Color.White;
+        }
+
+        private void btnVenda_Enter(object sender, EventArgs e)
+        {
+            btnVenda.BackColor = Color.LightGreen;
+        }
+
+        private void btnVenda_Leave(object sender, EventArgs e)
+        {
+            btnVenda.BackColor = Color.White;
+        }
+
+        private void btnCliente_Enter(object sender, EventArgs e)
+        {
+            btnCliente.BackColor = Color.LightGreen;
+        }
+
+        private void btnCliente_Leave(object sender, EventArgs e)
+        {
+            btnCliente.BackColor = Color.White;
+        }
+
+        private void btnSair_Enter(object sender, EventArgs e)
+        {
+            btnSair.BackColor = Color.Red;
+        }
+
+        private void btnSair_Leave(object sender, EventArgs e)
+        {
+            btnSair.BackColor = Color.White;
+        }
     }
     
 }

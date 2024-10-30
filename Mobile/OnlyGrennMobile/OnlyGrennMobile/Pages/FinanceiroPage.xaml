@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnlyGrennMobile.Pages.FinanceiroPage"
+             Title="FinanceiroPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Resumo Financeiro" FontSize="24" HorizontalOptions="Center" />
+
+            <CollectionView x:Name="FinanceiroCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="Data de Registro: {Binding Dregistro}" FontSize="18" FontAttributes="Bold" />
+                            <Label Text="Dia Início: {Binding Diainicio}" FontSize="14" />
+                            <Label Text="Dia Fim: {Binding Diafim}" FontSize="14" />
+                            <Label Text="Valor da Venda: {Binding Valorvenda, StringFormat='C'}" FontSize="14" />
+                            <Label Text="Valor da Despesa: {Binding Valordespesa, StringFormat='C'}" FontSize="14" />
+                            <Label Text="Valor do Lucro: {Binding Valorlucro, StringFormat='C'}" FontSize="14" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

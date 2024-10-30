@@ -27,20 +27,20 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tb_Usuario", conectar))
+                using (SqlCommand selecionar = new SqlCommand("SELECT * FROM tb_Usuario", conectar))
                 {
-                    DataTable attcheck = new DataTable();
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    DataTable tabela1 = new DataTable();
+                    using (SqlDataAdapter da = new SqlDataAdapter(selecionar))
                     {
-                        da.Fill(attcheck);
+                        da.Fill(tabela1);
                     }
 
                     // Filtra os dados com base nos checkboxes
-                    DataView filtrar = attcheck.DefaultView;
+                    DataView filtrar = tabela1.DefaultView;
 
                     // Criar um filtro
                     List<string> filtros = new List<string>();
@@ -64,30 +64,23 @@ namespace onlygreen
                         filtrar.RowFilter = ""; // Se nenhum checkbox estiver marcado, mostrar todos os itens
                     }
 
-                    // Atribuir o tbEstoque ao DataGridView
                     tbUsuario.DataSource = filtrar;
                 }
             }
         }
 
 
-        //Método para pegar id
-        public void SetId(string id)
-        {
-            txtId.Text = id;
-        }
-        //Método para pegar id fim   
-
         // Método add usuário
         public static void AddUser(classUsuario u)
         {  
             try
             {
-                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
-                    var command = new SqlCommand("INSERT INTO tb_Usuario (nome, cpf, telefone, email, rua, nrua, bairro, cidade, estado, cep, ulogar, senha, tipousuario, situacao) VALUES (@nome, @cpf, @telefone, @email, @rua, @nrua, @bairro, @cidade, @estado, @cep, @ulogar, @senha, @tipousuario, @situacao)", conectar);
+                    var command = new SqlCommand("INSERT INTO tb_Usuario (nome, cpf, telefone, email, rua, nrua, bairro, cidade, estado, cep, ulogar, senha, tipousuario, situacao) " +
+                                                 "VALUES (@nome, @cpf, @telefone, @email, @rua, @nrua, @bairro, @cidade, @estado, @cep, @ulogar, @senha, @tipousuario, @situacao)", conectar);
 
                     command.Parameters.AddWithValue("@nome", u.nome);
                     command.Parameters.AddWithValue("@cpf", u.cpf);
@@ -125,7 +118,7 @@ namespace onlygreen
         {
             try
             {
-                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (SqlConnection conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -322,7 +315,7 @@ namespace onlygreen
         }
 
 
-        //Setar usuário
+        //Adicionar usuário
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             if (ValidarCampoUsuario() == false)
@@ -405,8 +398,9 @@ namespace onlygreen
                 return;
             }
         }
-        //Setar usuário fim
+        //Adicionar usuário fim
 
+        //Tratamento de caracteres no login
         private void txtLogin_KeyPress(object sender, KeyPressEventArgs e)
         {
             int tecla = (int)e.KeyChar;
@@ -422,7 +416,7 @@ namespace onlygreen
         private DataTable GetUserDataById(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -450,7 +444,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -651,7 +645,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -703,6 +697,210 @@ namespace onlygreen
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             CarregarDados();
+        }
+
+
+        //FOCO
+       
+        private void txtPesquisar_Enter(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.LightBlue;
+        }
+
+        private void txtPesquisar_Leave(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.White;
+        }
+
+        private void btnBuscar_Enter(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.LightGreen;
+        }
+
+        private void btnBuscar_Leave(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.White;
+        }
+
+        private void btnAdicionar_Enter(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdicionar_Leave(object sender, EventArgs e)
+        {
+            btnAdicionar.BackColor = Color.White;
+        }
+
+        private void btnLimpar_Enter(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar_Leave(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.White;
+        }
+
+        private void txtId_Enter(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.LightBlue;
+        }
+
+        private void txtId_Leave(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.White;
+        }
+
+        private void btnSelecionar_Enter(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionar_Leave(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.Orange;
+        }
+
+        private void btnSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.White;
+        }
+
+
+        private void txtLogin_Enter(object sender, EventArgs e)
+        {
+            txtLogin.BackColor = Color.LightBlue;
+        }
+
+        private void txtLogin_Leave(object sender, EventArgs e)
+        {
+            txtLogin.BackColor = Color.White;
+        }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            txtSenha.BackColor = Color.LightBlue;
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            txtSenha.BackColor = Color.White;
+        }
+
+        private void txtNome_Enter(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.LightBlue;
+        }
+
+        private void txtNome_Leave(object sender, EventArgs e)
+        {
+            txtNome.BackColor = Color.White;
+        }
+
+        private void txtCPF_Enter(object sender, EventArgs e)
+        {
+            txtCPF.BackColor = Color.LightBlue;
+        }
+
+        private void txtCPF_Leave(object sender, EventArgs e)
+        {
+            txtCPF.BackColor = Color.White;
+        }
+
+        private void txtTelefone_Enter(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.LightBlue;
+        }
+
+        private void txtTelefone_Leave(object sender, EventArgs e)
+        {
+            txtTelefone.BackColor = Color.White;
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.LightBlue;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            txtEmail.BackColor = Color.White;
+        }
+
+        private void txtRua_Enter(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.LightBlue;
+        }
+
+        private void txtRua_Leave(object sender, EventArgs e)
+        {
+            txtRua.BackColor = Color.White;
+        }
+
+        private void txtNrua_Enter(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.LightBlue;
+        }
+
+        private void txtNrua_Leave(object sender, EventArgs e)
+        {
+            txtNrua.BackColor = Color.White;
+        }
+
+        private void txtBairro_Enter(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.LightBlue;
+        }
+
+        private void txtBairro_Leave(object sender, EventArgs e)
+        {
+            txtBairro.BackColor = Color.White;
+        }
+
+        private void txtCidade_Enter(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtCidade_Leave(object sender, EventArgs e)
+        {
+            txtCidade.BackColor = Color.White;
+        }
+
+        private void txtEstado_Enter(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.LightBlue;
+        }
+
+        private void txtEstado_Leave(object sender, EventArgs e)
+        {
+            txtEstado.BackColor = Color.White;
+        }
+
+        private void txtCEP_Enter(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.LightBlue;
+        }
+
+        private void txtCEP_Leave(object sender, EventArgs e)
+        {
+            txtCEP.BackColor = Color.White;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
         }
     }
 }

@@ -76,7 +76,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -123,7 +123,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -188,7 +188,7 @@ namespace onlygreen
         {
             if (!ValidarCampo())
             {
-                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
@@ -315,7 +315,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -366,7 +366,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -452,7 +452,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -510,5 +510,144 @@ namespace onlygreen
             }
         }
 
+        private void txtPesquisar_Enter(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.LightBlue;
+        }
+
+        private void txtPesquisar_Leave(object sender, EventArgs e)
+        {
+            txtPesquisar.BackColor = Color.White;
+        }
+
+        private void btnBuscar_Enter(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.LightGreen;
+        }
+
+        private void btnBuscar_Leave(object sender, EventArgs e)
+        {
+            btnBuscar.BackColor = Color.White;
+        }
+
+        private void txtIdestoque_Enter(object sender, EventArgs e)
+        {
+            txtIdestoque.BackColor = Color.LightBlue;
+        }
+
+        private void txtIdestoque_Leave(object sender, EventArgs e)
+        {
+            txtIdestoque.BackColor = Color.White;
+        }
+
+        private void btnSelecionarestoque_Enter(object sender, EventArgs e)
+        {
+            btnSelecionarestoque.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionarestoque_Leave(object sender, EventArgs e)
+        {
+            btnSelecionarestoque.BackColor = Color.White;
+        }
+
+        private void btnAdd_Enter(object sender, EventArgs e)
+        {
+            btnAdd.BackColor = Color.LightGreen;
+        }
+
+        private void btnAdd_Leave(object sender, EventArgs e)
+        {
+            btnAdd.BackColor = Color.White;
+        }
+
+        private void btnLimpar_Enter(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.LightGreen;
+        }
+
+        private void btnLimpar_Leave(object sender, EventArgs e)
+        {
+            btnLimpar.BackColor = Color.White;
+        }
+
+        private void txtId_Enter(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.LightBlue;
+        }
+
+        private void txtId_Leave(object sender, EventArgs e)
+        {
+            txtId.BackColor = Color.White;
+        }
+
+        private void btnSelecionar_Enter(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.LightGreen;
+        }
+
+        private void btnSelecionar_Leave(object sender, EventArgs e)
+        {
+            btnSelecionar.BackColor = Color.White;
+        }
+
+        private void btnSalvar_Enter(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.Orange;
+        }
+
+        private void btnSalvar_Leave(object sender, EventArgs e)
+        {
+            btnSalvar.BackColor = Color.White;
+        }
+
+        private void btnDel_Enter(object sender, EventArgs e)
+        {
+            btnDel.BackColor = Color.Red;
+        }
+
+        private void btnDel_Leave(object sender, EventArgs e)
+        {
+            btnDel.BackColor = Color.White;
+        }
+
+        private void txtIdcliente_Enter(object sender, EventArgs e)
+        {
+            txtIdcliente.BackColor = Color.LightBlue;
+        }
+
+        private void txtIdcliente_Leave(object sender, EventArgs e)
+        {
+            txtIdcliente.BackColor = Color.White;
+        }
+
+        private void txtQuantidade_Enter(object sender, EventArgs e)
+        {
+            txtQuantidade.BackColor = Color.LightBlue;
+        }
+
+        private void txtQuantidade_Leave(object sender, EventArgs e)
+        {
+            txtQuantidade.BackColor = Color.White;
+        }
+
+        private void txtValor_Enter(object sender, EventArgs e)
+        {
+            txtValor.BackColor = Color.LightBlue;
+        }
+
+        private void txtValor_Leave(object sender, EventArgs e)
+        {
+            txtValor.BackColor = Color.White;
+        }
+
+        private void btnVoltar_Enter(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.Red;
+        }
+
+        private void btnVoltar_Leave(object sender, EventArgs e)
+        {
+            btnVoltar.BackColor = Color.White;
+        }
     }
 }

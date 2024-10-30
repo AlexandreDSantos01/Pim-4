@@ -69,10 +69,12 @@
             this.btnFinanceiro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFinanceiro.Name = "btnFinanceiro";
             this.btnFinanceiro.Size = new System.Drawing.Size(486, 102);
-            this.btnFinanceiro.TabIndex = 7;
+            this.btnFinanceiro.TabIndex = 6;
             this.btnFinanceiro.Text = "Financeiro";
             this.btnFinanceiro.UseVisualStyleBackColor = true;
             this.btnFinanceiro.Click += new System.EventHandler(this.btnFinanceiro_Click);
+            this.btnFinanceiro.Enter += new System.EventHandler(this.btnFinanceiro_Enter);
+            this.btnFinanceiro.Leave += new System.EventHandler(this.btnFinanceiro_Leave);
             // 
             // btnSair
             // 
@@ -81,10 +83,12 @@
             this.btnSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(175, 38);
-            this.btnSair.TabIndex = 1;
+            this.btnSair.TabIndex = 8;
             this.btnSair.Text = "Desconectar";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnSair.Enter += new System.EventHandler(this.btnSair_Enter);
+            this.btnSair.Leave += new System.EventHandler(this.btnSair_Leave);
             // 
             // btnDespesa
             // 
@@ -93,10 +97,12 @@
             this.btnDespesa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDespesa.Name = "btnDespesa";
             this.btnDespesa.Size = new System.Drawing.Size(486, 102);
-            this.btnDespesa.TabIndex = 6;
+            this.btnDespesa.TabIndex = 4;
             this.btnDespesa.Text = "Despesa";
             this.btnDespesa.UseVisualStyleBackColor = true;
             this.btnDespesa.Click += new System.EventHandler(this.btnDespesa_Click);
+            this.btnDespesa.Enter += new System.EventHandler(this.btnDespesa_Enter);
+            this.btnDespesa.Leave += new System.EventHandler(this.btnDespesa_Leave);
             // 
             // btnFornecedor
             // 
@@ -105,10 +111,12 @@
             this.btnFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFornecedor.Name = "btnFornecedor";
             this.btnFornecedor.Size = new System.Drawing.Size(486, 102);
-            this.btnFornecedor.TabIndex = 5;
+            this.btnFornecedor.TabIndex = 2;
             this.btnFornecedor.Text = "Fornecedor";
             this.btnFornecedor.UseVisualStyleBackColor = true;
             this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
+            this.btnFornecedor.Enter += new System.EventHandler(this.btnFornecedor_Enter);
+            this.btnFornecedor.Leave += new System.EventHandler(this.btnFornecedor_Leave);
             // 
             // btnCliente
             // 
@@ -117,10 +125,12 @@
             this.btnCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(486, 102);
-            this.btnCliente.TabIndex = 4;
+            this.btnCliente.TabIndex = 7;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            this.btnCliente.Enter += new System.EventHandler(this.btnCliente_Enter);
+            this.btnCliente.Leave += new System.EventHandler(this.btnCliente_Leave);
             // 
             // btnVenda
             // 
@@ -129,10 +139,12 @@
             this.btnVenda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVenda.Name = "btnVenda";
             this.btnVenda.Size = new System.Drawing.Size(486, 102);
-            this.btnVenda.TabIndex = 3;
+            this.btnVenda.TabIndex = 5;
             this.btnVenda.Text = "Venda";
             this.btnVenda.UseVisualStyleBackColor = true;
             this.btnVenda.Click += new System.EventHandler(this.btnVenda_Click);
+            this.btnVenda.Enter += new System.EventHandler(this.btnVenda_Enter);
+            this.btnVenda.Leave += new System.EventHandler(this.btnVenda_Leave);
             // 
             // btnEstoque
             // 
@@ -141,10 +153,12 @@
             this.btnEstoque.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(486, 102);
-            this.btnEstoque.TabIndex = 2;
+            this.btnEstoque.TabIndex = 3;
             this.btnEstoque.Text = "Estoque";
             this.btnEstoque.UseVisualStyleBackColor = true;
             this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
+            this.btnEstoque.Enter += new System.EventHandler(this.btnEstoque_Enter);
+            this.btnEstoque.Leave += new System.EventHandler(this.btnEstoque_Leave);
             // 
             // btnProducao
             // 
@@ -157,6 +171,8 @@
             this.btnProducao.Text = "Produção";
             this.btnProducao.UseVisualStyleBackColor = true;
             this.btnProducao.Click += new System.EventHandler(this.button1_Click);
+            this.btnProducao.Enter += new System.EventHandler(this.btnProducao_Enter);
+            this.btnProducao.Leave += new System.EventHandler(this.btnProducao_Leave);
             // 
             // btnUsuario
             // 
@@ -169,6 +185,8 @@
             this.btnUsuario.Text = "Usuário";
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            this.btnUsuario.Enter += new System.EventHandler(this.btnUsuario_Enter);
+            this.btnUsuario.Leave += new System.EventHandler(this.btnUsuario_Leave);
             // 
             // Home
             // 
