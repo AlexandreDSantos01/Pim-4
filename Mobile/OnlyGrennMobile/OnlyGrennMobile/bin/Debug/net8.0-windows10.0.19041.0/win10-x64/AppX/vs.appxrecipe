@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-10-30T04:05:49.638</Modified>
+      <Modified>2024-10-31T17:57:09.271</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-10-30T03:46:19.978</Modified>
+      <Modified>2024-10-31T14:38:54.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.runtimeconfig.json">
       <PackagePath>OnlyGrennMobile.runtimeconfig.json</PackagePath>
-      <Modified>2024-10-30T03:40:20.786</Modified>
+      <Modified>2024-10-31T14:22:21.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.dll">
       <PackagePath>OnlyGrennMobile.dll</PackagePath>
-      <Modified>2024-10-30T04:05:49.269</Modified>
+      <Modified>2024-10-31T17:57:08.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>OnlyGrennMobile.exe</PackagePath>
-      <Modified>2024-10-30T04:05:49.272</Modified>
+      <Modified>2024-10-31T17:57:08.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.deps.json">
       <PackagePath>OnlyGrennMobile.deps.json</PackagePath>
-      <Modified>2024-10-30T03:46:19.786</Modified>
+      <Modified>2024-10-31T14:38:54.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -297,6 +297,22 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-09-09T00:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.cors\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cors.dll">
+      <PackagePath>Microsoft.AspNetCore.Cors.dll</PackagePath>
+      <Modified>2018-11-12T17:38:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Abstractions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.http.extensions\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Extensions.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Extensions.dll</PackagePath>
+      <Modified>2018-11-12T17:29:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.http.features\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll">
+      <PackagePath>Microsoft.AspNetCore.Http.Features.dll</PackagePath>
+      <Modified>2018-11-12T17:28:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -313,6 +329,10 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2023-10-31T14:58:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.FileProviders.Abstractions.dll</PackagePath>
+      <Modified>2018-11-11T00:26:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.extensions.logging\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
@@ -369,6 +389,10 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.82\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2024-08-26T17:46:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.net.http.headers\2.2.0\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll">
+      <PackagePath>Microsoft.Net.Http.Headers.dll</PackagePath>
+      <Modified>2018-11-12T17:28:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>

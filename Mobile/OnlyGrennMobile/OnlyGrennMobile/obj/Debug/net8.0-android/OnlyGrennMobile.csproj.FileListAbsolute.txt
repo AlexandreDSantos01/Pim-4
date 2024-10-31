@@ -1044,3 +1044,9 @@ C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\De
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Cors.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-android\android\assets\Microsoft.Net.Http.Headers.dll

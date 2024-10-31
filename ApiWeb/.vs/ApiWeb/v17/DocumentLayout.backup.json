@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\producao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\producao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,39 +47,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
-              "RelativeToolTip": "ApiWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T17:19:14.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Venda.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Venda.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Models\\Venda.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Venda.cs",
-              "RelativeToolTip": "ApiWeb\\Models\\Venda.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T16:59:33.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Despesa.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
               "RelativeDocumentMoniker": "ApiWeb\\Models\\Despesa.cs",
               "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
               "RelativeToolTip": "ApiWeb\\Models\\Despesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T16:56:48.533Z"
+              "WhenOpened": "2024-10-31T17:48:20.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Usuario.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:55:55.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producao.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Producao.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Producao.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Producao.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Producao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:55:14.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Fornecedor.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Fornecedor.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Fornecedor.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Fornecedor.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Fornecedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:52:32.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Financeiro.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Financeiro.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Financeiro.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Financeiro.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Financeiro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:51:06.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estoque.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Estoque.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Estoque.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Estoque.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Estoque.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:45:32.58Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -20,6 +20,7 @@ namespace OnlyGrennMobile.Pages
         private async void LoadData()
         {
             var usuarios = await _apiService.GetUsuariosAsync();
+            Usuarios.Clear();
             foreach (var usuario in usuarios)
             {
                 Usuarios.Add(usuario);

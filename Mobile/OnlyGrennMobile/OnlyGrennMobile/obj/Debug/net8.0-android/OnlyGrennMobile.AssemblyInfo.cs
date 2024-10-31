@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlyGrennMobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+60f9b267a218bc2ef214c32debce622b0056638b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8bad308a848aab0ae33f3b6c809817f52e07b518")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlyGrennMobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlyGrennMobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
