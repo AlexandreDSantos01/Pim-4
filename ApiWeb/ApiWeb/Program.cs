@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Adiciona serviços ao contêiner.
 builder.Services.AddControllers();
 
 // Configuração do DbContext com a string de conexão
@@ -26,11 +26,11 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure o middleware de CORS
+// Configura o middleware de CORS
 app.UseCors("AllowAllOrigins"); // Habilita a política de CORS definida acima
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Configura o pipeline de requisição HTTP
+
 {
     app.UseSwagger();
     app.UseSwaggerUI();

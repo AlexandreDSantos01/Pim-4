@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Net.Http.Json;
+using System.Net.Security;
 using System.Threading.Tasks;
 using OnlyGrennMobile.Models;
 
@@ -11,9 +12,21 @@ namespace OnlyGrennMobile.Services
 
         public ApiService()
         {
+
+            // Configura o HttpClientHandler para ignorar erros SSL
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
+                {
+                    if (cert != null && cert.Issuer.Equals("CN=localhost"))
+                        return true; // Ignora erros SSL para localhost
+
+                    return errors == SslPolicyErrors.None;
+                }
+            };
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:7203/api/") // URL da sua API
+                BaseAddress = new Uri("https://apionlygreen.azurewebsites.net/api/") // URL da sua API
             };
         }
 

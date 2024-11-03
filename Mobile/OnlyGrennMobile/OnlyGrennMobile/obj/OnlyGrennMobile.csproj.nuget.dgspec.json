@@ -72,15 +72,15 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -123,15 +123,15 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -174,15 +174,15 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -226,15 +226,15 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[8.0.92, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

@@ -673,6 +673,7 @@ C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x8
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiBoxView.java
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiDatePicker.java
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiHorizontalScrollView.java
+C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiLayerDrawable.java
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiMaterialButton.java
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiMaterialButton_MauiResizableDrawable.java
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\x86\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiPageControl.java
