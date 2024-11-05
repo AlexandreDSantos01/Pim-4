@@ -12,7 +12,7 @@
     <title>Fazenda Urbana</title>
     <style>
         body {
-            background-color: #dbead5;
+            background-color: #e6e8e6;
             margin: 0 10%;
             font-family: sans-serif;
         }
@@ -35,9 +35,9 @@
 
 <h1>Fornecedores</h1>
 
-<!--<p>
+<p>
     <a asp-action="Create">Create New</a>
-</p>-->
+</p>
 <table class="table">
     <thead>
         <tr>
@@ -59,15 +59,15 @@
             <th>
                 @Html.DisplayNameFor(model => model.NRua)
             </th>
-            <!--<th>
+            <th>
                 @Html.DisplayNameFor(model => model.Bairro)
-            </th>-->
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cidade)
             </th>
-            <!-- <th>
+             <th>
                 @Html.DisplayNameFor(model => model.Estado)
-            </th>-->
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cep)
             </th>
@@ -101,15 +101,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NRua)
             </td>
-                <!--<td>
+                <td>
                 @Html.DisplayFor(modelItem => item.Bairro)
             </td>-->
             <td>
                 @Html.DisplayFor(modelItem => item.Cidade)
             </td>
-                <!--<td>
+               <td>
                 @Html.DisplayFor(modelItem => item.Estado)
-            </td>-->
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cep)
             </td>
@@ -120,9 +120,9 @@
                 @Html.DisplayFor(modelItem => item.Situacao)
             </td>
             <td>
-                    <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>--> |
+                    -<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <!-- <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>-->
+                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
