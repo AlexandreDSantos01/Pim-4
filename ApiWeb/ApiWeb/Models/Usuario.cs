@@ -1,5 +1,8 @@
-﻿namespace ApiWeb.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ApiWeb.Models
 {
+    [Table("tb_Usuario")]
     public class Usuario
     {
         public int Id { get; set; }

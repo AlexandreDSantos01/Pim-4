@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Web.Models;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Linq;
-using Web.Models;
 using System.Collections.Generic;
+using BCrypt.Net;
+using Microsoft.EntityFrameworkCore;
 
 namespace Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    [Route("Account")]
     public class AccountController : Controller
     {
         private readonly MeuDbContext _context;
@@ -20,50 +21,51 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // Método para exibir a página de login (HTML)
-        [HttpGet("login")]
+        // Exibe a tela de login
+        [HttpGet("Login")]
         public IActionResult Login()
         {
-            return View(); // Retorna a View de Login
+            return View();
         }
 
-        // Método para login via API
-        [HttpPost("login")]
-        public async Task<IActionResult> LoginApi(UserLogin model)
+        // Realiza o login
+        [HttpPost("Login")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(UserLogin model, string returnUrl = null)
         {
             if (ModelState.IsValid)
             {
-                // Verifica se o usuário existe no banco de dados
-                var user = _context.tb_Usuario.FirstOrDefault(u => u.Ulogar == model.Ulogar);
+                var user = await _context.tb_Usuario
+                    .FirstOrDefaultAsync(u => u.ulogar == model.ulogar); // Usando model.ulogar
 
-                // Verifica se o usuário foi encontrado e se a senha está correta
-                if (user != null && user.Senha == model.Senha) // Certifique-se de adaptar a lógica de senha conforme necessário
+                if (user != null)
                 {
-                    // Configura as claims para autenticação
-                    var claims = new List<Claim>
+                    bool isPasswordValid = BCrypt.Net.BCrypt.EnhancedVerify(model.senha, user.senha);
+
+                    if (isPasswordValid)
                     {
-                        new Claim(ClaimTypes.Name, user.Ulogar)
-                    };
+                        var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.ulogar),
+                    // Use o campo correto de role se tiver
+                };
 
-                    // Cria a identidade do usuário
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
-                    // Configura o cookie de autenticação
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-
-                    // Retorna a página inicial após login bem-sucedido
-                    return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
 
-                ModelState.AddModelError("", "Nome de usuário ou senha inválidos.");
+                ModelState.AddModelError(string.Empty, "Usuário ou senha inválidos.");
             }
 
-            // Se a validação falhar, retorna a mesma view com o modelo
-            return View("Login", model);
+            return View(model);
         }
 
-        // Método para logout
-        [HttpPost("logout")]
+        // Logout
+        [HttpPost("Logout")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

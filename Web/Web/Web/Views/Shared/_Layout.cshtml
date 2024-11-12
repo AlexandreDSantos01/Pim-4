@@ -22,7 +22,7 @@
                         <!-- Menu de Navegação para as Entidades -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>                      
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
                         </li>
@@ -30,7 +30,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Producoes" asp-action="Index">Produção</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""asp-controller="Estoques" asp-action="Index">Estoque</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
@@ -48,6 +48,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Financeiros" asp-action="Index">Financeiro</a>
                         </li>
                     </ul>
+
+                    <!-- Controle de Exibição do Botão de Logoff -->
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-link nav-link" style="text-decoration: none; color: inherit;">
+                                Logoff
+                            </button>
+                        </form>
+                    }
                 </div>
             </div>
         </nav>

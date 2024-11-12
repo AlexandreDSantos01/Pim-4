@@ -5,14 +5,13 @@
 }
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazenda Urbana</title>
+    <title>@ViewData["Title"]</title>
     <style>
         body {
-            background-color: #dbead5;
+            background-color: #FFFFFF;
             margin: 0 10%;
             font-family: sans-serif;
         }
@@ -37,35 +36,25 @@
 
 <form asp-action="Login" method="post">
     <div class="form-group">
-        <label asp-for="Ulogar"></label>
-        <input asp-for="Ulogar" class="form-control" />
-        <span asp-validation-for="Ulogar" class="text-danger"></span>
+        <label for="Ulogar">Usuário</label>
+        <input type="text" class="form-control" id="Ulogar" name="Ulogar" required />
     </div>
 
     <div class="form-group">
-        <label asp-for="Senha"></label>
-        <input asp-for="Senha" type="password" class="form-control" />
-        <span asp-validation-for="Senha" class="text-danger"></span>
+        <label for="Senha">Senha</label>
+        <input type="password" class="form-control" id="Senha" name="Senha" required />
     </div>
 
     <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
 
-<div>
-    @* Para exibir mensagens de erro gerais de login *@
-    @if (ViewData.ModelState.TryGetValue("", out var entry) && entry.Errors.Any())
+    <!-- Exibindo erros de validação -->
+    @Html.ValidationSummary(true, "", new { @class = "alert alert-danger mt-3" })
+
+    <!-- Exibindo erros específicos via ViewData -->
+    @if (!String.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
     {
-        <div class="alert alert-danger">
-            @foreach (var error in entry.Errors)
-            {
-                <p>@error.ErrorMessage</p>
-            }
+        <div class="alert alert-danger mt-3">
+            @ViewData["ErrorMessage"]
         </div>
     }
-</div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+</form>

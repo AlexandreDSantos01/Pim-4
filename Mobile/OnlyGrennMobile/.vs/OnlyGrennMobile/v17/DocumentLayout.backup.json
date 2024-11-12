@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +50,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\AppShell.xaml",
-              "RelativeDocumentMoniker": "OnlyGrennMobile\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\AppShell.xaml",
-              "RelativeToolTip": "OnlyGrennMobile\\AppShell.xaml",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "OnlyGrennMobile\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MauiProgram.cs",
+              "RelativeToolTip": "OnlyGrennMobile\\MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T03:33:38.731Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:33:35.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "OnlyGrennMobile\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
+              "RelativeToolTip": "OnlyGrennMobile\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:33:33.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml",
               "RelativeDocumentMoniker": "OnlyGrennMobile\\MainPage.xaml",
@@ -79,38 +82,11 @@
               "RelativeToolTip": "OnlyGrennMobile\\MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T03:33:34.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T02:33:28.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "OnlyGrennMobile\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
-              "RelativeToolTip": "OnlyGrennMobile\\MainPage.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T03:33:08.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\App.xaml.cs",
-              "RelativeDocumentMoniker": "OnlyGrennMobile\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\App.xaml.cs",
-              "RelativeToolTip": "OnlyGrennMobile\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T03:33:05.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "OnlyGrennMobile\\AppShell.xaml.cs",
@@ -118,7 +94,19 @@
               "RelativeToolTip": "OnlyGrennMobile\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T03:33:03.98Z",
+              "WhenOpened": "2024-11-12T02:33:18.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\App.xaml.cs",
+              "RelativeDocumentMoniker": "OnlyGrennMobile\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\App.xaml.cs",
+              "RelativeToolTip": "OnlyGrennMobile\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T02:33:14.418Z",
               "EditorCaption": ""
             },
             {
@@ -131,34 +119,7 @@
               "RelativeToolTip": "OnlyGrennMobile\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-03T03:32:53.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "OnlyGrennMobile\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MauiProgram.cs",
-              "RelativeToolTip": "OnlyGrennMobile\\MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T03:32:45.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\ApiService.cs",
-              "RelativeDocumentMoniker": "OnlyGrennMobile\\ApiService.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\ApiService.cs*",
-              "RelativeToolTip": "OnlyGrennMobile\\ApiService.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T02:48:45.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T02:33:05.85Z"
             }
           ]
         }

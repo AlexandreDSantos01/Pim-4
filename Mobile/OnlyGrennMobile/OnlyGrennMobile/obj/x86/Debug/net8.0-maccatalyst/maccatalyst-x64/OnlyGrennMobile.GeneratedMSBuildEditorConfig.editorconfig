@@ -12,83 +12,89 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlyGrennMobile
-build_property.ProjectDir = C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\
+build_property.ProjectDir = E:\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/App.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/AppShell.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/MainPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/ClientePage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/ClientePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.ClientePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ClientePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ClientePage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/DespesaPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/DespesaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.DespesaPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\DespesaPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\DespesaPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/EstoquePage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/EstoquePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.EstoquePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\EstoquePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\EstoquePage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/FinanceiroPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/FinanceiroPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.FinanceiroPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\FinanceiroPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\FinanceiroPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/FornecedorPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/FornecedorPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.FornecedorPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\FornecedorPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\FornecedorPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/ProducaoPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/ProducaoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.ProducaoPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\ProducaoPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ProducaoPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/UsuarioPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/UsuarioPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.UsuarioPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\UsuarioPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\UsuarioPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/VendaPage.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Pages/VendaPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Pages.VendaPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\VendaPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\VendaPage.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Resources/Styles/Colors.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Alexandre/Documents/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Resources/Styles/Styles.xaml]
+[E:/Pim-4/Mobile/OnlyGrennMobile/OnlyGrennMobile/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = OnlyGrennMobile.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

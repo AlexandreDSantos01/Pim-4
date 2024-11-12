@@ -21,8 +21,8 @@ namespace OnlyGrennMobile.Models
         public string Cep { get; set; }
         public string TipoUsuario { get; set; }
         public string Situacao { get; set; }
-        public string Ulogar { get; set; }
-        public string Senha { get; set; }
+        public string ulogar { get; set; }
+        public string senha { get; set; }
     }
 
 }

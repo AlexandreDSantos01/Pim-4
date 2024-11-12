@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell(); // Use AppShell para permitir navegação
+            MainPage = new NavigationPage(new Pages.LoginPage());
         }
     }
 }

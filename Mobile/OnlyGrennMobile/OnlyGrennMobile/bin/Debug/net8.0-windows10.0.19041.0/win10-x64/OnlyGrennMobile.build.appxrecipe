@@ -223,6 +223,9 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\bcrypt.net-next\4.0.3\lib\net6.0\BCrypt.Net-Next.dll">
+      <PackagePath>BCrypt.Net-Next.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.cors\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cors.dll">
       <PackagePath>Microsoft.AspNetCore.Cors.dll</PackagePath>
     </AppxPackagedFile>

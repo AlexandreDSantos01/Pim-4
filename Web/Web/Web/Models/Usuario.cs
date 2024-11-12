@@ -1,4 +1,6 @@
-﻿namespace Web.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Web.Models
 {
     public class Usuario
     {
@@ -15,7 +17,11 @@
         public string Cep { get; set; }
         public string TipoUsuario { get; set; }
         public string Situacao { get; set; }
-        public string Ulogar { get; set; }
-        public string Senha { get; set; }
+
+        [Column("ulogar")] // Mapeia a coluna "ulogar" para "Ulogar"
+        public string ulogar { get; set; }
+
+        [Column("senha")] // Mapeia a coluna "senha" para "Senha"
+        public string senha { get; set; }
     }
 }

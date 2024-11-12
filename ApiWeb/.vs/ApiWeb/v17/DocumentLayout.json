@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|solutionrelative:apiweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D692984-0463-48F6-A1C3-9A09463B90D3}|ApiWeb\\ApiWeb.csproj|c:\\users\\alexandre\\documents\\pim-4\\apiweb\\apiweb\\apiweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,45 +45,77 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Despesa.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
-              "RelativeDocumentMoniker": "ApiWeb\\Models\\Despesa.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Despesa.cs",
-              "RelativeToolTip": "ApiWeb\\Models\\Despesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T17:35:29.271Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7d1a5679-04f2-3f4a-851f-855baa54731c}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\appsettings.json",
               "RelativeDocumentMoniker": "ApiWeb\\appsettings.json",
               "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\appsettings.json",
               "RelativeToolTip": "ApiWeb\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-02T16:16:53.443Z",
+              "WhenOpened": "2024-11-10T04:46:55.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ApiWeb\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T04:39:57.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ApiWeb\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T04:53:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ApiWeb\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Models\\Usuario.cs",
+              "RelativeToolTip": "ApiWeb\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T04:37:12.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
               "RelativeDocumentMoniker": "ApiWeb\\Program.cs",
               "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\Program.cs",
               "RelativeToolTip": "ApiWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T15:02:29.637Z"
+              "WhenOpened": "2024-11-02T15:02:29.637Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApiWeb.csproj",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\ApiWeb\\ApiWeb\\ApiWeb.csproj",
               "RelativeDocumentMoniker": "ApiWeb\\ApiWeb.csproj",
@@ -83,7 +123,8 @@
               "RelativeToolTip": "ApiWeb\\ApiWeb.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-02T02:06:27.048Z"
+              "WhenOpened": "2024-11-02T02:06:27.048Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -236,8 +236,6 @@ C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\bin\Debug\System.Numerics.V
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.csproj.AssemblyReference.cache
-C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.csproj.SuggestedBindingRedirects.cache
-C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.exe.config
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.Cliente.resources
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.Despesa.resources
 C:\Users\Alexandre\Documents\Pim-4\Desktop\onlygreen\obj\Debug\onlygreen.Estoque.resources

@@ -1,41 +1,5 @@
 [
   {
-    "ContainingType": "Web.Controllers.AccountController",
-    "Method": "Login",
-    "RelativePath": "api/Account/login",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Web.Controllers.AccountController",
-    "Method": "LoginApi",
-    "RelativePath": "api/Account/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "Web.Models.UserLogin",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Web.Controllers.AccountController",
-    "Method": "Logout",
-    "RelativePath": "api/Account/logout",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Web.Controllers.ClientesController",
     "Method": "GetClientes",
     "RelativePath": "api/Clientes",

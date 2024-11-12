@@ -30,265 +30,265 @@
     <AppXManifest Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-03T03:56:14.440</Modified>
+      <Modified>2024-11-12T02:59:00.699</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-11-03T03:32:22.671</Modified>
+      <Modified>2024-11-12T02:56:13.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.runtimeconfig.json">
       <PackagePath>OnlyGrennMobile.runtimeconfig.json</PackagePath>
-      <Modified>2024-11-03T03:32:22.248</Modified>
+      <Modified>2024-11-12T02:59:00.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.dll">
       <PackagePath>OnlyGrennMobile.dll</PackagePath>
-      <Modified>2024-11-03T03:56:13.984</Modified>
+      <Modified>2024-11-12T02:58:59.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>OnlyGrennMobile.exe</PackagePath>
-      <Modified>2024-11-03T03:56:13.988</Modified>
+      <Modified>2024-11-12T02:58:59.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-10-30T02:19:57.801</Modified>
+      <Modified>2024-11-12T02:21:43.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.075</Modified>
+      <Modified>2024-11-12T02:21:47.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.096</Modified>
+      <Modified>2024-11-12T02:21:47.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.115</Modified>
+      <Modified>2024-11-12T02:21:47.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.145</Modified>
+      <Modified>2024-11-12T02:21:47.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.255</Modified>
+      <Modified>2024-11-12T02:21:47.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-10-30T02:19:57.794</Modified>
+      <Modified>2024-11-12T02:21:47.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-10-30T02:19:57.795</Modified>
+      <Modified>2024-11-12T02:21:47.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.000</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.999</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.999</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.999</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:03.999</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.004</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.004</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.004</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.004</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.004</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.006</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.005</Modified>
+      <Modified>2024-11-12T02:22:47.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.001</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.001</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.001</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.001</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.002</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.003</Modified>
+      <Modified>2024-11-12T02:22:47.204</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.001</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.000</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.000</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.000</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.000</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.203</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-11-01T15:40:04.007</Modified>
+      <Modified>2024-11-12T02:22:47.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.deps.json">
       <PackagePath>OnlyGrennMobile.deps.json</PackagePath>
-      <Modified>2024-11-03T03:32:22.104</Modified>
+      <Modified>2024-11-12T02:59:00.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -297,6 +297,10 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-09-09T00:48:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\bcrypt.net-next\4.0.3\lib\net6.0\BCrypt.Net-Next.dll">
+      <PackagePath>BCrypt.Net-Next.dll</PackagePath>
+      <Modified>2022-03-03T16:10:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\.nuget\packages\microsoft.aspnetcore.cors\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.Cors.dll">
       <PackagePath>Microsoft.AspNetCore.Cors.dll</PackagePath>

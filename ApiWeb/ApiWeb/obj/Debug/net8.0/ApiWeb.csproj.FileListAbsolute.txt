@@ -515,3 +515,7 @@ C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\obj\Debug\net8.0\refint\ApiWeb.
 C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\obj\Debug\net8.0\ApiWeb.pdb
 C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\obj\Debug\net8.0\ApiWeb.genruntimeconfig.cache
 C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\obj\Debug\net8.0\ref\ApiWeb.dll
+C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\bin\Debug\net8.0\JWT.dll
+C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Alexandre\Documents\Pim-4\ApiWeb\ApiWeb\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
