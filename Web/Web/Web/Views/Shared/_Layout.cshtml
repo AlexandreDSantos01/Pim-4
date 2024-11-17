@@ -1,60 +1,84 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["OnlyGreen"] - OnlyGreen</title>
+
+    <!-- Links para os arquivos CSS do Bootstrap e do projeto -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Web.styles.css" asp-append-version="true" />
+
+    <!-- Adiciona o conjunto de ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilo personalizado -->
+    <style>
+        .navbar {
+            background-color: #dbead5 !important;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #dbead5;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 2px 0;
+            text-align: center;
+        }
+
+            footer a {
+                color: #57b1dc;
+                text-decoration: none;
+            }
+
+                footer a:hover {
+                    text-decoration: underline;
+                }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlyGreen</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <!-- Menu de Navegação para as Entidades -->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Producoes" asp-action="Index">Produção</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Financeiros" asp-action="Index">Financeiro</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Producoes" asp-action="Index">Produção</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Financeiros" asp-action="Index">Financeiro</a></li>
                     </ul>
 
-                    <!-- Controle de Exibição do Botão de Logoff -->
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline" onsubmit="return confirmAndNotify();">
                             <button type="submit" class="btn btn-link nav-link" style="text-decoration: none; color: inherit;">
-                                Logoff
+                                <i class="bi bi-box-arrow-right"></i> Sair
                             </button>
                         </form>
                     }
@@ -62,20 +86,30 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="footer text-muted">
         <div class="container">
             &copy; 2024 - OnlyGreen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <!-- Scripts necessários -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        function confirmAndNotify() {
+            if (confirm('Tem certeza que deseja sair?')) {
+                alert('Você será desconectado. Até logo!');
+                return true; // Prossegue com o envio do formulário
+            }
+            return false; // Cancela o envio do formulário
+        }
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

@@ -26,7 +26,7 @@ namespace onlygreen
         {
             string situacao = string.Empty;
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -46,6 +46,29 @@ namespace onlygreen
 
             return situacao;
         }
+        private string ObterNomeUsuario(string login)
+        {
+            string nomeUsuario = null;
+
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            using (var conectar = new SqlConnection(bdonlygreen))
+            {
+                conectar.Open();
+                var command = new SqlCommand("SELECT nome FROM tb_Usuario WHERE ulogar = @login", conectar);
+                command.Parameters.AddWithValue("@login", login);
+
+                // Executa a consulta e armazena o nome do usuário
+                var resultado = command.ExecuteScalar();
+
+                if (resultado != null)
+                {
+                    nomeUsuario = resultado.ToString(); // Converte o resultado para string
+                }
+            }
+
+            return nomeUsuario; // Retorna o nome do usuário ou null se não encontrado
+        }
+
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
@@ -65,7 +88,9 @@ namespace onlygreen
             if (VerificarCredenciais(login, senha))
             {
                 
-                UserSession.TipoUsuario = ObterTipoUsuario(login); 
+                UserSession.TipoUsuario = ObterTipoUsuario(login);
+                UserSession.NomeUsuario = ObterNomeUsuario(login);
+
                 var menu = new Home();
                 menu.Show(this);
                 this.Hide(); 
@@ -79,7 +104,7 @@ namespace onlygreen
         {
             string tipoUsuario = null; // Inicializa a variável
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -101,7 +126,7 @@ namespace onlygreen
         // Método para verificar credenciais
         private bool VerificarCredenciais(string login, string senha)
         {
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -175,7 +200,7 @@ namespace onlygreen
 
         private void btnEntrar_Leave(object sender, EventArgs e)
         {
-            btnEntrar.BackColor = Color.White;
+            btnEntrar.BackColor = Color.Silver;
         }
 
         private void btnAjuda_Enter(object sender, EventArgs e)
@@ -185,7 +210,7 @@ namespace onlygreen
 
         private void btnAjuda_Leave(object sender, EventArgs e)
         {
-            btnAjuda.BackColor = Color.White;
+            btnAjuda.BackColor = Color.Silver;
         }
 
         //FOCO FIM

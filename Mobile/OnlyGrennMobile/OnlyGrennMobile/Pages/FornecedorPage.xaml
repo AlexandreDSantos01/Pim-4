@@ -1,75 +1,82 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="OnlyGrennMobile.Pages.FornecedorPage"
              Title="Lista de Fornecedores">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
-            <Label Text="Lista de Fornecedores" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="Lista de Fornecedores" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
 
-            <CollectionView x:Name="FornecedorCollectionView" Margin="0,10,0,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
-                            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, Auto">
+                <CollectionView x:Name="FornecedorCollectionView" Margin="0,10,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
+                                <toolkit:Expander>
+                                    <toolkit:Expander.Header>
+                                        <!-- Exibe as informações principais quando o item está minimizado -->
+                                        <StackLayout Orientation="Horizontal" Spacing="5">
+                                            <Label Text="ID:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Id}" FontSize="14" FontAttributes="Bold" />
+                                            <Label Text=" - Nome:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Nome}" FontSize="14" FontAttributes="Bold" />
+                                            <Label Text=" - CNPJ:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Cnpj}" FontSize="14" HorizontalTextAlignment="End" />
+                                        </StackLayout>
+                                    </toolkit:Expander.Header>
 
-                                <!-- Linha 1: ID -->
-                                <Label Grid.Row="0" Grid.Column="0" Text="ID:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Id}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" />
+                                    <toolkit:Expander.Content>
+                                        <!-- Conteúdo que será exibido ao expandir o item -->
+                                        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, Auto">
 
-                                <!-- Linha 2: Nome -->
-                                <Label Grid.Row="1" Grid.Column="0" Text="Nome:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" />
+                                            <!-- Linha 1: Telefone -->
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Telefone:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Telefone}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 3: CNPJ -->
-                                <Label Grid.Row="2" Grid.Column="0" Text="CNPJ:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Cnpj}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 2: Email -->
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Email:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Email}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 4: Telefone -->
-                                <Label Grid.Row="3" Grid.Column="0" Text="Telefone:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding Telefone}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 3: Rua -->
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Rua:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Rua}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 5: Email -->
-                                <Label Grid.Row="4" Grid.Column="0" Text="Email:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Email}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 4: Número da Rua -->
+                                            <Label Grid.Row="3" Grid.Column="0" Text="N°:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding NRua}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 6: Rua -->
-                                <Label Grid.Row="5" Grid.Column="0" Text="Rua:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="5" Grid.Column="1" Text="{Binding Rua}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 5: Bairro -->
+                                            <Label Grid.Row="4" Grid.Column="0" Text="Bairro:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="4" Grid.Column="1" Text="{Binding Bairro}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 7: Número da Rua -->
-                                <Label Grid.Row="6" Grid.Column="0" Text="N°:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="6" Grid.Column="1" Text="{Binding NRua}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 6: Cidade -->
+                                            <Label Grid.Row="5" Grid.Column="0" Text="Cidade:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="5" Grid.Column="1" Text="{Binding Cidade}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 8: Bairro -->
-                                <Label Grid.Row="7" Grid.Column="0" Text="Bairro:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="7" Grid.Column="1" Text="{Binding Bairro}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 7: Estado -->
+                                            <Label Grid.Row="6" Grid.Column="0" Text="Estado:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="6" Grid.Column="1" Text="{Binding Estado}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 9: Cidade -->
-                                <Label Grid.Row="8" Grid.Column="0" Text="Cidade:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="8" Grid.Column="1" Text="{Binding Cidade}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 8: CEP -->
+                                            <Label Grid.Row="7" Grid.Column="0" Text="CEP:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="7" Grid.Column="1" Text="{Binding Cep}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 10: Estado -->
-                                <Label Grid.Row="9" Grid.Column="0" Text="Estado:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="9" Grid.Column="1" Text="{Binding Estado}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 9: Produtos -->
+                                            <Label Grid.Row="8" Grid.Column="0" Text="Produtos:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="8" Grid.Column="1" Text="{Binding Produtos}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 11: CEP -->
-                                <Label Grid.Row="10" Grid.Column="0" Text="CEP:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="10" Grid.Column="1" Text="{Binding Cep}" FontSize="14" HorizontalTextAlignment="End" />
-
-                                <!-- Linha 12: Produtos -->
-                                <Label Grid.Row="11" Grid.Column="0" Text="Produtos:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="11" Grid.Column="1" Text="{Binding Produtos}" FontSize="14" HorizontalTextAlignment="End" />
-
-                                <!-- Linha 13: Situação -->
-                                <Label Grid.Row="12" Grid.Column="0" Text="Situação:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="12" Grid.Column="1" Text="{Binding Situacao}" FontSize="14" HorizontalTextAlignment="End" />
-
-                            </Grid>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                                            <!-- Linha 10: Situação -->
+                                            <Label Grid.Row="9" Grid.Column="0" Text="Situação:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="9" Grid.Column="1" Text="{Binding Situacao}" FontSize="14" HorizontalTextAlignment="End" />
+                                        </Grid>
+                                    </toolkit:Expander.Content>
+                                </toolkit:Expander>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

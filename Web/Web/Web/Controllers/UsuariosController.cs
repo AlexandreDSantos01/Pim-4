@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization; // Necessário para [Authorize]
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [Authorize] // Protege todas as ações do controlador
     [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : Controller

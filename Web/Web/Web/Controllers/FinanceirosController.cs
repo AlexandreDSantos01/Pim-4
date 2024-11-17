@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization; // Import necessário para [Authorize]
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [Authorize] // Aplica a proteção a todas as ações do controlador
     [Route("api/[controller]")]
     [ApiController]
     public class FinanceirosController : Controller

@@ -40,6 +40,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.txtSenha);
             this.groupBox1.Controls.Add(this.txtLogin);
             this.groupBox1.Controls.Add(this.btnAjuda);
@@ -56,6 +57,8 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(131, 220);
             this.txtSenha.MaxLength = 10;
@@ -69,6 +72,8 @@
             // 
             // txtLogin
             // 
+            this.txtLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(131, 116);
             this.txtLogin.MaxLength = 10;
@@ -80,24 +85,28 @@
             // 
             // btnAjuda
             // 
+            this.btnAjuda.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnAjuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjuda.Location = new System.Drawing.Point(175, 414);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(226, 58);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.Text = "Ajuda";
-            this.btnAjuda.UseVisualStyleBackColor = true;
+            this.btnAjuda.UseVisualStyleBackColor = false;
             this.btnAjuda.Click += new System.EventHandler(this.btnAjuda_Click);
             this.btnAjuda.Enter += new System.EventHandler(this.btnAjuda_Enter);
             this.btnAjuda.Leave += new System.EventHandler(this.btnAjuda_Leave);
             // 
             // btnEntrar
             // 
+            this.btnEntrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Location = new System.Drawing.Point(148, 291);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(280, 75);
             this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             this.btnEntrar.Enter += new System.EventHandler(this.btnEntrar_Enter);
             this.btnEntrar.Leave += new System.EventHandler(this.btnEntrar_Leave);
@@ -126,6 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1536, 770);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;

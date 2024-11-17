@@ -38,7 +38,7 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDadosEstoque()
         {
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -106,7 +106,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -129,7 +129,14 @@ namespace onlygreen
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            if (string.IsNullOrWhiteSpace(txtIdproducao.Text))
+            {
+                MessageBox.Show("Por favor, insira um ID válido para selecionar.");
+                txtIdproducao.Focus();
+                return;
+            }
+
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -165,73 +172,84 @@ namespace onlygreen
 
         private void btnSalvar2_Click(object sender, EventArgs e)
         {
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
-            using (SqlConnection conectar = new SqlConnection(bdonlygreen))
+            if (string.IsNullOrWhiteSpace(txtIdproducao.Text))
             {
-                conectar.Open();
-                using (SqlTransaction transaction = conectar.BeginTransaction())
+                MessageBox.Show("Por favor, insira um ID válido para alterar.");
+                txtIdproducao.Focus();
+                return;
+            }
+
+            if (ValidarCampoEstoque() == false)
+            {
+                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+
+                using (SqlConnection conectar = new SqlConnection(bdonlygreen))
                 {
-                    try
+                    conectar.Open();
+                    using (SqlTransaction transaction = conectar.BeginTransaction())
                     {
-                        // Insere na tabela TB_Estoque
-                        using (SqlCommand cmd = new SqlCommand())
+                        try
                         {
-                            cmd.Connection = conectar;
-                            cmd.Transaction = transaction;
-
-                            // Define a situação com base na quantidade
-                            string situacao = Convert.ToInt32(txtQuantidade.Text) > 0 ? "Disponível" : "Esgotado";
-
-                            cmd.CommandText = "INSERT INTO tb_Estoque (nome, quantidade, dregistroProducao, estimativaProducao, dcolheita, validade, valornutritivo, preco, situacao) " +
-                                              "VALUES (@nome, @quantidade, @dregistroProducao, @estimativaProducao, GETDATE(), @validade, @valornutritivo, @preco, @situacao)";
-
-                            // Corrigindo para usar o valor do TextBox     
-                            cmd.Parameters.AddWithValue("@nome", txtNome.Text);
-                            cmd.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
-                            cmd.Parameters.AddWithValue("@dregistroProducao", txtDregistroProducao.Text);
-                            cmd.Parameters.AddWithValue("@estimativaProducao", txtEstimativa.Text);
-
-                            // Validação da data de validade
-                            DateTime validade;
-                            if (!DateTime.TryParse(txtValidade.Text, out validade) || validade < DateTime.Today)
+                            // Insere na tabela TB_Estoque
+                            using (SqlCommand cmd = new SqlCommand())
                             {
-                                MessageBox.Show("A data de validade é inválida ou está no passado.");
-                                return;
+                                cmd.Connection = conectar;
+                                cmd.Transaction = transaction;
+
+                                // Define a situação com base na quantidade
+                                string situacao = Convert.ToInt32(txtQuantidade.Text) > 0 ? "Disponível" : "Esgotado";
+
+                                cmd.CommandText = "INSERT INTO tb_Estoque (nome, quantidade, dregistroProducao, estimativaProducao, dcolheita, validade, valornutritivo, preco, situacao) " +
+                                                  "VALUES (@nome, @quantidade, @dregistroProducao, @estimativaProducao, GETDATE(), @validade, @valornutritivo, @preco, @situacao)";
+
+                                // Corrigindo para usar o valor do TextBox     
+                                cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+                                cmd.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
+                                cmd.Parameters.AddWithValue("@dregistroProducao", txtDregistroProducao.Text);
+                                cmd.Parameters.AddWithValue("@estimativaProducao", txtEstimativa.Text);
+
+                                // Validação da data de validade
+                                DateTime validade;
+                                if (!DateTime.TryParse(txtValidade.Text, out validade) || validade < DateTime.Today)
+                                {
+                                    MessageBox.Show("A data de validade é inválida ou está no passado.");
+                                    return;
+                                }
+                                cmd.Parameters.AddWithValue("@validade", validade); // Adiciona a validade válida
+
+                                cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
+                                cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
+                                cmd.Parameters.AddWithValue("@situacao", situacao); // Adiciona o parâmetro da situação
+
+                                cmd.ExecuteNonQuery();
                             }
-                            cmd.Parameters.AddWithValue("@validade", validade); // Adiciona a validade válida
 
-                            cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
-                            cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
-                            cmd.Parameters.AddWithValue("@situacao", situacao); // Adiciona o parâmetro da situação
+                            // Deleta da tabela TB_Producao
+                            using (SqlCommand cmd = new SqlCommand())
+                            {
+                                cmd.Connection = conectar;
+                                cmd.Transaction = transaction;
+                                cmd.CommandText = "DELETE FROM tb_Producao WHERE id = @id";
+                                cmd.Parameters.AddWithValue("@id", txtIdproducao.Text);
 
-                            cmd.ExecuteNonQuery();
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            // Confirma a transação
+                            transaction.Commit();
+                            MessageBox.Show("Produto registrado com sucesso e removido da produção!");
+
+                            var menu = new Estoque();
+                            menu.Show(this);
+                            this.Visible = false;
                         }
-
-                        // Deleta da tabela TB_Producao
-                        using (SqlCommand cmd = new SqlCommand())
+                        catch (Exception ex)
                         {
-                            cmd.Connection = conectar;
-                            cmd.Transaction = transaction;
-                            cmd.CommandText = "DELETE FROM tb_Producao WHERE id = @id";
-                            cmd.Parameters.AddWithValue("@id", txtIdproducao.Text);
-
-                            cmd.ExecuteNonQuery();
+                            // Reverte a transação em caso de erro
+                            transaction.Rollback();
+                            MessageBox.Show("Erro ao registrar o produto: " + ex.Message);
                         }
-
-                        // Confirma a transação
-                        transaction.Commit();
-                        MessageBox.Show("Produto registrado com sucesso e removido da produção!");
-
-                        var menu = new Estoque();
-                        menu.Show(this);
-                        this.Visible = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        // Reverte a transação em caso de erro
-                        transaction.Rollback();
-                        MessageBox.Show("Erro ao registrar o produto: " + ex.Message);
                     }
                 }
             }
@@ -243,7 +261,7 @@ namespace onlygreen
         private DataTable GetId(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -262,16 +280,16 @@ namespace onlygreen
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            // Pegar e conferir ID
             if (string.IsNullOrWhiteSpace(txtId.Text))
             {
                 MessageBox.Show("Por favor, insira um ID válido para selecionar.");
+                txtId.Focus();
                 return;
             }
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -371,9 +389,16 @@ namespace onlygreen
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor, insira um ID válido para alterar.");
+                txtId.Focus();
+                return;
+            }
+
             if (ValidarCampoEstoque() == false)
             { 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -427,12 +452,12 @@ namespace onlygreen
         }   
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            Limpar();   
-        }
+            var resultado = MessageBox.Show("Você tem certeza que deseja limpar todos os campos de texto?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
-        private void btnLimpar2_Click(object sender, EventArgs e)
-        {
-            Limpar();
+            if (resultado == DialogResult.OK)
+            {
+                Limpar();
+            }
         }
 
         private void checkDisponivel_CheckedChanged(object sender, EventArgs e)
@@ -465,7 +490,7 @@ namespace onlygreen
 
         private void btnBuscar_Leave(object sender, EventArgs e)
         {
-            btnBuscar.BackColor = Color.White;
+            btnBuscar.BackColor = Color.Silver;
         }
 
         private void txtIdproducao_Enter(object sender, EventArgs e)
@@ -485,7 +510,7 @@ namespace onlygreen
 
         private void btnAdicionar_Leave(object sender, EventArgs e)
         {
-            btnAdicionar.BackColor = Color.White;
+            btnAdicionar.BackColor = Color.Silver;
         }
 
         private void btnSalvar2_Enter(object sender, EventArgs e)
@@ -495,7 +520,7 @@ namespace onlygreen
 
         private void btnSalvar2_Leave(object sender, EventArgs e)
         {
-            btnSalvar2.BackColor = Color.White;
+            btnSalvar2.BackColor = Color.Silver;
         }
 
         private void btnLimpar_Enter(object sender, EventArgs e)
@@ -505,7 +530,7 @@ namespace onlygreen
 
         private void btnLimpar_Leave(object sender, EventArgs e)
         {
-            btnLimpar.BackColor = Color.White;
+            btnLimpar.BackColor = Color.Silver;
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -525,7 +550,7 @@ namespace onlygreen
 
         private void btnSelecionar_Leave(object sender, EventArgs e)
         {
-            btnSelecionar.BackColor = Color.White;
+            btnSelecionar.BackColor = Color.Silver;
         }
 
         private void btnSalvar_Enter(object sender, EventArgs e)
@@ -535,17 +560,7 @@ namespace onlygreen
 
         private void btnSalvar_Leave(object sender, EventArgs e)
         {
-            btnSalvar.BackColor = Color.White;
-        }
-
-        private void btnLimpar2_Enter(object sender, EventArgs e)
-        {
-            btnLimpar2.BackColor = Color.LightGreen;
-        }
-
-        private void btnLimpar2_Leave(object sender, EventArgs e)
-        {
-            btnLimpar2.BackColor = Color.White;
+            btnSalvar.BackColor = Color.Silver;
         }
 
         private void txtQuantidade_Enter(object sender, EventArgs e)
@@ -595,7 +610,7 @@ namespace onlygreen
 
         private void btnVoltar_Leave(object sender, EventArgs e)
         {
-            btnVoltar.BackColor = Color.White;
+            btnVoltar.BackColor = Color.Silver;
         }
     }
 }

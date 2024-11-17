@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<Web.Models.Producao>
 
 @{
+    // Define o título da página na propriedade ViewData
     ViewData["Title"] = "Produção";
 }
 
@@ -12,72 +13,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazenda Urbana</title>
     <style>
+        /* Estilo do corpo da página */
         body {
-            background-color: #dbead5;
-            margin: 0 10%;
-            font-family: sans-serif;
+            background-color: #ffffff; /* Fundo branco */
+            margin: 0 10%; /* Margem lateral de 10% */
+            font-family: sans-serif; /* Fonte padrão */
         }
 
+        /* Estilo do título principal */
         h1 {
-            text-align: center;
-            font-family: serif;
-            font-weight: normal;
-            text-transform: uppercase;
-            border-bottom: 1px solid #57b1dc;
-            margin-top: 30px;
+            text-align: center; /* Centralizado */
+            font-family: serif; /* Fonte serifada */
+            font-weight: normal; /* Peso normal da fonte */
+            text-transform: uppercase; /* Texto em maiúsculas */
+            border-bottom: 1px solid #000000; /* Borda inferior preta */
+            margin-top: 30px; /* Margem superior */
         }
 
-        h2 {
-            color: #470000;
-            font-size: 1em;
+        /* Estilo da tabela */
+        table {
+            width: 100%; /* Ocupa toda a largura disponível */
+            border-collapse: collapse; /* Remove espaços entre células */
+        }
+
+        /* Estilo para cabeçalho e células da tabela */
+        th, td {
+            border: 1px solid #000000; /* Bordas finas pretas */
+            padding: 10px; /* Espaçamento interno */
+            text-align: left; /* Alinhamento à esquerda */
+        }
+
+        /* Cor alternada para as linhas (efeito zebra) */
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff; /* Linhas ímpares com fundo branco */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #dbead5; /* Linhas pares com fundo verde claro */
+        }
+
+        /* Estilo para o cabeçalho */
+        th {
+            background-color: #dbead5; /* Fundo verde */
+            color: black; /* Texto preto */
+            text-transform: uppercase; /* Texto em maiúsculas */
+        }
+
+        /* Contêiner da tabela com rolagem */
+        .table-container {
+            max-height: 400px; /* Altura máxima ajustada para 10 linhas */
+            overflow-y: auto; /* Rolagem vertical ativa */
+            border: 1px solid #000000; /* Borda ao redor da tabela */
+            margin-top: 20px; /* Margem superior para separar da tabela */
         }
     </style>
 </head>
 
-<h1>Produção</h1>
+<body>
+    <!-- Título principal da página -->
+    <h1>Produção</h1>
 
-<!--<p>
-    <a asp-action="Create">Create New</a>
-</p>-->
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estimativa)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DRegistro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estimativa)
-            </td>
-            <td>
-                    <!--<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>--> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <!--<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>-->
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Contêiner para a tabela com rolagem -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <!-- Cabeçalhos das colunas, usando o nome das propriedades do modelo -->
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+                    <th>@Html.DisplayNameFor(model => model.DRegistro)</th>
+                    <th>@Html.DisplayNameFor(model => model.Estimativa)</th>
+                    <th></th> <!-- Coluna para ações (ex.: Detalhes, Editar) -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop que percorre cada item do modelo para criar uma linha na tabela -->
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <!-- Exibe os valores de cada propriedade do objeto 'Producao' em uma célula -->
+                        <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
+                        <td>@Html.DisplayFor(modelItem => item.DRegistro)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Estimativa)</td>
+                        <td>
+                            <!-- Link para a ação 'Details' do controlador, passando o Id do item -->
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

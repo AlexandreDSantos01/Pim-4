@@ -45,7 +45,6 @@
             this.tbEstoqueBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bdonlygreenDataSet13 = new onlygreen.bdonlygreenDataSet13();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLimpar2 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnSelecionar = new System.Windows.Forms.Button();
@@ -255,7 +254,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.btnLimpar2);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.txtId);
             this.panel2.Controls.Add(this.btnSelecionar);
@@ -264,20 +262,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(242, 192);
             this.panel2.TabIndex = 5;
-            // 
-            // btnLimpar2
-            // 
-            this.btnLimpar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar2.Location = new System.Drawing.Point(18, 142);
-            this.btnLimpar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLimpar2.Name = "btnLimpar2";
-            this.btnLimpar2.Size = new System.Drawing.Size(209, 31);
-            this.btnLimpar2.TabIndex = 3;
-            this.btnLimpar2.Text = "Limpar campos";
-            this.btnLimpar2.UseVisualStyleBackColor = true;
-            this.btnLimpar2.Click += new System.EventHandler(this.btnLimpar2_Click);
-            this.btnLimpar2.Enter += new System.EventHandler(this.btnLimpar2_Enter);
-            this.btnLimpar2.Leave += new System.EventHandler(this.btnLimpar2_Leave);
             // 
             // label14
             // 
@@ -291,6 +275,7 @@
             // 
             // txtId
             // 
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(92, 34);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -303,28 +288,32 @@
             // 
             // btnSelecionar
             // 
+            this.btnSelecionar.BackColor = System.Drawing.Color.Silver;
+            this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelecionar.Location = new System.Drawing.Point(18, 68);
+            this.btnSelecionar.Location = new System.Drawing.Point(18, 84);
             this.btnSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(209, 32);
             this.btnSelecionar.TabIndex = 1;
             this.btnSelecionar.Text = "Selecionar produto";
-            this.btnSelecionar.UseVisualStyleBackColor = true;
+            this.btnSelecionar.UseVisualStyleBackColor = false;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             this.btnSelecionar.Enter += new System.EventHandler(this.btnSelecionar_Enter);
             this.btnSelecionar.Leave += new System.EventHandler(this.btnSelecionar_Leave);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Silver;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(18, 105);
+            this.btnSalvar.Location = new System.Drawing.Point(18, 131);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(209, 32);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar alteração";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             this.btnSalvar.Enter += new System.EventHandler(this.btnSalvar_Enter);
             this.btnSalvar.Leave += new System.EventHandler(this.btnSalvar_Leave);
@@ -344,6 +333,8 @@
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Location = new System.Drawing.Point(23, 142);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -351,13 +342,15 @@
             this.btnLimpar.Size = new System.Drawing.Size(245, 31);
             this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "Limpar campos";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             this.btnLimpar.Enter += new System.EventHandler(this.btnLimpar_Enter);
             this.btnLimpar.Leave += new System.EventHandler(this.btnLimpar_Leave);
             // 
             // btnSalvar2
             // 
+            this.btnSalvar2.BackColor = System.Drawing.Color.Silver;
+            this.btnSalvar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar2.Location = new System.Drawing.Point(23, 106);
             this.btnSalvar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -365,13 +358,15 @@
             this.btnSalvar2.Size = new System.Drawing.Size(245, 32);
             this.btnSalvar2.TabIndex = 2;
             this.btnSalvar2.Text = "Salvar no estoque";
-            this.btnSalvar2.UseVisualStyleBackColor = true;
+            this.btnSalvar2.UseVisualStyleBackColor = false;
             this.btnSalvar2.Click += new System.EventHandler(this.btnSalvar2_Click);
             this.btnSalvar2.Enter += new System.EventHandler(this.btnSalvar2_Enter);
             this.btnSalvar2.Leave += new System.EventHandler(this.btnSalvar2_Leave);
             // 
             // btnAdicionar
             // 
+            this.btnAdicionar.BackColor = System.Drawing.Color.Silver;
+            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.Location = new System.Drawing.Point(127, 22);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -379,7 +374,7 @@
             this.btnAdicionar.Size = new System.Drawing.Size(141, 78);
             this.btnAdicionar.TabIndex = 1;
             this.btnAdicionar.Text = "Selecionar novo produto";
-            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.UseVisualStyleBackColor = false;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             this.btnAdicionar.Enter += new System.EventHandler(this.btnAdicionar_Enter);
             this.btnAdicionar.Leave += new System.EventHandler(this.btnAdicionar_Leave);
@@ -396,6 +391,7 @@
             // 
             // txtIdproducao
             // 
+            this.txtIdproducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdproducao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdproducao.Location = new System.Drawing.Point(23, 67);
             this.txtIdproducao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -408,6 +404,8 @@
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Silver;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(1355, 27);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -415,13 +413,15 @@
             this.btnVoltar.Size = new System.Drawing.Size(150, 35);
             this.btnVoltar.TabIndex = 7;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
             this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
             // 
             // btnBuscar
             // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Silver;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(805, 71);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -429,7 +429,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(115, 57);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             this.btnBuscar.Enter += new System.EventHandler(this.btnBuscar_Enter);
             this.btnBuscar.Leave += new System.EventHandler(this.btnBuscar_Leave);
@@ -445,6 +445,7 @@
             // 
             // txtPesquisar
             // 
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPesquisar.Location = new System.Drawing.Point(28, 83);
             this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPesquisar.MaxLength = 50;
@@ -491,6 +492,7 @@
             // 
             // txtDregistroProducao
             // 
+            this.txtDregistroProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDregistroProducao.Location = new System.Drawing.Point(301, 67);
             this.txtDregistroProducao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDregistroProducao.Mask = "00/00/0000";
@@ -501,6 +503,7 @@
             // 
             // txtValidade
             // 
+            this.txtValidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValidade.Location = new System.Drawing.Point(33, 290);
             this.txtValidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtValidade.Mask = "00/00/0000";
@@ -522,6 +525,7 @@
             // 
             // txtPreco
             // 
+            this.txtPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPreco.Location = new System.Drawing.Point(35, 216);
             this.txtPreco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPreco.MaxLength = 10;
@@ -543,6 +547,7 @@
             // 
             // txtValornutritivo
             // 
+            this.txtValornutritivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValornutritivo.Location = new System.Drawing.Point(299, 216);
             this.txtValornutritivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtValornutritivo.MaxLength = 10;
@@ -594,6 +599,7 @@
             // 
             // txtQuantidade
             // 
+            this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantidade.Location = new System.Drawing.Point(299, 143);
             this.txtQuantidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuantidade.MaxLength = 10;
@@ -605,6 +611,7 @@
             // 
             // txtEstimativa
             // 
+            this.txtEstimativa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEstimativa.Location = new System.Drawing.Point(28, 67);
             this.txtEstimativa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEstimativa.Mask = "00/00/0000";
@@ -615,6 +622,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Location = new System.Drawing.Point(34, 143);
             this.txtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNome.Name = "txtNome";
@@ -705,7 +713,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn situacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnLimpar2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;

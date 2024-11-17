@@ -31,11 +31,7 @@ namespace onlygreen
            
         }
         ////////////////////////////////IGNORAR
-        private void tbVenda_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
+   
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -70,13 +66,13 @@ namespace onlygreen
         {
             if (string.IsNullOrWhiteSpace(txtPesquisar.Text))
             {
-                MessageBox.Show("Por favor: insira um id ou nome.");
+                MessageBox.Show("Por favor: insira um termo de pesquisa.");
                 txtPesquisar.Focus();
                 return;
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -120,10 +116,11 @@ namespace onlygreen
             if (string.IsNullOrWhiteSpace(txtIdestoque.Text) || !int.TryParse(txtIdestoque.Text, out int estoqueId))
             {
                 MessageBox.Show("Por favor, insira um ID de estoque válido. \nConferir na tabela de estoque os produtos disponíveis.");
+                txtIdestoque.Focus();
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -146,6 +143,7 @@ namespace onlygreen
                         else
                         {
                             MessageBox.Show("Nenhum registro encontrado com esse ID. \nPor favor, verificar a tabela de estoque.");
+                  
                         }
                     }
                 }
@@ -158,12 +156,14 @@ namespace onlygreen
             if (string.IsNullOrWhiteSpace(txtIdestoque.Text) || !int.TryParse(txtIdestoque.Text, out int estoqueId))
             {
                 MessageBox.Show("Por favor, insira um ID de estoque válido.");
+                txtIdestoque.Focus();
                 return true;
             }
 
             if (string.IsNullOrWhiteSpace(txtIdcliente.Text) || !int.TryParse(txtIdcliente.Text, out int clienteId))
             {
                 MessageBox.Show("Por favor, insira um ID de cliente válido.");
+                txtIdcliente.Focus();
                 return true;
             }
 
@@ -188,29 +188,53 @@ namespace onlygreen
         {
             if (!ValidarCampo())
             {
-                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
 
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
 
-                    // Declare as variáveis aqui
+                    
                     int clienteId = int.Parse(txtIdcliente.Text);
                     int estoqueId = int.Parse(txtIdestoque.Text);
                     int quantidadeVenda = int.Parse(txtQuantidade.Text);
 
-                    // Verificar se o cliente existe
+                    
                     using (var cmdCliente = new SqlCommand("SELECT COUNT(*) FROM tb_Cliente WHERE id = @id", conectar))
                     {
                         cmdCliente.Parameters.AddWithValue("@id", clienteId);
                         int clienteCount = (int)cmdCliente.ExecuteScalar();
+                        
 
                         if (clienteCount == 0)
                         {
                             MessageBox.Show("Cliente não encontrado. Por favor, verifique o ID do cliente.");
+                            txtIdcliente.Focus();
                             return;
                         }
                     }
+
+                    // Verificar se o cliente existe e se está ativo
+                    using (var cmdCliente = new SqlCommand("SELECT situacao FROM tb_Cliente WHERE id = @id", conectar))
+                    {
+                        cmdCliente.Parameters.AddWithValue("@id", clienteId);
+
+                        var situacaoCliente = cmdCliente.ExecuteScalar() as string;
+
+                        if (situacaoCliente == null)
+                        {
+                            MessageBox.Show("Cliente não encontrado. Por favor, verifique o ID do cliente.");
+                            txtIdcliente.Focus();
+                            return;
+                        }
+                        else if (situacaoCliente == "Inativo")
+                        {
+                            MessageBox.Show("Cliente está inativo e não pode realizar novas compras.");
+                            txtIdcliente.Focus();
+                            return;
+                        }
+                    }
+
 
                     // Verificar a quantidade disponível no estoque
                     using (var cmdEstoque = new SqlCommand("SELECT quantidade FROM tb_Estoque WHERE id = @id", conectar))
@@ -221,6 +245,7 @@ namespace onlygreen
                         if (estoqueQuantidade < quantidadeVenda)
                         {
                             MessageBox.Show("Quantidade insuficiente em estoque.");
+                            txtQuantidade.Focus();  
                             return;
                         }
 
@@ -277,6 +302,7 @@ namespace onlygreen
                             {
                                 troca.Rollback(); // Reverte a transação em caso de erro
                                 MessageBox.Show("Erro ao registrar nova quantidade na tabela estoque: " + ex.Message);
+                                txtIdestoque.Focus();
                             }
                         }
                     }
@@ -300,7 +326,12 @@ namespace onlygreen
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            Limpar();
+            var resultado = MessageBox.Show("Você tem certeza que deseja limpar todos os campos de texto?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (resultado == DialogResult.OK)
+            {
+                Limpar();
+            }
         }
 
 
@@ -312,10 +343,11 @@ namespace onlygreen
             if (string.IsNullOrWhiteSpace(txtId.Text) || !int.TryParse(txtId.Text, out int estoqueId))
             {
                 MessageBox.Show("Por favor, insira um ID de venda válido.");
+                txtId.Focus();
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -340,7 +372,6 @@ namespace onlygreen
 
                             DateTime dregistro = dt.Rows[0].Field<DateTime>("dregistro");
                             txtRegistro.Text = dregistro.ToString("dd/MM/yyyy");
-                            
                         }
                         else
                         {
@@ -357,6 +388,7 @@ namespace onlygreen
             if (string.IsNullOrWhiteSpace(txtId.Text) || !int.TryParse(txtId.Text, out int vendaId))
             {
                 MessageBox.Show("Por favor, insira um ID de venda válido.");
+                txtId.Focus();
                 return;
             }
 
@@ -366,7 +398,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -382,6 +414,27 @@ namespace onlygreen
                     if (clienteid == 0)
                     {
                         MessageBox.Show("Cliente não encontrado. Por favor, verifique o ID do cliente.");
+                        return;
+                    }
+                }
+
+                // Verificar se o cliente existe e se está ativo
+                using (var cmdCliente = new SqlCommand("SELECT situacao FROM tb_Cliente WHERE id = @id", conectar))
+                {
+                    cmdCliente.Parameters.AddWithValue("@id", clienteId);
+
+                    var situacaoCliente = cmdCliente.ExecuteScalar() as string;
+
+                    if (situacaoCliente == null)
+                    {
+                        MessageBox.Show("Cliente não encontrado. Por favor, verifique o ID do cliente.");
+                        txtIdcliente.Focus();
+                        return;
+                    }
+                    else if (situacaoCliente == "Inativo")
+                    {
+                        MessageBox.Show("Cliente está inativo e não pode realizar novas compras.");
+                        txtIdcliente.Focus();
                         return;
                     }
                 }
@@ -432,7 +485,11 @@ namespace onlygreen
                         }
 
                         troca.Commit();
-                        MessageBox.Show("Venda atualizada com sucesso!");
+                        MessageBox.Show("Venda alterada com sucesso!");
+
+                        var menu = new Venda();
+                        menu.Show(this);
+                        this.Visible = false;
                     }
                     catch (Exception ex)
                     {
@@ -449,10 +506,11 @@ namespace onlygreen
             if (string.IsNullOrWhiteSpace(txtId.Text) || !int.TryParse(txtId.Text, out int vendaId))
             {
                 MessageBox.Show("Por favor, insira um ID de venda válido.");
+                txtId.Focus();
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -500,6 +558,10 @@ namespace onlygreen
 
                         troca.Commit();
                         MessageBox.Show("Venda deletada com sucesso!");
+                       
+                        var menu = new Venda();
+                        menu.Show(this);
+                        this.Visible = false;
                     }
                     catch (Exception ex)
                     {
@@ -527,7 +589,7 @@ namespace onlygreen
 
         private void btnBuscar_Leave(object sender, EventArgs e)
         {
-            btnBuscar.BackColor = Color.White;
+            btnBuscar.BackColor = Color.Silver;
         }
 
         private void txtIdestoque_Enter(object sender, EventArgs e)
@@ -547,7 +609,7 @@ namespace onlygreen
 
         private void btnSelecionarestoque_Leave(object sender, EventArgs e)
         {
-            btnSelecionarestoque.BackColor = Color.White;
+            btnSelecionarestoque.BackColor = Color.Silver;
         }
 
         private void btnAdd_Enter(object sender, EventArgs e)
@@ -557,7 +619,7 @@ namespace onlygreen
 
         private void btnAdd_Leave(object sender, EventArgs e)
         {
-            btnAdd.BackColor = Color.White;
+            btnAdd.BackColor = Color.Silver;
         }
 
         private void btnLimpar_Enter(object sender, EventArgs e)
@@ -567,7 +629,7 @@ namespace onlygreen
 
         private void btnLimpar_Leave(object sender, EventArgs e)
         {
-            btnLimpar.BackColor = Color.White;
+            btnLimpar.BackColor = Color.Silver;
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -587,7 +649,7 @@ namespace onlygreen
 
         private void btnSelecionar_Leave(object sender, EventArgs e)
         {
-            btnSelecionar.BackColor = Color.White;
+            btnSelecionar.BackColor = Color.Silver;
         }
 
         private void btnSalvar_Enter(object sender, EventArgs e)
@@ -597,7 +659,7 @@ namespace onlygreen
 
         private void btnSalvar_Leave(object sender, EventArgs e)
         {
-            btnSalvar.BackColor = Color.White;
+            btnSalvar.BackColor = Color.Silver;
         }
 
         private void btnDel_Enter(object sender, EventArgs e)
@@ -607,7 +669,7 @@ namespace onlygreen
 
         private void btnDel_Leave(object sender, EventArgs e)
         {
-            btnDel.BackColor = Color.White;
+            btnDel.BackColor = Color.Silver;
         }
 
         private void txtIdcliente_Enter(object sender, EventArgs e)
@@ -647,7 +709,7 @@ namespace onlygreen
 
         private void btnVoltar_Leave(object sender, EventArgs e)
         {
-            btnVoltar.BackColor = Color.White;
+            btnVoltar.BackColor = Color.Silver;
         }
     }
 }

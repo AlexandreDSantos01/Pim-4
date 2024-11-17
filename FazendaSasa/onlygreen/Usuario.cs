@@ -24,240 +24,135 @@ namespace onlygreen
             check2.Checked = true;
         }
 
-        // Método para carregar os dados no DataGridView
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
-                using (SqlCommand selecionar = new SqlCommand("SELECT * FROM tb_Usuario", conectar))
+                using (SqlCommand pegardados = new SqlCommand("SELECT * FROM tb_Usuario", conectar))
                 {
-                    DataTable tabela1 = new DataTable();
-                    using (SqlDataAdapter da = new SqlDataAdapter(selecionar))
+                    DataTable ativoinativo = new DataTable();
+
+                    using (SqlDataAdapter resp = new SqlDataAdapter(pegardados))
                     {
-                        da.Fill(tabela1);
+                        resp.Fill(ativoinativo);
                     }
 
-                    // Filtra os dados com base nos checkboxes
-                    DataView filtrar = tabela1.DefaultView;
 
-                    // Criar um filtro
-                    List<string> filtros = new List<string>();
+                    DataView versituacao = ativoinativo.DefaultView;
+
+
+                    List<string> filtro = new List<string>();
 
                     if (check1.Checked)
                     {
-                        filtros.Add("situacao = 'Ativo'");
+                        filtro.Add("situacao = 'Ativo'");
                     }
                     if (check2.Checked)
                     {
-                        filtros.Add("situacao = 'Inativo'");
+                        filtro.Add("situacao = 'Inativo'");
                     }
 
-                    // Aplicar filtro apenas se houver condições
-                    if (filtros.Count > 0)
+
+                    if (filtro.Count > 0)
                     {
-                        filtrar.RowFilter = string.Join(" OR ", filtros);
+                        versituacao.RowFilter = string.Join(" OR ", filtro);
                     }
                     else
                     {
-                        filtrar.RowFilter = ""; // Se nenhum checkbox estiver marcado, mostrar todos os itens
+                        versituacao.RowFilter = "";
                     }
 
-                    tbUsuario.DataSource = filtrar;
+
+                    tbUsuario.DataSource = versituacao;
                 }
             }
         }
 
-
-        // Método add usuário
-        public static void AddUser(classUsuario u)
-        {  
-            try
-            {
-                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
-                using (var conectar = new SqlConnection(bdonlygreen))
-                {
-                    conectar.Open();
-                    var command = new SqlCommand("INSERT INTO tb_Usuario (nome, cpf, telefone, email, rua, nrua, bairro, cidade, estado, cep, ulogar, senha, tipousuario, situacao) " +
-                                                 "VALUES (@nome, @cpf, @telefone, @email, @rua, @nrua, @bairro, @cidade, @estado, @cep, @ulogar, @senha, @tipousuario, @situacao)", conectar);
-
-                    command.Parameters.AddWithValue("@nome", u.nome);
-                    command.Parameters.AddWithValue("@cpf", u.cpf);
-                    command.Parameters.AddWithValue("@telefone", u.telefone);
-                    command.Parameters.AddWithValue("@email", u.email);
-                    command.Parameters.AddWithValue("@rua", u.rua);
-                    command.Parameters.AddWithValue("@nrua", u.nrua);
-                    command.Parameters.AddWithValue("@bairro", u.bairro);
-                    command.Parameters.AddWithValue("@cidade", u.cidade);
-                    command.Parameters.AddWithValue("@estado", u.estado);
-                    command.Parameters.AddWithValue("@cep", u.cep);
-                    command.Parameters.AddWithValue("@ulogar", u.ulogar);
-                    command.Parameters.AddWithValue("@senha", u.senha);
-                    command.Parameters.AddWithValue("@tipousuario", u.tipousuario);
-                    command.Parameters.AddWithValue("@situacao", u.situacao);
-
-                    command.ExecuteNonQuery();
-                
-                    MessageBox.Show("Usuário adicionado com sucesso.");
-                }
-            }
-            catch (SqlException ex) when (ex.Number == 2627)
-            {
-                MessageBox.Show("Usuário, cpf ou nome já existe no banco de dados. Altere e tente novamente.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
-            }
-        }
-        // Método add usuário fim
 
         //Método att usuário
-        public static void AttUser(classUsuario u)
-        {
-            try
-            {
-                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
-                using (SqlConnection conectar = new SqlConnection(bdonlygreen))
-                {
-                    conectar.Open();
 
-                    string sql = "UPDATE tb_Usuario SET " +
-                                 "nome = @nome, " +
-                                 "telefone = @telefone, " +
-                                 "email = @email, " +
-                                 "rua = @rua, " +
-                                 "nrua = @nrua, " +
-                                 "bairro = @bairro, " +
-                                 "cidade = @cidade, " +
-                                 "estado = @estado, " +
-                                 "cep = @cep, " +
-                                 "tipousuario = @tipousuario, " +
-                                 "situacao = @situacao, " +
-                                 "senha = @senha " +
-                                 "WHERE ulogar = @ulogar;";
-
-
-                    using (SqlCommand cmd = new SqlCommand(sql, conectar))
-                    {
-                        cmd.Parameters.AddWithValue("@nome", u.nome);
-                        cmd.Parameters.AddWithValue("@cpf", u.cpf);
-                        cmd.Parameters.AddWithValue("@telefone", u.telefone);
-                        cmd.Parameters.AddWithValue("@email", u.email);
-                        cmd.Parameters.AddWithValue("@rua", u.rua);
-                        cmd.Parameters.AddWithValue("@nrua", u.nrua);
-                        cmd.Parameters.AddWithValue("@bairro", u.bairro);
-                        cmd.Parameters.AddWithValue("@cidade", u.cidade);
-                        cmd.Parameters.AddWithValue("@estado", u.estado);
-                        cmd.Parameters.AddWithValue("@cep", u.cep);
-                        cmd.Parameters.AddWithValue("@ulogar", u.ulogar);
-                        cmd.Parameters.AddWithValue("@senha", u.senha);
-                        cmd.Parameters.AddWithValue("@tipousuario", u.tipousuario);
-                        cmd.Parameters.AddWithValue("@situacao", u.situacao);
-                       
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Usuário atualizado com sucesso."); 
-
-                    }
-                }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Erro ao atualizar usuário: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
-            }
-        }
         //Método att usuário
 
         //Método validar campos usuário
-        private bool ValidarCampoUsuario()
+        private bool ValidarCampo()
         {
-            //Campo nome
-            if (txtNome.Text == "")
+
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
                 MessageBox.Show("O campo nome é obrigatório.");
                 txtNome.Focus();
                 return true;
             }
 
-            //Campo cpf
-            if (txtCPF.Text == "")
+
+            if (string.IsNullOrWhiteSpace(txtCPF.Text))
             {
-                MessageBox.Show("O campo cpf é obrigatório.");
+                MessageBox.Show("O campo CPF é obrigatório.");
                 txtCPF.Focus();
                 return true;
             }
 
-            //Campo telefone
-            if (txtTelefone.Text == "")
+
+            if (string.IsNullOrWhiteSpace(txtTelefone.Text))
             {
                 MessageBox.Show("O campo telefone é obrigatório.");
                 txtTelefone.Focus();
                 return true;
             }
 
-            //Campo email
-            if (txtEmail.Text == "")
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 MessageBox.Show("O campo email é obrigatório.");
                 txtEmail.Focus();
                 return true;
             }
 
-            //Campo rua
-            if (txtRua.Text == "")
+            if (string.IsNullOrWhiteSpace(txtRua.Text))
             {
                 MessageBox.Show("O campo rua é obrigatório.");
                 txtRua.Focus();
                 return true;
             }
 
-            //Campo nrua
-            if (txtNrua.Text == "")
+            if (string.IsNullOrWhiteSpace(txtNrua.Text))
             {
                 MessageBox.Show("O campo número da rua é obrigatório.");
                 txtNrua.Focus();
                 return true;
             }
 
-            //Campo bairro
-            if (txtBairro.Text == "")
+            if (string.IsNullOrWhiteSpace(txtBairro.Text))
             {
                 MessageBox.Show("O campo bairro é obrigatório.");
                 txtBairro.Focus();
                 return true;
             }
 
-            //Campo cidade
-            if (txtCidade.Text == "")
+            if (string.IsNullOrWhiteSpace(txtCidade.Text))
             {
                 MessageBox.Show("O campo cidade é obrigatório.");
                 txtCidade.Focus();
                 return true;
             }
 
-            //Campo estado
-            if (txtEstado.Text == "")
+            if (string.IsNullOrWhiteSpace(txtEstado.Text))
             {
                 MessageBox.Show("O campo estado é obrigatório.");
                 txtEstado.Focus();
                 return true;
             }
 
-            //Campo cep
-            if (txtCEP.Text == "")
+            if (string.IsNullOrWhiteSpace(txtCEP.Text))
             {
                 MessageBox.Show("O campo cep é obrigatório.");
                 txtCEP.Focus();
                 return true;
             }
-
+    
             //Campo usuário
-            if (txtLogin.Text == "")
+            if (string.IsNullOrWhiteSpace(txtLogin.Text))
             {
                 MessageBox.Show("O campo usuário é obrigatório.");
                 txtLogin.Focus();
@@ -265,7 +160,7 @@ namespace onlygreen
             }
 
             //Campo senha
-            if (txtSenha.Text == "")
+            if (string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 MessageBox.Show("O campo senha é obrigatório.");
                 txtSenha.Focus();
@@ -318,7 +213,7 @@ namespace onlygreen
         //Adicionar usuário
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            if (ValidarCampoUsuario() == false)
+            if (ValidarCampo() == false)
             {
                 if (checkAtivo.Checked == false)
                 {
@@ -331,11 +226,9 @@ namespace onlygreen
                 {
                     string senha = txtSenha.Text;
                     string senhaHash = BCrypt.Net.BCrypt.EnhancedHashPassword(senha, 13);
-                    
-                    Console.WriteLine($"Hash gerado: {senhaHash}");
+  
 
                     classUsuario classusuario = new classUsuario();
-
 
                     classusuario.nome = txtNome.Text;
                     classusuario.cpf = txtCPF.Text;
@@ -376,20 +269,11 @@ namespace onlygreen
                         classusuario.tipousuario = "Todos";
                     }
 
-                    //Situação
-                    if (checkAtivo.Checked)
-                    {
-                        classusuario.situacao = "Ativo";
-                    }
-                    else
-                    {
-                        classusuario.situacao = "Inativo";
-                    }
+                    string situacao = checkAtivo.Checked ? "Ativo" : "Inativo";
+                    classusuario.situacao = situacao;
 
-                    AddUser(classusuario);
-
-                    Console.WriteLine($"Senha fornecida: {senha}");
-                    Console.WriteLine($"Hash armazenado: {senhaHash}");
+                    classSupervisor supervisor = new classSupervisor();
+                    supervisor.INSERTusuario(classusuario);
 
                     var menu = new Usuario();
                     menu.Show(this);
@@ -413,45 +297,19 @@ namespace onlygreen
 
         }
 
-        private DataTable GetUserDataById(int userId)
+        private void COUNTUsuario()
         {
-            DataTable dt = new DataTable();
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
-
-            using (var conectar = new SqlConnection(bdonlygreen))
-            {
-                conectar.Open();
-                using (var command = new SqlCommand("SELECT * FROM tb_Usuario WHERE id = @id", conectar))
-                {
-                    command.Parameters.AddWithValue("@id", userId);
-                    using (var adapter = new SqlDataAdapter(command))
-                    {
-                        adapter.Fill(dt); // Preenche o DataTable
-                    }
-                }
-            }
-            return dt;
-        }
-
-        private void btnAlterar_Click(object sender, EventArgs e)
-        {
-            // Pegar e conferir ID
-            if (string.IsNullOrWhiteSpace(txtId.Text))
-            {
-                MessageBox.Show("Por favor, insira um ID válido para selecionar.");
-                return;
-            }
-
-            // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
-                using (var command = new SqlCommand("SELECT COUNT(*) FROM tb_Usuario WHERE id = @id", conectar))
+                using (var procurarID = new SqlCommand("SELECT COUNT(*) FROM tb_Usuario WHERE id = @id", conectar))
                 {
-                    command.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text)); // Converte para int
-                    idExists = (int)command.ExecuteScalar() > 0;
+                    procurarID.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
+                    idExists = (int)procurarID.ExecuteScalar() > 0;
                 }
             }
 
@@ -460,28 +318,36 @@ namespace onlygreen
                 MessageBox.Show("O ID informado não existe na tabela.");
                 return;
             }
+        }
 
-            // Carrega os dados do usuário usando o novo método
-            DataTable dt = GetUserDataById(Convert.ToInt32(txtId.Text));
-
-            // Verifica se o DataTable não está vazio
-            if (dt.Rows.Count > 0)
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
             {
-                // Preenche os campos do formulário com os dados do usuário
-                txtNome.Text = dt.Rows[0].Field<string>("nome");
-                txtCPF.Text = dt.Rows[0].Field<string>("cpf");
-                txtTelefone.Text = dt.Rows[0].Field<string>("telefone");
-                txtEmail.Text = dt.Rows[0].Field<string>("email");
-                txtRua.Text = dt.Rows[0].Field<string>("rua");
-                txtNrua.Text = dt.Rows[0].Field<string>("nrua");
-                txtBairro.Text = dt.Rows[0].Field<string>("bairro");
-                txtCidade.Text = dt.Rows[0].Field<string>("cidade");
-                txtEstado.Text = dt.Rows[0].Field<string>("estado");
-                txtCEP.Text = dt.Rows[0].Field<string>("cep");
-                txtLogin.Text = dt.Rows[0].Field<string>("ulogar");
-                txtSenha.Text = dt.Rows[0].Field<string>("senha");
-                // Preenche a situação do usuário
-                if (dt.Rows[0].Field<string>("situacao") == "Ativo")
+                MessageBox.Show("Por favor, insira um ID válido para selecionar.");
+                txtId.Focus();
+            }
+
+            COUNTUsuario();
+
+            classSupervisor supervisor = new classSupervisor();
+            DataTable preencher = supervisor.SELECT(Convert.ToInt32(txtId.Text));
+
+            if (preencher.Rows.Count > 0)
+            {
+                txtNome.Text = preencher.Rows[0].Field<string>("nome");
+                txtCPF.Text = preencher.Rows[0].Field<string>("cpf");
+                txtTelefone.Text = preencher.Rows[0].Field<string>("telefone");
+                txtEmail.Text = preencher.Rows[0].Field<string>("email");
+                txtRua.Text = preencher.Rows[0].Field<string>("rua");
+                txtNrua.Text = preencher.Rows[0].Field<string>("nrua");
+                txtBairro.Text = preencher.Rows[0].Field<string>("bairro");
+                txtCidade.Text = preencher.Rows[0].Field<string>("cidade");
+                txtEstado.Text = preencher.Rows[0].Field<string>("estado");
+                txtCEP.Text = preencher.Rows[0].Field<string>("cep");
+                txtLogin.Text = preencher.Rows[0].Field<string>("ulogar");
+ 
+                if (preencher.Rows[0].Field<string>("situacao") == "Ativo")
                 {
                     checkAtivo.Checked = true;
                 }
@@ -490,8 +356,8 @@ namespace onlygreen
                     checkAtivo.Checked = false;
                 }
 
-                // Preenche o tipo de usuário
-                string tipoUsuario = dt.Rows[0].Field<string>("tipousuario");
+                string tipoUsuario = preencher.Rows[0].Field<string>("tipousuario");
+
                 switch (tipoUsuario)
                 {
                     case "Financeiro":
@@ -513,7 +379,6 @@ namespace onlygreen
                         rbTodos.Checked = true;
                         break;
                     default:
-                        // Se não houver correspondência, desmarque todos ou faça outra ação
                         rbFinanceiro.Checked = false;
                         rbProdutor.Checked = false;
                         rbSuprimento.Checked = false;
@@ -556,12 +421,24 @@ namespace onlygreen
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            Limpar();
+            var resultado = MessageBox.Show("Você tem certeza que deseja limpar todos os campos de texto?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (resultado == DialogResult.OK)
+            {
+                Limpar();
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (ValidarCampoUsuario() == false)
+
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Por favor, insira um ID válido para alterar.");
+                txtId.Focus();
+            }
+
+            if (ValidarCampo() == false)
             {
                 var resultado = MessageBox.Show("Você tem certeza que deseja alterar esse usuário?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
@@ -624,7 +501,8 @@ namespace onlygreen
                         classusuario.situacao = "Inativo";
                     }
 
-                    AttUser(classusuario);
+                    classSupervisor supervisor = new classSupervisor();
+                    supervisor.UPDATEusuario(classusuario);
 
                     var menu = new Usuario();
                     menu.Show(this);
@@ -645,12 +523,14 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
                 conectar.Open();
-                using (SqlCommand cmd = new SqlCommand(
+                using (SqlCommand buscar = new SqlCommand(
                     "SELECT * FROM tb_Usuario WHERE nome LIKE @pesquisar OR " +
                     "nome LIKE @pesquisar OR " +
                     "cpf LIKE @pesquisar OR " +
@@ -658,17 +538,17 @@ namespace onlygreen
                     "situacao LIKE @pesquisar OR " +
                      "id LIKE @pesquisar", conectar))
                 {
-                    cmd.Parameters.AddWithValue("@pesquisar", "%" + pesquisar + "%");
-                    DataTable dt = new DataTable();
+                    buscar.Parameters.AddWithValue("@pesquisar", "%" + pesquisar + "%");
 
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    DataTable preencher = new DataTable();
+
+                    using (SqlDataAdapter resp = new SqlDataAdapter(buscar))
                     {
-                        da.Fill(dt);
-                        tbUsuario.DataSource = dt;
+                        resp.Fill(preencher);
+                        tbUsuario.DataSource = preencher;
                     }
                 }
             }
-
         }
 
 
@@ -719,7 +599,7 @@ namespace onlygreen
 
         private void btnBuscar_Leave(object sender, EventArgs e)
         {
-            btnBuscar.BackColor = Color.White;
+            btnBuscar.BackColor = Color.Silver;
         }
 
         private void btnAdicionar_Enter(object sender, EventArgs e)
@@ -729,7 +609,7 @@ namespace onlygreen
 
         private void btnAdicionar_Leave(object sender, EventArgs e)
         {
-            btnAdicionar.BackColor = Color.White;
+            btnAdicionar.BackColor = Color.Silver;
         }
 
         private void btnLimpar_Enter(object sender, EventArgs e)
@@ -739,7 +619,7 @@ namespace onlygreen
 
         private void btnLimpar_Leave(object sender, EventArgs e)
         {
-            btnLimpar.BackColor = Color.White;
+            btnLimpar.BackColor = Color.Silver;
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -759,7 +639,7 @@ namespace onlygreen
 
         private void btnSelecionar_Leave(object sender, EventArgs e)
         {
-            btnSelecionar.BackColor = Color.White;
+            btnSelecionar.BackColor = Color.Silver;
         }
 
         private void btnSalvar_Enter(object sender, EventArgs e)
@@ -769,7 +649,7 @@ namespace onlygreen
 
         private void btnSalvar_Leave(object sender, EventArgs e)
         {
-            btnSalvar.BackColor = Color.White;
+            btnSalvar.BackColor = Color.Silver;
         }
 
 
@@ -900,7 +780,7 @@ namespace onlygreen
 
         private void btnVoltar_Leave(object sender, EventArgs e)
         {
-            btnVoltar.BackColor = Color.White;
+            btnVoltar.BackColor = Color.Silver;
         }
     }
 }

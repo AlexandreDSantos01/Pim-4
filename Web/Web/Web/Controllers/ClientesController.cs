@@ -2,11 +2,13 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization; // Importar para usar o [Authorize]
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
+    [Authorize] // Protege todo o controlador
     [Route("api/[controller]")]
     [ApiController]
     public class ClientesController : Controller

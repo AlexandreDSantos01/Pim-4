@@ -283,6 +283,7 @@
             // 
             // txtRegistro
             // 
+            this.txtRegistro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRegistro.Location = new System.Drawing.Point(277, 230);
             this.txtRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRegistro.Mask = "00/00/0000";
@@ -294,6 +295,7 @@
             // 
             // txtValor
             // 
+            this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtValor.Location = new System.Drawing.Point(49, 230);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(139, 30);
@@ -304,6 +306,7 @@
             // 
             // txtQuantidade
             // 
+            this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantidade.Location = new System.Drawing.Point(48, 159);
             this.txtQuantidade.MaxLength = 10;
             this.txtQuantidade.Name = "txtQuantidade";
@@ -314,6 +317,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNome.Location = new System.Drawing.Point(48, 89);
             this.txtNome.MaxLength = 30;
             this.txtNome.Name = "txtNome";
@@ -323,6 +327,7 @@
             // 
             // txtIdcliente
             // 
+            this.txtIdcliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdcliente.Location = new System.Drawing.Point(279, 89);
             this.txtIdcliente.MaxLength = 10;
             this.txtIdcliente.Name = "txtIdcliente";
@@ -333,6 +338,8 @@
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Silver;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(1391, 28);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -340,7 +347,7 @@
             this.btnVoltar.Size = new System.Drawing.Size(115, 36);
             this.btnVoltar.TabIndex = 5;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             this.btnVoltar.Enter += new System.EventHandler(this.btnVoltar_Enter);
             this.btnVoltar.Leave += new System.EventHandler(this.btnVoltar_Leave);
@@ -348,7 +355,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1182, 132);
+            this.label11.Location = new System.Drawing.Point(1166, 132);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(313, 25);
             this.label11.TabIndex = 39;
@@ -357,7 +364,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(971, 132);
+            this.label10.Location = new System.Drawing.Point(959, 132);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(168, 25);
             this.label10.TabIndex = 38;
@@ -371,13 +378,15 @@
             this.panel2.Controls.Add(this.txtId);
             this.panel2.Controls.Add(this.btnSelecionar);
             this.panel2.Controls.Add(this.btnSalvar);
-            this.panel2.Location = new System.Drawing.Point(1217, 160);
+            this.panel2.Location = new System.Drawing.Point(1205, 160);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(242, 192);
             this.panel2.TabIndex = 3;
             // 
             // btnDel
             // 
+            this.btnDel.BackColor = System.Drawing.Color.Silver;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDel.Location = new System.Drawing.Point(18, 142);
             this.btnDel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -385,7 +394,7 @@
             this.btnDel.Size = new System.Drawing.Size(209, 31);
             this.btnDel.TabIndex = 3;
             this.btnDel.Text = "Deletar";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             this.btnDel.Enter += new System.EventHandler(this.btnDel_Enter);
             this.btnDel.Leave += new System.EventHandler(this.btnDel_Leave);
@@ -402,6 +411,7 @@
             // 
             // txtId
             // 
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(92, 34);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -414,6 +424,8 @@
             // 
             // btnSelecionar
             // 
+            this.btnSelecionar.BackColor = System.Drawing.Color.Silver;
+            this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelecionar.Location = new System.Drawing.Point(18, 68);
             this.btnSelecionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -421,13 +433,15 @@
             this.btnSelecionar.Size = new System.Drawing.Size(209, 32);
             this.btnSelecionar.TabIndex = 1;
             this.btnSelecionar.Text = "Selecionar venda";
-            this.btnSelecionar.UseVisualStyleBackColor = true;
+            this.btnSelecionar.UseVisualStyleBackColor = false;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             this.btnSelecionar.Enter += new System.EventHandler(this.btnSelecionar_Enter);
             this.btnSelecionar.Leave += new System.EventHandler(this.btnSelecionar_Leave);
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Silver;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(18, 105);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -435,7 +449,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(209, 32);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             this.btnSalvar.Enter += new System.EventHandler(this.btnSalvar_Enter);
             this.btnSalvar.Leave += new System.EventHandler(this.btnSalvar_Leave);
@@ -448,13 +462,15 @@
             this.panel1.Controls.Add(this.btnSelecionarestoque);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtIdestoque);
-            this.panel1.Location = new System.Drawing.Point(916, 160);
+            this.panel1.Location = new System.Drawing.Point(904, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 192);
             this.panel1.TabIndex = 2;
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Silver;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Location = new System.Drawing.Point(23, 142);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -462,13 +478,15 @@
             this.btnLimpar.Size = new System.Drawing.Size(245, 31);
             this.btnLimpar.TabIndex = 3;
             this.btnLimpar.Text = "Limpar campos";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             this.btnLimpar.Enter += new System.EventHandler(this.btnLimpar_Enter);
             this.btnLimpar.Leave += new System.EventHandler(this.btnLimpar_Leave);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.Silver;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(23, 106);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -476,13 +494,15 @@
             this.btnAdd.Size = new System.Drawing.Size(245, 32);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Adicionar";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             this.btnAdd.Enter += new System.EventHandler(this.btnAdd_Enter);
             this.btnAdd.Leave += new System.EventHandler(this.btnAdd_Leave);
             // 
             // btnSelecionarestoque
             // 
+            this.btnSelecionarestoque.BackColor = System.Drawing.Color.Silver;
+            this.btnSelecionarestoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelecionarestoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelecionarestoque.Location = new System.Drawing.Point(127, 22);
             this.btnSelecionarestoque.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -490,7 +510,7 @@
             this.btnSelecionarestoque.Size = new System.Drawing.Size(141, 78);
             this.btnSelecionarestoque.TabIndex = 1;
             this.btnSelecionarestoque.Text = "Selecionar produto ";
-            this.btnSelecionarestoque.UseVisualStyleBackColor = true;
+            this.btnSelecionarestoque.UseVisualStyleBackColor = false;
             this.btnSelecionarestoque.Click += new System.EventHandler(this.btnSelecionarestoque_Click);
             this.btnSelecionarestoque.Enter += new System.EventHandler(this.btnSelecionarestoque_Enter);
             this.btnSelecionarestoque.Leave += new System.EventHandler(this.btnSelecionarestoque_Leave);
@@ -507,6 +527,7 @@
             // 
             // txtIdestoque
             // 
+            this.txtIdestoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIdestoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdestoque.Location = new System.Drawing.Point(23, 67);
             this.txtIdestoque.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -519,6 +540,8 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Silver;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(800, 65);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -526,7 +549,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(115, 57);
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             this.btnBuscar.Enter += new System.EventHandler(this.btnBuscar_Enter);
             this.btnBuscar.Leave += new System.EventHandler(this.btnBuscar_Leave);
@@ -542,6 +565,7 @@
             // 
             // txtPesquisar
             // 
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPesquisar.Location = new System.Drawing.Point(23, 77);
             this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPesquisar.MaxLength = 50;

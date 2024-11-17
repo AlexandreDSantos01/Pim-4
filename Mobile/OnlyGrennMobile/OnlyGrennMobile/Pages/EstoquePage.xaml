@@ -1,49 +1,64 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="OnlyGrennMobile.Pages.EstoquePage"
              Title="Estoque">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
-            <Label Text="Lista de Estoque" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="Lista de Estoque" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
 
-            <CollectionView x:Name="EstoqueCollectionView">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
-                            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, Auto">
-                                <!-- Linha 1: Nome e Quantidade -->
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" />
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Quantidade}" FontSize="14" HorizontalTextAlignment="End" />
+                <CollectionView x:Name="EstoqueCollectionView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
+                                <toolkit:Expander>
+                                    <toolkit:Expander.Header>
+                                        <!-- Exibe apenas o Nome e a Quantidade quando o item está minimizado -->
+                                        <StackLayout Orientation="Horizontal" Spacing="5">
+                                            <Label Text="Produto:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" />
+                                            <Label Text=" - Quantidade:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Quantidade}" FontSize="14" HorizontalTextAlignment="End" />
+                                        </StackLayout>
+                                    </toolkit:Expander.Header>
 
-                                <!-- Linha 2: Data de Colheita -->
-                                <Label Grid.Row="1" Grid.Column="0" Text="Data de Colheita:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DColheita}" FontSize="14" HorizontalTextAlignment="End" />
+                                    <toolkit:Expander.Content>
+                                        <!-- Conteúdo que será exibido ao expandir o item -->
+                                        <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, Auto">
 
-                                <!-- Linha 3: Data de Registro -->
-                                <Label Grid.Row="2" Grid.Column="0" Text="Data de Registro:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding DRegistroProducao}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 1: Data de Colheita -->
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Data de Colheita:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding DColheita}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 4: Estimativa de Produção -->
-                                <Label Grid.Row="3" Grid.Column="0" Text="Estimativa Produção:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding EstimativaProducao}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 2: Data de Registro -->
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Data de Registro:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding DRegistroProducao}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 5: Validade -->
-                                <Label Grid.Row="4" Grid.Column="0" Text="Validade:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Validade}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 3: Estimativa de Produção -->
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Estimativa Produção:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="{Binding EstimativaProducao}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 6: Preço -->
-                                <Label Grid.Row="5" Grid.Column="0" Text="Preço:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="5" Grid.Column="1" Text="{Binding Preco, StringFormat='{}{0:C}'}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 4: Validade -->
+                                            <Label Grid.Row="3" Grid.Column="0" Text="Validade:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Validade}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 7: Situação -->
-                                <Label Grid.Row="6" Grid.Column="0" Text="Situação:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="6" Grid.Column="1" Text="{Binding Situacao}" FontSize="14" FontAttributes="Italic" TextColor="DarkRed" HorizontalTextAlignment="End" />
-                            </Grid>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                                            <!-- Linha 5: Preço -->
+                                            <Label Grid.Row="4" Grid.Column="0" Text="Preço:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="4" Grid.Column="1" Text="{Binding Preco, StringFormat='{}{0:C}'}" FontSize="14" HorizontalTextAlignment="End" />
+
+                                            <!-- Linha 6: Situação -->
+                                            <Label Grid.Row="5" Grid.Column="0" Text="Situação:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="5" Grid.Column="1" Text="{Binding Situacao}" FontSize="14" FontAttributes="Italic" TextColor="DarkRed" HorizontalTextAlignment="End" />
+                                        </Grid>
+                                    </toolkit:Expander.Content>
+                                </toolkit:Expander>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

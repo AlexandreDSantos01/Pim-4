@@ -59,7 +59,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -92,7 +92,12 @@ namespace onlygreen
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            Limpar();
+            var resultado = MessageBox.Show("Você tem certeza que deseja limpar todos os campos de texto?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (resultado == DialogResult.OK)
+            {
+                Limpar();
+            }
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -102,10 +107,11 @@ namespace onlygreen
                 !DateTime.TryParse(txtAte.Text, out DateTime dataFim))
             {
                 MessageBox.Show("Por favor, insira datas válidas.");
+                txtDe.Focus();
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
 
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
@@ -177,7 +183,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -237,7 +243,7 @@ namespace onlygreen
                 return; // O usuário cancelou a operação
             }
 
-            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -283,7 +289,7 @@ namespace onlygreen
 
         private void btnBuscar_Leave(object sender, EventArgs e)
         {
-            btnBuscar.BackColor = Color.White;
+            btnBuscar.BackColor = Color.Silver;
         }
 
         private void btnAdicionar_Enter(object sender, EventArgs e)
@@ -293,7 +299,7 @@ namespace onlygreen
 
         private void btnAdicionar_Leave(object sender, EventArgs e)
         {
-            btnAdicionar.BackColor = Color.White;
+            btnAdicionar.BackColor = Color.Silver;
         }
 
         private void btnLimpar_Enter(object sender, EventArgs e)
@@ -303,7 +309,7 @@ namespace onlygreen
 
         private void btnLimpar_Leave(object sender, EventArgs e)
         {
-            btnLimpar.BackColor = Color.White;
+            btnLimpar.BackColor = Color.Silver;
         }
 
         private void txtId_Enter(object sender, EventArgs e)
@@ -323,7 +329,7 @@ namespace onlygreen
 
         private void btnSelecionar_Leave(object sender, EventArgs e)
         {
-            btnSelecionar.BackColor = Color.White;
+            btnSelecionar.BackColor = Color.Silver;
         }
 
         private void btnDel_Enter(object sender, EventArgs e)
@@ -333,7 +339,7 @@ namespace onlygreen
 
         private void btnDel_Leave(object sender, EventArgs e)
         {
-            btnDel.BackColor = Color.White;
+            btnDel.BackColor = Color.Silver;
         }
 
         private void txtDe_Enter(object sender, EventArgs e)
@@ -363,7 +369,7 @@ namespace onlygreen
 
         private void btnVoltar_Leave(object sender, EventArgs e)
         {
-            btnVoltar.BackColor = Color.White;
+            btnVoltar.BackColor = Color.Silver;
         }
     }
 }

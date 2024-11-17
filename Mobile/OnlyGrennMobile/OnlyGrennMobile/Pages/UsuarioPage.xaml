@@ -1,90 +1,99 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="OnlyGrennMobile.Pages.UsuarioPage"
              Title="Usuários">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
-            <Label Text="Lista de Usuários" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="Lista de Usuários" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
 
-            <!-- CollectionView para exibir usuários -->
-            <CollectionView x:Name="UserCollectionView" SelectionMode="Single" Margin="0,10,0,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
+                <!-- CollectionView para exibir usuários -->
+                <CollectionView x:Name="UserCollectionView" SelectionMode="Single" Margin="0,10,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
+                                <toolkit:Expander>
+                                    <toolkit:Expander.Header>
+                                        <StackLayout Orientation="Horizontal">
+                                            <!-- Exibe apenas ID e Nome quando o item está minimizado -->
+                                            <Label Text="ID:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Id}" FontSize="14" FontAttributes="Bold" HorizontalOptions="End" />
 
-                                <!-- Linha 1: ID -->
-                                <Label Grid.Row="0" Text="ID:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="0" Text="{Binding Id}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <Label Text=" - Nome:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" HorizontalOptions="End" />
+                                        </StackLayout>
+                                    </toolkit:Expander.Header>
 
-                                <!-- Linha 2: Nome -->
-                                <Label Grid.Row="1" Text="Nome:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="1" Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" Grid.Column="1" />
+                                    <toolkit:Expander.Content>
+                                        <!-- Conteúdo que será exibido ao expandir o item -->
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
 
-                                <!-- Linha 3: CPF -->
-                                <Label Grid.Row="2" Text="CPF:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="2" Text="{Binding Cpf}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 1: CPF -->
+                                            <Label Grid.Row="0" Text="CPF:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="0" Text="{Binding Cpf}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 4: Email -->
-                                <Label Grid.Row="3" Text="Email:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="3" Text="{Binding Email}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 2: Email -->
+                                            <Label Grid.Row="1" Text="Email:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="1" Text="{Binding Email}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 5: Telefone -->
-                                <Label Grid.Row="4" Text="Telefone:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="4" Text="{Binding Telefone}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 3: Telefone -->
+                                            <Label Grid.Row="2" Text="Telefone:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="2" Text="{Binding Telefone}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 6: Rua -->
-                                <Label Grid.Row="5" Text="Rua:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="5" Text="{Binding Rua}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 4: Rua -->
+                                            <Label Grid.Row="3" Text="Rua:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="3" Text="{Binding Rua}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 7: Número da Rua -->
-                                <Label Grid.Row="6" Text="Número da Rua:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="6" Text="{Binding Nrua}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 5: Número da Rua -->
+                                            <Label Grid.Row="4" Text="Número da Rua:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="4" Text="{Binding Nrua}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 8: Bairro -->
-                                <Label Grid.Row="7" Text="Bairro:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="7" Text="{Binding Bairro}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 6: Bairro -->
+                                            <Label Grid.Row="5" Text="Bairro:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="5" Text="{Binding Bairro}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 9: Cidade -->
-                                <Label Grid.Row="8" Text="Cidade:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="8" Text="{Binding Cidade}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 7: Cidade -->
+                                            <Label Grid.Row="6" Text="Cidade:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="6" Text="{Binding Cidade}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 10: Estado -->
-                                <Label Grid.Row="9" Text="Estado:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="9" Text="{Binding Estado}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 8: Estado -->
+                                            <Label Grid.Row="7" Text="Estado:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="7" Text="{Binding Estado}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 11: CEP -->
-                                <Label Grid.Row="10" Text="CEP:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="10" Text="{Binding Cep}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 9: CEP -->
+                                            <Label Grid.Row="8" Text="CEP:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="8" Text="{Binding Cep}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 12: Tipo de Usuário -->
-                                <Label Grid.Row="11" Text="Tipo de Usuário:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="11" Text="{Binding TipoUsuario}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                            <!-- Linha 10: Tipo de Usuário -->
+                                            <Label Grid.Row="9" Text="Tipo de Usuário:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="9" Text="{Binding TipoUsuario}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
 
-                                <!-- Linha 13: Situação -->
-                                <Label Grid.Row="12" Text="Situação:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="12" Text="{Binding Situacao}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
-                            </Grid>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                                            <!-- Linha 11: Situação -->
+                                            <Label Grid.Row="10" Text="Situação:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="10" Text="{Binding Situacao}" FontSize="14" HorizontalTextAlignment="End" Grid.Column="1" />
+                                        </Grid>
+                                    </toolkit:Expander.Content>
+                                </toolkit:Expander>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

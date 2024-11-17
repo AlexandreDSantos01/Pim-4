@@ -4,6 +4,8 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "OnlyGrennMobile.dll" comes first in this list. */
 		"OnlyGrennMobile.dll",
 		"BCrypt.Net-Next.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"GoogleGson.dll",
 		"Microsoft.AspNetCore.Cors.dll",
 		"Microsoft.AspNetCore.Http.Abstractions.dll",

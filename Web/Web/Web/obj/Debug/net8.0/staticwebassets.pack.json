@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\images\\Fazenda.jpg",
+      "PackagePath": "staticwebassets\\images\\Fazenda.jpg"
+    },
+    {
       "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

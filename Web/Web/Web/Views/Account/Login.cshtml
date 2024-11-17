@@ -10,51 +10,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
     <style>
+        /* Estilo do corpo da página */
         body {
             background-color: #FFFFFF;
-            margin: 0 10%;
+            margin: 0 10%; /* Remover margens padrões */
             font-family: sans-serif;
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            flex-direction: column;
+            height: 100vh; /* Garantir que o conteúdo ocupe toda a altura da tela */
         }
 
+        /* Estilo do título */
         h1 {
             text-align: center;
             font-family: serif;
             font-weight: normal;
             text-transform: uppercase;
             border-bottom: 1px solid #57b1dc;
-            margin-top: 30px;
+            margin-bottom: 20px;
         }
 
+        /* Estilo para a mensagem de boas-vindas */
         h2 {
             color: #470000;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo para o grupo de formulário */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: center; /* Centraliza as labels e campos */
+        }
+
+        /* Estilo para os campos de entrada */
+        .form-control {
+            width: 100%; /* Ocupa 100% da largura do container */
+            max-width: 300px; /* Largura máxima do campo */
+            padding: 10px;
             font-size: 1em;
+            border-radius: 5px; /* Bordas arredondadas */
+            border: 2px solid #dbead5; /* Cor de borda padrão */
+            transition: border-color 0.3s; /* Efeito de transição para mudança de cor */
+        }
+
+            /* Mudança da cor da borda quando o campo está em foco */
+            .form-control:focus {
+                border-color: #4CAF50; /* Cor da borda quando o campo está em foco (verde) */
+                outline: none; /* Remove a borda de foco padrão do navegador */
+            }
+
+        /* Estilo para o botão */
+        .btn {
+            width: 100%; /* Largura total do botão */
+            max-width: 300px; /* Largura máxima do botão */
+            padding: 10px;
+            font-size: 1em;
+            background-color: #dbead5; /* Cor de fundo do botão */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Mostra o cursor de clique */
+            transition: background-color 0.3s; /* Efeito de transição para mudança de cor */
+        }
+
+            /* Estilo para o botão quando passa o mouse sobre ele */
+            .btn:hover {
+                background-color: #b8e1b3; /* Cor de fundo quando o mouse passa por cima */
+            }
+
+        /* Estilo para mensagens de erro */
+        .alert {
+            width: 100%;
+            max-width: 300px; /* Largura máxima da mensagem */
+            margin-top: 10px;
+            text-align: center; /* Centraliza a mensagem de erro */
         }
     </style>
 </head>
 
-<h2>Login</h2>
+<body>
+    <!-- Título em itálico -->
+    <h2><em>Bem-vindo a OnlyGreen</em></h2>
 
-<form asp-action="Login" method="post">
-    <div class="form-group">
-        <label for="Ulogar">Usuário</label>
-        <input type="text" class="form-control" id="Ulogar" name="Ulogar" required />
-    </div>
-
-    <div class="form-group">
-        <label for="Senha">Senha</label>
-        <input type="password" class="form-control" id="Senha" name="Senha" required />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Entrar</button>
-
-    <!-- Exibindo erros de validação -->
-    @Html.ValidationSummary(true, "", new { @class = "alert alert-danger mt-3" })
-
-    <!-- Exibindo erros específicos via ViewData -->
-    @if (!String.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
-    {
-        <div class="alert alert-danger mt-3">
-            @ViewData["ErrorMessage"]
+    <!-- Formulário de login -->
+    <form asp-action="Login" method="post">
+        <!-- Campo para o nome de usuário com label em itálico -->
+        <div class="form-group">
+            <label for="Ulogar"><em>Usuário</em></label>
+            <input type="text" class="form-control" id="Ulogar" name="Ulogar" required />
         </div>
-    }
-</form>
+
+        <!-- Campo para a senha com label em itálico -->
+        <div class="form-group">
+            <label for="Senha"><em>Senha</em></label>
+            <input type="password" class="form-control" id="Senha" name="Senha" required />
+        </div>
+
+        <!-- Botão de envio -->
+        <button type="submit" class="btn">Entrar</button>
+
+        <!-- Exibição de erros de validação -->
+        @Html.ValidationSummary(true, "", new { @class = "alert alert-danger mt-3" })
+
+        <!-- Exibindo mensagens de erro específicas via ViewData -->
+        @if (!String.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
+        {
+            <div class="alert alert-danger mt-3">
+                @ViewData["ErrorMessage"]
+            </div>
+        }
+    </form>
+</body>
+
+</html>

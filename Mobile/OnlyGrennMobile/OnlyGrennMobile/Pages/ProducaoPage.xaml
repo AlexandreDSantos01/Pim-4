@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="OnlyGrennMobile.Pages.ProducaoPage"
              Title="Lista de Produção">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="15">
-            <Label Text="Lista de Produção" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="15">
+                <Label Text="Lista de Produção" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
 
-            <CollectionView x:Name="ProducaoCollectionView" Margin="0,10,0,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
-                            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*, Auto">
+                <CollectionView x:Name="ProducaoCollectionView" Margin="0,10,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="8">
+                                <toolkit:Expander>
+                                    <toolkit:Expander.Header>
+                                        <!-- Exibe as informações principais quando o item está minimizado -->
+                                        <StackLayout Orientation="Horizontal" Spacing="5">
+                                            <Label Text="ID:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Id}" FontSize="14" FontAttributes="Bold" />
+                                            <Label Text=" - Nome:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Nome}" FontSize="14" FontAttributes="Bold" />
+                                            <Label Text=" - Quantidade:" FontSize="14" TextColor="Gray" />
+                                            <Label Text="{Binding Quantidade}" FontSize="14" HorizontalTextAlignment="End" />
+                                        </StackLayout>
+                                    </toolkit:Expander.Header>
 
-                                <!-- Linha 1: ID -->
-                                <Label Grid.Row="0" Grid.Column="0" Text="ID:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Id}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" />
+                                    <toolkit:Expander.Content>
+                                        <!-- Conteúdo que será exibido ao expandir o item -->
+                                        <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, Auto">
 
-                                <!-- Linha 2: Nome -->
-                                <Label Grid.Row="1" Grid.Column="0" Text="Nome:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nome}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="End" />
+                                            <!-- Linha 1: Data de Registro -->
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Data de Registro:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Dregistro}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 3: Quantidade -->
-                                <Label Grid.Row="2" Grid.Column="0" Text="Quantidade:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Quantidade}" FontSize="14" HorizontalTextAlignment="End" />
+                                            <!-- Linha 2: Estimativa -->
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Estimativa:" FontSize="14" TextColor="Gray" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Estimativa}" FontSize="14" HorizontalTextAlignment="End" />
 
-                                <!-- Linha 4: Data de Registro -->
-                                <Label Grid.Row="3" Grid.Column="0" Text="Data de Registro:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding Dregistro}" FontSize="14" HorizontalTextAlignment="End" />
-
-                                <!-- Linha 5: Estimativa -->
-                                <Label Grid.Row="4" Grid.Column="0" Text="Estimativa:" FontSize="14" TextColor="Gray" />
-                                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Estimativa}" FontSize="14" HorizontalTextAlignment="End" />
-
-                            </Grid>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                                        </Grid>
+                                    </toolkit:Expander.Content>
+                                </toolkit:Expander>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
