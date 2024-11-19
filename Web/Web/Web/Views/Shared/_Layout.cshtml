@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -16,30 +16,39 @@
 
     <!-- Estilo personalizado -->
     <style>
+        /* Barra de navegação */
         .navbar {
             background-color: #dbead5 !important;
-            border: 2px solid black;
+            border: 2px solid black; /* Aplica a borda em todos os lados */
             border-radius: 10px;
         }
 
+        /* Rodapé */
         footer {
             background-color: #dbead5;
             color: black;
             border: 2px solid black;
             border-radius: 10px;
-            padding: 2px 0;
+            padding: 5px 15px;
             text-align: center;
         }
 
-            footer a {
-                color: #57b1dc;
-                text-decoration: none;
+        .footer-content {
+            max-width: 1140px; /* Mesma largura da barra de navegação com container padrão */
+            margin: 0 auto; /* Centraliza o conteúdo */
+        }
+
+        /* Links no rodapé */
+        footer a {
+            color: #57b1dc;
+            text-decoration: none;
+        }
+
+            footer a:hover {
+                text-decoration: underline;
             }
 
-                footer a:hover {
-                    text-decoration: underline;
-                }
-
+        /* Layout do body */
         body {
             display: flex;
             flex-direction: column;
@@ -55,25 +64,68 @@
 
 <body>
     <header>
+        <!-- Barra de navegação -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <div class="container">
+                <!-- Logo ou link principal -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlyGreen</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botão para o menu de navegação em dispositivos móveis -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <!-- Menu de navegação -->
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Producoes" asp-action="Index">Produção</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">Estoque</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Despesas" asp-action="Index">Despesas</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Financeiros" asp-action="Index">Financeiro</a></li>
+                        <!-- Item de navegação com ícone e texto -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Home
+                            </a>
+                        </li>
+                        <!-- Outros itens de navegação com ícones e texto -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">
+                                <i class="bi bi-people"></i> Usuários
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Producoes" asp-action="Index">
+                                <i class="bi bi-tools"></i> Produção
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Estoques" asp-action="Index">
+                                <i class="bi bi-box-seam"></i> Estoque
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">
+                                <i class="bi bi-person-circle"></i> Clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Fornecedores" asp-action="Index">
+                                <i class="bi bi-truck"></i> Fornecedores
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Despesas" asp-action="Index">
+                                <i class="bi bi-cash-coin"></i> Despesas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Vendas" asp-action="Index">
+                                <i class="bi bi-cart"></i> Vendas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Financeiros" asp-action="Index">
+                                <i class="bi bi-bar-chart-line"></i> Financeiro
+                            </a>
+                        </li>
                     </ul>
 
+                    <!-- Formulário de logout, se o usuário estiver autenticado -->
                     @if (User.Identity.IsAuthenticated)
                     {
                         <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline" onsubmit="return confirmAndNotify();">
@@ -87,13 +139,15 @@
         </nav>
     </header>
 
+    <!-- Corpo principal da página -->
     <main role="main" class="pb-3">
-        @RenderBody()
+        @RenderBody() <!-- Renderiza o conteúdo da view específica -->
     </main>
 
-    <footer class="footer text-muted">
-        <div class="container">
-            &copy; 2024 - OnlyGreen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="footer-content">
+            &copy; 2024 - OnlyGreen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
         </div>
     </footer>
 
@@ -101,6 +155,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Função de confirmação para o logout
         function confirmAndNotify() {
             if (confirm('Tem certeza que deseja sair?')) {
                 alert('Você será desconectado. Até logo!');
@@ -109,7 +164,8 @@
             return false; // Cancela o envio do formulário
         }
     </script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    @await RenderSectionAsync("Scripts", required: false) <!-- Renderiza scripts adicionais, se houver -->
 </body>
 
 </html>

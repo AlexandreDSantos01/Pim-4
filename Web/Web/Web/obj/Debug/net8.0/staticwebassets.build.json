@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l7COrMrKryiOicXmZry+tDGwui8NARM1iQVlvU9uCj8=",
+  "Hash": "zvZgHW6O8tbT+mAFB046hEfTRr4IAZ+JmakXW81TRJg=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Fazenda.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\images\\fazenda01.jpeg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "images/fazenda01.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fazenda01.jpeg"
     },
     {
       "Identity": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\js\\site.js",

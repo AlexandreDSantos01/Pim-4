@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre\\documents\\pim-4\\web\\web\\web\\views\\financeiros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\financeiros\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre\\documents\\pim-4\\web\\web\\web\\controllers\\despesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\controllers\\despesascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre\\documents\\pim-4\\web\\web\\web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|c:\\users\\alexandre\\documents\\pim-4\\web\\web\\web\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEB2FD63-7402-4FFE-AFBF-E27B59ECE0CB}|Web\\Web.csproj|solutionrelative:web\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,27 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Views\\Financeiros\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Financeiros\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Views\\Financeiros\\Index.cshtml*",
-              "RelativeToolTip": "Web\\Views\\Financeiros\\Index.cshtml*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T20:57:29.062Z",
+              "Title": "DespesasController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Controllers\\DespesasController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\DespesasController.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Controllers\\DespesasController.cs",
+              "RelativeToolTip": "Web\\Controllers\\DespesasController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T01:48:10.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Usuarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Usuarios\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAE0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T20:48:04.345Z",
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Web\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T01:45:47.868Z",
               "EditorCaption": ""
             }
           ]

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\Fazenda.jpg"
     },
     {
+      "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\images\\fazenda01.jpeg",
+      "PackagePath": "staticwebassets\\images\\fazenda01.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
