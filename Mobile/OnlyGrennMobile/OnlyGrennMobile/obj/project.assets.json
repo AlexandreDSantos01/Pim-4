@@ -49,6 +49,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2442,6 +2445,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -4837,6 +4843,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -7230,6 +7239,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -9625,6 +9637,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -12018,6 +12033,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -14413,6 +14431,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -16806,6 +16827,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -19201,6 +19225,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -19808,6 +19835,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -20417,6 +20447,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -21024,6 +21057,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -21633,6 +21669,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -22240,6 +22279,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -22849,6 +22891,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -23456,6 +23501,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -24065,6 +24113,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -24672,6 +24723,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -25281,6 +25335,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -25888,6 +25945,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -26497,6 +26557,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -27104,6 +27167,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -27713,6 +27779,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -28320,6 +28389,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -28929,6 +29001,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -29726,6 +29801,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -30475,6 +30553,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -31226,6 +31307,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -31975,6 +32059,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -32726,6 +32813,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -33476,6 +33566,9 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -34225,6 +34318,9 @@
             "related": ".xml"
           }
         }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -35017,6 +35113,27 @@
         "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
         "lib/net8.0/CommunityToolkit.Maui.Core.dll",
         "lib/net8.0/CommunityToolkit.Maui.Core.xml"
+      ]
+    },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
       ]
     },
     "GoogleGson/2.10.1.4": {
@@ -39499,6 +39616,7 @@
     "net8.0-android34.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "CommunityToolkit.Maui >= 9.1.1",
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.92",
@@ -39509,6 +39627,7 @@
     "net8.0-ios18.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "CommunityToolkit.Maui >= 9.1.1",
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.92",
@@ -39519,6 +39638,7 @@
     "net8.0-maccatalyst18.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "CommunityToolkit.Maui >= 9.1.1",
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.92",
@@ -39529,6 +39649,7 @@
     "net8.0-windows10.0.19041": [
       "BCrypt.Net-Next >= 4.0.3",
       "CommunityToolkit.Maui >= 9.1.1",
+      "FontAwesome >= 4.7.0",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.92",
@@ -39610,6 +39731,10 @@
             "target": "Package",
             "version": "[9.1.1, )"
           },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -39668,6 +39793,10 @@
           "CommunityToolkit.Maui": {
             "target": "Package",
             "version": "[9.1.1, )"
+          },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
@@ -39728,6 +39857,10 @@
             "target": "Package",
             "version": "[9.1.1, )"
           },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -39787,6 +39920,10 @@
           "CommunityToolkit.Maui": {
             "target": "Package",
             "version": "[9.1.1, )"
+          },
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",

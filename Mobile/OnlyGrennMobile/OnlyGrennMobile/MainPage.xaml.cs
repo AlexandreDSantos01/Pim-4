@@ -7,6 +7,8 @@ namespace OnlyGrennMobile
         public MainPage()
         {
             InitializeComponent();
+
+            this.BackgroundColor = Colors.White;
         }
 
         private async void NavigateToUsuario(object sender, EventArgs e)

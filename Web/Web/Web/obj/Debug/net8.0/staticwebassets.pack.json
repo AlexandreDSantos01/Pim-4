@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\fazenda01.jpeg"
     },
     {
+      "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\images\\icons8-natural-food-70.ico",
+      "PackagePath": "staticwebassets\\images\\icons8-natural-food-70.ico"
+    },
+    {
+      "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\images\\icons8-natural-food-70.png",
+      "PackagePath": "staticwebassets\\images\\icons8-natural-food-70.png"
+    },
+    {
       "Id": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Web\\Web\\Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

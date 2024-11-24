@@ -22,6 +22,7 @@ namespace onlygreen
         {
             InitializeComponent();
         }
+
         private string ObterSituacaoUsuario(string login)
         {
             string situacao = string.Empty;
@@ -46,6 +47,7 @@ namespace onlygreen
 
             return situacao;
         }
+
         private string ObterNomeUsuario(string login)
         {
             string nomeUsuario = null;
@@ -57,52 +59,48 @@ namespace onlygreen
                 var command = new SqlCommand("SELECT nome FROM tb_Usuario WHERE ulogar = @login", conectar);
                 command.Parameters.AddWithValue("@login", login);
 
-                // Executa a consulta e armazena o nome do usuário
                 var resultado = command.ExecuteScalar();
 
                 if (resultado != null)
                 {
-                    nomeUsuario = resultado.ToString(); // Converte o resultado para string
+                    nomeUsuario = resultado.ToString();
                 }
             }
 
-            return nomeUsuario; // Retorna o nome do usuário ou null se não encontrado
+            return nomeUsuario;
         }
-
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             string login = txtLogin.Text;
             string senha = txtSenha.Text;
 
-            var situacaoUsuario = ObterSituacaoUsuario(login); // Método que você precisará implementar
+            var situacaoUsuario = ObterSituacaoUsuario(login);
 
-            // Verifica se o usuário está ativo
             if (situacaoUsuario == "Inativo")
             {
                 MessageBox.Show("Usuário inativo. Acesso negado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; 
+                return;
             }
 
-            // Método para verificar as credenciais
             if (VerificarCredenciais(login, senha))
             {
-                
                 UserSession.TipoUsuario = ObterTipoUsuario(login);
                 UserSession.NomeUsuario = ObterNomeUsuario(login);
 
                 var menu = new Home();
                 menu.Show(this);
-                this.Hide(); 
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Login ou senha inválidos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private string ObterTipoUsuario(string login)
         {
-            string tipoUsuario = null; // Inicializa a variável
+            string tipoUsuario = null;
 
             string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
@@ -111,19 +109,17 @@ namespace onlygreen
                 var command = new SqlCommand("SELECT tipousuario FROM tb_Usuario WHERE ulogar = @login", conectar);
                 command.Parameters.AddWithValue("@login", login);
 
-                // Executa a consulta e armazena o tipo de usuário
                 var resultado = command.ExecuteScalar();
 
                 if (resultado != null)
                 {
-                    tipoUsuario = resultado.ToString(); // Converte o resultado para string
+                    tipoUsuario = resultado.ToString();
                 }
             }
 
-            return tipoUsuario; // Retorna o tipo de usuário ou null se não encontrado
+            return tipoUsuario;
         }
 
-        // Método para verificar credenciais
         private bool VerificarCredenciais(string login, string senha)
         {
             string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
@@ -131,22 +127,17 @@ namespace onlygreen
             {
                 conectar.Open();
 
-                // Busca o hash da senha para o ulogar fornecido
                 var command = new SqlCommand("SELECT senha FROM tb_Usuario WHERE ulogar = @login", conectar);
                 command.Parameters.AddWithValue("@login", login);
 
-                // Executa a consulta e armazena o hash da senha
                 var senhaHash = command.ExecuteScalar() as string;
 
                 if (senhaHash != null)
                 {
-                    // Log para verificar a senha hash encontrada
                     Console.WriteLine($"Senha hash encontrada: {senhaHash}");
 
-                    // Verifica se a senha fornecida corresponde ao hash armazenado
                     bool isVerified = BCrypt.Net.BCrypt.EnhancedVerify(senha, senhaHash);
 
-                    // Log para verificar se a verificação foi bem-sucedida
                     Console.WriteLine($"Verificação de senha: {isVerified}");
                     return isVerified;
                 }
@@ -156,14 +147,11 @@ namespace onlygreen
                 }
             }
 
-            return false; // Retorna falso se o usuário não foi encontrado
+            return false;
         }
-
-
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void btnAjuda_Click(object sender, EventArgs e)
@@ -171,11 +159,10 @@ namespace onlygreen
             MessageBox.Show("Para recuperação de senha ou cadastro consulte um supervisor.", "Ajuda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-
-        //FOCO
+        // FOCO
         private void txtLogin_Enter(object sender, EventArgs e)
         {
-            txtLogin.BackColor = Color.LightBlue;
+            txtLogin.BackColor = Color.LightBlue; // Mantém a cor original
         }
 
         private void txtLogin_Leave(object sender, EventArgs e)
@@ -185,7 +172,7 @@ namespace onlygreen
 
         private void txtSenha_Enter(object sender, EventArgs e)
         {
-            txtSenha.BackColor = Color.LightBlue;
+            txtSenha.BackColor = Color.LightBlue; // Mantém a cor original
         }
 
         private void txtSenha_Leave(object sender, EventArgs e)
@@ -195,7 +182,7 @@ namespace onlygreen
 
         private void btnEntrar_Enter(object sender, EventArgs e)
         {
-            btnEntrar.BackColor = Color.LightGreen;
+            btnEntrar.BackColor = Color.LightGreen; // Cor de foco no botão entrar
         }
 
         private void btnEntrar_Leave(object sender, EventArgs e)
@@ -205,7 +192,7 @@ namespace onlygreen
 
         private void btnAjuda_Enter(object sender, EventArgs e)
         {
-            btnAjuda.BackColor = Color.Red;
+            btnAjuda.BackColor = Color.Red; // Cor vermelha ao focar
         }
 
         private void btnAjuda_Leave(object sender, EventArgs e)
@@ -213,6 +200,18 @@ namespace onlygreen
             btnAjuda.BackColor = Color.Silver;
         }
 
-        //FOCO FIM
+        private void txtLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtSenha.Focus();
+        }
+
+        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnEntrar.PerformClick();
+        }
+
+        // FOCO FIM
     }
 }

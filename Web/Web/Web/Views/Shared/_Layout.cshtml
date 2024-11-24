@@ -18,14 +18,14 @@
     <style>
         /* Barra de navegação */
         .navbar {
-            background-color: #dbead5 !important;
-            border: 2px solid black; /* Aplica a borda em todos os lados */
+            background-color: #C0C0C0 !important;
+            border: 2px solid black;
             border-radius: 10px;
         }
 
         /* Rodapé */
         footer {
-            background-color: #dbead5;
+            background-color: #C0C0C0;
             color: black;
             border: 2px solid black;
             border-radius: 10px;
@@ -34,11 +34,10 @@
         }
 
         .footer-content {
-            max-width: 1140px; /* Mesma largura da barra de navegação com container padrão */
-            margin: 0 auto; /* Centraliza o conteúdo */
+            max-width: 1140px;
+            margin: 0 auto;
         }
 
-        /* Links no rodapé */
         footer a {
             color: #57b1dc;
             text-decoration: none;
@@ -48,7 +47,6 @@
                 text-decoration: underline;
             }
 
-        /* Layout do body */
         body {
             display: flex;
             flex-direction: column;
@@ -59,6 +57,10 @@
         main {
             flex: 1;
         }
+
+        .bi {
+            color: #000000;
+        }
     </style>
 </head>
 
@@ -67,22 +69,22 @@
         <!-- Barra de navegação -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <!-- Logo ou link principal -->
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlyGreen</a>
+                <!-- Logo com ícone ao lado do nome -->
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/icons8-natural-food-70.png" alt="Ícone OnlyGreen" style="width: 30px; height: 30px; margin-right: 10px;">
+                    OnlyGreen
+                </a>
                 <!-- Botão para o menu de navegação em dispositivos móveis -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <!-- Menu de navegação -->
                     <ul class="navbar-nav flex-grow-1">
-                        <!-- Item de navegação com ícone e texto -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
                                 <i class="bi bi-house-door"></i> Home
                             </a>
                         </li>
-                        <!-- Outros itens de navegação com ícones e texto -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Index">
                                 <i class="bi bi-people"></i> Usuários
@@ -125,7 +127,7 @@
                         </li>
                     </ul>
 
-                    <!-- Formulário de logout, se o usuário estiver autenticado -->
+                    <!-- Formulário de logout -->
                     @if (User.Identity.IsAuthenticated)
                     {
                         <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline" onsubmit="return confirmAndNotify();">
@@ -141,31 +143,30 @@
 
     <!-- Corpo principal da página -->
     <main role="main" class="pb-3">
-        @RenderBody() <!-- Renderiza o conteúdo da view específica -->
+        @RenderBody()
     </main>
 
-    <!-- Rodapé da página -->
+    <!-- Rodapé -->
     <footer>
         <div class="footer-content">
             &copy; 2024 - OnlyGreen - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
         </div>
     </footer>
 
-    <!-- Scripts necessários -->
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Função de confirmação para o logout
         function confirmAndNotify() {
             if (confirm('Tem certeza que deseja sair?')) {
                 alert('Você será desconectado. Até logo!');
-                return true; // Prossegue com o envio do formulário
+                return true;
             }
-            return false; // Cancela o envio do formulário
+            return false;
         }
     </script>
 
-    @await RenderSectionAsync("Scripts", required: false) <!-- Renderiza scripts adicionais, se houver -->
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>

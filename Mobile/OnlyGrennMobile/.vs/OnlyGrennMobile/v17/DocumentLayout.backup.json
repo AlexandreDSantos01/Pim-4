@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|c:\\users\\alexandre\\documents\\pim-4\\mobile\\onlygrennmobile\\onlygrennmobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{957A15E8-E417-44BF-9A92-EBC3685A4B1D}|OnlyGrennMobile\\OnlyGrennMobile.csproj|solutionrelative:onlygrennmobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "OnlyGrennMobile\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml.cs",
+              "RelativeToolTip": "OnlyGrennMobile\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T22:45:03.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml",
               "RelativeDocumentMoniker": "OnlyGrennMobile\\MainPage.xaml",
               "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\MainPage.xaml",
               "RelativeToolTip": "OnlyGrennMobile\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-12T20:08:26.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "OnlyGrennMobile\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\Pages\\LoginPage.xaml*",
+              "RelativeToolTip": "OnlyGrennMobile\\Pages\\LoginPage.xaml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T00:33:05.292Z",
               "EditorCaption": ""
             }
           ]

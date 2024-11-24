@@ -11,6 +11,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "CommunityToolkit.Maui": "9.1.1",
+          "FontAwesome": "4.7.0",
           "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.1",
           "Microsoft.Maui.Controls": "8.0.92",
@@ -67,6 +68,7 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {},
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
@@ -608,6 +610,13 @@
       "sha512": "sha512-2O5bgBnwYLKXUMSA4a0hd3ildtr9t5Rw109y7Lz0udnX4C9JrW8Xi1mLDuUcNmK+U37gulhJGLb2tCMc+cbo3w==",
       "path": "communitytoolkit.maui.core/9.1.1",
       "hashPath": "communitytoolkit.maui.core.9.1.1.nupkg.sha512"
+    },
+    "FontAwesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "path": "fontawesome/4.7.0",
+      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cors/2.2.0": {
       "type": "package",

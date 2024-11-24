@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[9.1.1, )"
             },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -132,6 +136,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.1.1, )"
+            },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
@@ -192,6 +200,10 @@
               "target": "Package",
               "version": "[9.1.1, )"
             },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -251,6 +263,10 @@
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.1.1, )"
+            },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",

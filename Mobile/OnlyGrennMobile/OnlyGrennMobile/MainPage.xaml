@@ -1,18 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OnlyGrennMobile.MainPage">
+             x:Class="OnlyGrennMobile.MainPage"
+             BackgroundColor="White">
+
+    <!-- Define a cor de fundo da página -->
 
     <StackLayout Padding="20" Spacing="10">
-        <Label Text="Menu Principal" FontSize="24" HorizontalOptions="Center" />
+        <Label Text="Menu Principal" FontSize="24" HorizontalOptions="Center" TextColor="Black"/>
 
-        <Button Text="Usuário" Clicked="NavigateToUsuario"/>
-        <Button Text="Produção" Clicked="NavigateToProducao"/>
-        <Button Text="Estoque" Clicked="NavigateToEstoque"/>
-        <Button Text="Cliente" Clicked="NavigateToCliente"/>
-        <Button Text="Fornecedor" Clicked="NavigateToFornecedor"/>
-        <Button Text="Despesa" Clicked="NavigateToDespesa"/>
-        <Button Text="Venda" Clicked="NavigateToVenda"/>
-        <Button Text="Financeiro" Clicked="NavigateToFinanceiro"/>
+        <!-- Botões com borda personalizada -->
+        <Button Text="Usuário" Clicked="NavigateToUsuario" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Produção" Clicked="NavigateToProducao" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Estoque" Clicked="NavigateToEstoque" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Cliente" Clicked="NavigateToCliente" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Fornecedor" Clicked="NavigateToFornecedor" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Despesa" Clicked="NavigateToDespesa" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Venda" Clicked="NavigateToVenda" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
+        <Button Text="Financeiro" Clicked="NavigateToFinanceiro" BackgroundColor="Transparent" BorderColor="#C0C0C0" BorderWidth="2" CornerRadius="10" TextColor="Black"/>
     </StackLayout>
 </ContentPage>

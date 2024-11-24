@@ -214,6 +214,9 @@
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8.scale-100.png">
+      <PackagePath>icons8.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.deps.json">
       <PackagePath>OnlyGrennMobile.deps.json</PackagePath>
     </AppxPackagedFile>
