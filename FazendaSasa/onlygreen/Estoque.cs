@@ -38,7 +38,7 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDadosEstoque()
         {
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -106,7 +106,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -136,7 +136,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -182,7 +182,7 @@ namespace onlygreen
 
             if (ValidarCampoEstoque() == false)
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
                 using (SqlConnection conectar = new SqlConnection(bdonlygreen))
                 {
@@ -200,8 +200,8 @@ namespace onlygreen
                                 // Define a situação com base na quantidade
                                 string situacao = Convert.ToInt32(txtQuantidade.Text) > 0 ? "Disponível" : "Esgotado";
 
-                                cmd.CommandText = "INSERT INTO tb_Estoque (nome, quantidade, dregistroProducao, estimativaProducao, dcolheita, validade, valornutritivo, preco, situacao) " +
-                                                  "VALUES (@nome, @quantidade, @dregistroProducao, @estimativaProducao, GETDATE(), @validade, @valornutritivo, @preco, @situacao)";
+                                cmd.CommandText = "INSERT INTO tb_Estoque (nome, quantidade, dregistroProducao, estimativaProducao, dcolheita, validade, preco, situacao) " +
+                                                  "VALUES (@nome, @quantidade, @dregistroProducao, @estimativaProducao, GETDATE(), @validade, @preco, @situacao)";
 
                                 // Corrigindo para usar o valor do TextBox     
                                 cmd.Parameters.AddWithValue("@nome", txtNome.Text);
@@ -216,9 +216,7 @@ namespace onlygreen
                                     MessageBox.Show("A data de validade é inválida ou está no passado.");
                                     return;
                                 }
-                                cmd.Parameters.AddWithValue("@validade", validade); // Adiciona a validade válida
-
-                                cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
+                                cmd.Parameters.AddWithValue("@validade", validade); // Adiciona a validade válida          
                                 cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
                                 cmd.Parameters.AddWithValue("@situacao", situacao); // Adiciona o parâmetro da situação
 
@@ -261,7 +259,7 @@ namespace onlygreen
         private DataTable GetId(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -289,7 +287,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -323,8 +321,6 @@ namespace onlygreen
 
                 DateTime validade = dt.Rows[0].Field<DateTime>("validade");
                 txtValidade.Text = estimativa.ToString("dd/MM/yyyy");
-
-                txtValornutritivo.Text = dt.Rows[0].Field<int>("valornutritivo").ToString();
                 txtPreco.Text = dt.Rows[0].Field<decimal>("preco").ToString();
             }
 
@@ -369,14 +365,7 @@ namespace onlygreen
                 txtPreco.Focus();
                 return true;
             }
-
-            if (txtValornutritivo.Text == "")
-            {
-                MessageBox.Show("O campo valor nutritivo é obrigatório.");
-                txtValornutritivo.Focus();
-                return true;
-            }
-
+          
             if (txtValidade.Text == "")
             {
                 MessageBox.Show("O campo validade é obrigatório.");
@@ -398,14 +387,13 @@ namespace onlygreen
 
             if (ValidarCampoEstoque() == false)
             { 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
                     using (var cmd = new SqlCommand("UPDATE tb_Estoque SET quantidade = @quantidade, dregistroProducao = @dregistroProducao, estimativaProducao = @estimativaProducao, validade = @validade, valornutritivo = @valornutritivo, preco = @preco, situacao = @situacao WHERE id = @id", conectar))
                     {
                         cmd.Parameters.AddWithValue("@quantidade", Convert.ToInt32(txtQuantidade.Text));
-                        cmd.Parameters.AddWithValue("@valornutritivo", txtValornutritivo.Text);
                         cmd.Parameters.AddWithValue("@preco", Convert.ToDouble(txtPreco.Text));
                         cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txtId.Text));
 
@@ -445,7 +433,6 @@ namespace onlygreen
             txtNome.Clear();
             txtQuantidade.Clear();
             txtValidade.Clear();
-            txtValornutritivo.Clear();
             txtPreco.Clear();
             txtDregistroProducao.Clear(); 
             txtEstimativa.Clear();  
@@ -583,15 +570,6 @@ namespace onlygreen
             txtPreco.BackColor = Color.White;
         }
 
-        private void txtValornutritivo_Enter(object sender, EventArgs e)
-        {
-            txtValornutritivo.BackColor = Color.LightBlue;
-        }
-
-        private void txtValornutritivo_Leave(object sender, EventArgs e)
-        {
-            txtValornutritivo.BackColor = Color.White;
-        }
 
         private void txtValidade_Enter(object sender, EventArgs e)
         {
@@ -612,5 +590,6 @@ namespace onlygreen
         {
             btnVoltar.BackColor = Color.Silver;
         }
+
     }
 }

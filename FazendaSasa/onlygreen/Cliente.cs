@@ -25,7 +25,7 @@ namespace onlygreen
         // Método para carregar os dados no DataGridView
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -72,7 +72,7 @@ namespace onlygreen
         private void Cliente_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'bdonlygreenDataSet17.tb_Cliente'. Você pode movê-la ou removê-la conforme necessário.
-           // this.tb_ClienteTableAdapter1.Fill(this.bdonlygreenDataSet17.tb_Cliente);
+            //this.tb_ClienteTableAdapter1.Fill(this.bdonlygreenDataSet17.tb_Cliente);
 
 
             tbCliente.Columns[0].Width = 50;
@@ -106,7 +106,7 @@ namespace onlygreen
 
             string pesquisar = txtPesquisar.Text;
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
@@ -285,7 +285,7 @@ namespace onlygreen
         {
             bool idExists = false;
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {

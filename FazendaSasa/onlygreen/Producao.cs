@@ -42,7 +42,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -80,7 +80,7 @@ namespace onlygreen
         private DataTable GetId(int userId)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -110,7 +110,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -187,7 +187,7 @@ namespace onlygreen
                 {
                     try
                     {
-                        string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                        string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
                         using (var conectar = new SqlConnection(bdonlygreen))
                         {
                             conectar.Open();
@@ -261,7 +261,7 @@ namespace onlygreen
 
             if (result == DialogResult.Yes)
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -308,9 +308,9 @@ namespace onlygreen
 
             if (ValidarCampoProducao() == false)
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
-                // Atualizar os dados no banco de dados
-                using (var conectar = new SqlConnection(bdonlygreen))
+                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
+            // Atualizar os dados no banco de dados
+            using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
                     using (var cmd = new SqlCommand("UPDATE tb_Producao SET nome = @nome, quantidade = @quantidade, estimativa = @estimativa WHERE id = @id", conectar))

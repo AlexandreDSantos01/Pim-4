@@ -27,7 +27,7 @@ namespace onlygreen
         private void Venda_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'bdonlygreenDataSet16.tb_Venda'. Você pode movê-la ou removê-la conforme necessário.
-           // this.tb_VendaTableAdapter1.Fill(this.bdonlygreenDataSet16.tb_Venda);
+            //this.tb_VendaTableAdapter1.Fill(this.bdonlygreenDataSet16.tb_Venda);
            
         }
         ////////////////////////////////IGNORAR
@@ -72,7 +72,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -120,7 +120,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -188,7 +188,7 @@ namespace onlygreen
         {
             if (!ValidarCampo())
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
@@ -347,7 +347,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -398,7 +398,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -510,7 +510,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();

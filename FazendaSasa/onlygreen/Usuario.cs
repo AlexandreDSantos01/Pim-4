@@ -26,7 +26,7 @@ namespace onlygreen
 
         private void CarregarDados()
         {
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -74,6 +74,103 @@ namespace onlygreen
         //Método att usuário
 
         //Método att usuário
+
+        //Método validar campos usuário
+        private bool ValidarCampoATT()
+        {
+
+            if (string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("O campo nome é obrigatório.");
+                txtNome.Focus();
+                return true;
+            }
+
+
+            if (string.IsNullOrWhiteSpace(txtCPF.Text))
+            {
+                MessageBox.Show("O campo CPF é obrigatório.");
+                txtCPF.Focus();
+                return true;
+            }
+
+
+            if (string.IsNullOrWhiteSpace(txtTelefone.Text))
+            {
+                MessageBox.Show("O campo telefone é obrigatório.");
+                txtTelefone.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("O campo email é obrigatório.");
+                txtEmail.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtRua.Text))
+            {
+                MessageBox.Show("O campo rua é obrigatório.");
+                txtRua.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNrua.Text))
+            {
+                MessageBox.Show("O campo número da rua é obrigatório.");
+                txtNrua.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtBairro.Text))
+            {
+                MessageBox.Show("O campo bairro é obrigatório.");
+                txtBairro.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCidade.Text))
+            {
+                MessageBox.Show("O campo cidade é obrigatório.");
+                txtCidade.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEstado.Text))
+            {
+                MessageBox.Show("O campo estado é obrigatório.");
+                txtEstado.Focus();
+                return true;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtCEP.Text))
+            {
+                MessageBox.Show("O campo cep é obrigatório.");
+                txtCEP.Focus();
+                return true;
+            }
+
+            //Campo usuário
+            if (string.IsNullOrWhiteSpace(txtLogin.Text))
+            {
+                MessageBox.Show("O campo usuário é obrigatório.");
+                txtLogin.Focus();
+                return true;
+            }
+
+            //Campo check permissões
+            if (rbFinanceiro.Checked == false && rbProdutor.Checked == false && rbSuprimento.Checked == false && rbVendedor.Checked == false && rbSupervisor.Checked == false && rbTodos.Checked == false)
+            {
+                MessageBox.Show("As permissões do usuário é obrigatório.");
+                rbSupervisor.Focus();
+                return true;
+            }
+
+            return false;
+        }
+
+        //Método validar campos usuário fim
 
         //Método validar campos usuário
         private bool ValidarCampo()
@@ -301,7 +398,7 @@ namespace onlygreen
         {
             bool idExists = false;
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -327,71 +424,75 @@ namespace onlygreen
                 MessageBox.Show("Por favor, insira um ID válido para selecionar.");
                 txtId.Focus();
             }
-
-            COUNTUsuario();
-
-            classSupervisor supervisor = new classSupervisor();
-            DataTable preencher = supervisor.SELECT(Convert.ToInt32(txtId.Text));
-
-            if (preencher.Rows.Count > 0)
+            else
             {
-                txtNome.Text = preencher.Rows[0].Field<string>("nome");
-                txtCPF.Text = preencher.Rows[0].Field<string>("cpf");
-                txtTelefone.Text = preencher.Rows[0].Field<string>("telefone");
-                txtEmail.Text = preencher.Rows[0].Field<string>("email");
-                txtRua.Text = preencher.Rows[0].Field<string>("rua");
-                txtNrua.Text = preencher.Rows[0].Field<string>("nrua");
-                txtBairro.Text = preencher.Rows[0].Field<string>("bairro");
-                txtCidade.Text = preencher.Rows[0].Field<string>("cidade");
-                txtEstado.Text = preencher.Rows[0].Field<string>("estado");
-                txtCEP.Text = preencher.Rows[0].Field<string>("cep");
-                txtLogin.Text = preencher.Rows[0].Field<string>("ulogar");
- 
-                if (preencher.Rows[0].Field<string>("situacao") == "Ativo")
+
+                COUNTUsuario();
+
+                classSupervisor supervisor = new classSupervisor();
+                DataTable preencher = supervisor.SELECT(Convert.ToInt32(txtId.Text));
+
+                if (preencher.Rows.Count > 0)
                 {
-                    checkAtivo.Checked = true;
+                    txtNome.Text = preencher.Rows[0].Field<string>("nome");
+                    txtCPF.Text = preencher.Rows[0].Field<string>("cpf");
+                    txtTelefone.Text = preencher.Rows[0].Field<string>("telefone");
+                    txtEmail.Text = preencher.Rows[0].Field<string>("email");
+                    txtRua.Text = preencher.Rows[0].Field<string>("rua");
+                    txtNrua.Text = preencher.Rows[0].Field<string>("nrua");
+                    txtBairro.Text = preencher.Rows[0].Field<string>("bairro");
+                    txtCidade.Text = preencher.Rows[0].Field<string>("cidade");
+                    txtEstado.Text = preencher.Rows[0].Field<string>("estado");
+                    txtCEP.Text = preencher.Rows[0].Field<string>("cep");
+                    txtLogin.Text = preencher.Rows[0].Field<string>("ulogar");
+
+                    if (preencher.Rows[0].Field<string>("situacao") == "Ativo")
+                    {
+                        checkAtivo.Checked = true;
+                    }
+                    else
+                    {
+                        checkAtivo.Checked = false;
+                    }
+
+                    string tipoUsuario = preencher.Rows[0].Field<string>("tipousuario");
+
+                    switch (tipoUsuario)
+                    {
+                        case "Financeiro":
+                            rbFinanceiro.Checked = true;
+                            break;
+                        case "Produtor":
+                            rbProdutor.Checked = true;
+                            break;
+                        case "Suprimento":
+                            rbSuprimento.Checked = true;
+                            break;
+                        case "Vendedor":
+                            rbVendedor.Checked = true;
+                            break;
+                        case "Supervisor":
+                            rbSupervisor.Checked = true;
+                            break;
+                        case "Todos":
+                            rbTodos.Checked = true;
+                            break;
+                        default:
+                            rbFinanceiro.Checked = false;
+                            rbProdutor.Checked = false;
+                            rbSuprimento.Checked = false;
+                            rbVendedor.Checked = false;
+                            rbSupervisor.Checked = false;
+                            rbTodos.Checked = false;
+                            break;
+                    }
                 }
                 else
                 {
-                    checkAtivo.Checked = false;
-                }
-
-                string tipoUsuario = preencher.Rows[0].Field<string>("tipousuario");
-
-                switch (tipoUsuario)
-                {
-                    case "Financeiro":
-                        rbFinanceiro.Checked = true;
-                        break;
-                    case "Produtor":
-                        rbProdutor.Checked = true;
-                        break;
-                    case "Suprimento":
-                        rbSuprimento.Checked = true;
-                        break;
-                    case "Vendedor":
-                        rbVendedor.Checked = true;
-                        break;
-                    case "Supervisor":
-                        rbSupervisor.Checked = true;
-                        break;
-                    case "Todos":
-                        rbTodos.Checked = true;
-                        break;
-                    default:
-                        rbFinanceiro.Checked = false;
-                        rbProdutor.Checked = false;
-                        rbSuprimento.Checked = false;
-                        rbVendedor.Checked = false;
-                        rbSupervisor.Checked = false;
-                        rbTodos.Checked = false;
-                        break;
+                    MessageBox.Show("Não foi possível carregar os dados do usuário.");
                 }
             }
-            else
-            {
-                MessageBox.Show("Não foi possível carregar os dados do usuário.");
-            }
+
         }
 
 
@@ -438,34 +539,38 @@ namespace onlygreen
                 txtId.Focus();
             }
 
-            if (ValidarCampo() == false)
+            if (ValidarCampoATT() == false)
             {
                 var resultado = MessageBox.Show("Você tem certeza que deseja alterar esse usuário?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
                 if (resultado == DialogResult.OK)
                 {
-                    //hash
-                    string senha = txtSenha.Text;
-                    string senhaHash = BCrypt.Net.BCrypt.EnhancedHashPassword(senha, 13);
-                    //hash fim
+                    string senhaHash = null; // Variável para armazenar a senha hash apenas se for digitada.
 
-                    classUsuario classusuario = new classUsuario();
+                    if (!string.IsNullOrWhiteSpace(txtSenha.Text)) // Verifica se o campo senha foi preenchido.
+                    {
+                        // Gera o hash somente se houver texto na senha.
+                        string senha = txtSenha.Text;
+                        senhaHash = BCrypt.Net.BCrypt.EnhancedHashPassword(senha, 13);
+                    }
 
+                    classUsuario classusuario = new classUsuario
+                    {
+                        nome = txtNome.Text,
+                        cpf = txtCPF.Text,
+                        telefone = txtTelefone.Text,
+                        email = txtEmail.Text,
+                        rua = txtRua.Text,
+                        nrua = txtNrua.Text,
+                        bairro = txtBairro.Text,
+                        cidade = txtCidade.Text,
+                        estado = txtEstado.Text,
+                        cep = txtCEP.Text,
+                        ulogar = txtLogin.Text,
+                        senha = senhaHash // Define o hash ou mantém null se não foi alterado.
+                    };
 
-                    classusuario.nome = txtNome.Text;
-                    classusuario.cpf = txtCPF.Text;
-                    classusuario.telefone = txtTelefone.Text;
-                    classusuario.email = txtEmail.Text;
-                    classusuario.rua = txtRua.Text;
-                    classusuario.nrua = txtNrua.Text;
-                    classusuario.bairro = txtBairro.Text;
-                    classusuario.cidade = txtCidade.Text;
-                    classusuario.estado = txtEstado.Text;
-                    classusuario.cep = txtCEP.Text;
-                    classusuario.ulogar = txtLogin.Text;
-                    classusuario.senha = senhaHash;
-
-                    //Tipo Usuário
+                    // Define o tipo de usuário.
                     if (rbFinanceiro.Checked)
                     {
                         classusuario.tipousuario = "Financeiro";
@@ -491,23 +596,17 @@ namespace onlygreen
                         classusuario.tipousuario = "Todos";
                     }
 
-                    //Situação
-                    if (checkAtivo.Checked)
-                    {
-                        classusuario.situacao = "Ativo";
-                    }
-                    else
-                    {
-                        classusuario.situacao = "Inativo";
-                    }
+                    // Define a situação.
+                    classusuario.situacao = checkAtivo.Checked ? "Ativo" : "Inativo";
 
+                    // Chama o método de atualização.
                     classSupervisor supervisor = new classSupervisor();
                     supervisor.UPDATEusuario(classusuario);
 
+                    // Retorna ao menu de usuário.
                     var menu = new Usuario();
                     menu.Show(this);
                     this.Visible = false;
-
                 }
                 return;
             }
@@ -524,7 +623,7 @@ namespace onlygreen
 
             string pesquisar = txtPesquisar.Text;
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {

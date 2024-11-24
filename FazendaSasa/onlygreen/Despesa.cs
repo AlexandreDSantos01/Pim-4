@@ -59,7 +59,7 @@ namespace onlygreen
             }
 
             string pesquisar = txtPesquisar.Text;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
 
@@ -104,7 +104,7 @@ namespace onlygreen
         private DataTable GetId(int ID)
         {
             DataTable dt = new DataTable();
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
@@ -132,7 +132,7 @@ namespace onlygreen
 
             // Verifica se o ID existe no banco de dados
             bool idExists = false;
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (var conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -230,8 +230,6 @@ namespace onlygreen
         }
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            int FornecedorId = int.Parse(txtIdfornecedor.Text);
-
             if (string.IsNullOrWhiteSpace(txtId.Text))
             {
                 MessageBox.Show("Por favor, insira um ID válido para alterar.");
@@ -241,7 +239,8 @@ namespace onlygreen
 
             if (ValidarCampoDespesa() == false)
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                int FornecedorId = int.Parse(txtIdfornecedor.Text);
+                string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
 
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
@@ -353,7 +352,7 @@ namespace onlygreen
                 return;
             }
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
             using (SqlConnection conectar = new SqlConnection(bdonlygreen))
             {
                 conectar.Open();
@@ -404,7 +403,7 @@ namespace onlygreen
             {
                 try
                 {
-                    string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                    string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
                     using (var conectar = new SqlConnection(bdonlygreen))
                     {
                         conectar.Open();
@@ -571,7 +570,6 @@ namespace onlygreen
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            int FornecedorId = int.Parse(txtIdfornecedor.Text);
 
             if (ValidarCampo() == false)
             {
@@ -581,7 +579,8 @@ namespace onlygreen
                 {
                     try
                     {
-                        string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                         int FornecedorId = int.Parse(txtIdfornecedor.Text);
+                        string bdonlygreen = "Server=DESKTOP-BRQ9Q8N;Database=bdonlygreen;Integrated Security=True;";
                         using (var conectar = new SqlConnection(bdonlygreen))
                         {
                             conectar.Open();

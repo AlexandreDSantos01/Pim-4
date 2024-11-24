@@ -15,43 +15,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2411,43 +2374,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -4809,43 +4735,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -7205,43 +7094,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -9603,43 +9455,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -11999,43 +11814,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -14397,43 +14175,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -16793,43 +16534,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "GoogleGson/2.10.1.4": {
         "type": "package",
@@ -19191,43 +18895,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -19801,43 +19468,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -20413,43 +20043,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -21023,43 +20616,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -21635,43 +21191,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -22245,43 +21764,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -22857,43 +22339,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -23467,43 +22912,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -24079,43 +23487,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -24689,43 +24060,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -25301,43 +24635,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -25911,43 +25208,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -26523,43 +25783,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -27133,43 +26356,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -27745,43 +26931,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -28356,43 +27505,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -28966,44 +28078,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -29720,24 +28794,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Speech.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Text.Encodings.Web/4.5.0": {
         "type": "package",
         "compile": {
@@ -29765,44 +28821,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -30477,18 +29495,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
@@ -30519,44 +29525,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -31230,18 +30198,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
@@ -31272,44 +30228,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -31983,18 +30901,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
@@ -32025,44 +30931,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -32736,18 +31604,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
@@ -32778,44 +31634,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -33489,18 +32307,6 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
-        }
-      },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Text.Encodings.Web/4.5.0": {
@@ -33531,44 +32337,6 @@
           }
         }
       },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
-      },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -34244,18 +33012,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
       "System.Text.Encodings.Web/4.5.0": {
         "type": "package",
         "compile": {
@@ -34283,44 +33039,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CommunityToolkit.Maui/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Maui.Core": "9.1.1",
-          "Microsoft.Maui.Controls": "8.0.71"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CommunityToolkit.Maui.Core/9.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Maui.Core": "8.0.71",
-          "Microsoft.Maui.Essentials": "8.0.71",
-          "System.Speech": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FontAwesome/4.7.0": {
-        "type": "package"
       },
       "Microsoft.AspNetCore.Cors/2.2.0": {
         "type": "package",
@@ -35003,18 +33721,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "System.Speech/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/System.Speech.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net8.0/System.Speech.dll": {}
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
       "System.Text.Encodings.Web/4.5.0": {
         "type": "package",
         "compile": {
@@ -35060,80 +33766,6 @@
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
         "lib/netstandard2.1/BCrypt.Net-Next.xml",
         "readme.md"
-      ]
-    },
-    "CommunityToolkit.Maui/9.1.1": {
-      "sha512": "vDFIMhs/NRKEaHrrxq3AR3qEnfc0L6nno3/ZEFRUctDdwcYKNfmx8aof1lj8++dX+56c282SLHyuCnN6eH2Mpg==",
-      "type": "package",
-      "path": "communitytoolkit.maui/9.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ReadMe.txt",
-        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
-        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
-        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
-        "communitytoolkit.maui.9.1.1.nupkg.sha512",
-        "communitytoolkit.maui.nuspec",
-        "icon.png",
-        "lib/net8.0-android34.0/CommunityToolkit.Maui.dll",
-        "lib/net8.0-android34.0/CommunityToolkit.Maui.xml",
-        "lib/net8.0-ios18.0/CommunityToolkit.Maui.dll",
-        "lib/net8.0-ios18.0/CommunityToolkit.Maui.xml",
-        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.dll",
-        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.xml",
-        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.dll",
-        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.xml",
-        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll",
-        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.xml",
-        "lib/net8.0/CommunityToolkit.Maui.dll",
-        "lib/net8.0/CommunityToolkit.Maui.xml"
-      ]
-    },
-    "CommunityToolkit.Maui.Core/9.1.1": {
-      "sha512": "2O5bgBnwYLKXUMSA4a0hd3ildtr9t5Rw109y7Lz0udnX4C9JrW8Xi1mLDuUcNmK+U37gulhJGLb2tCMc+cbo3w==",
-      "type": "package",
-      "path": "communitytoolkit.maui.core/9.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ReadMe.txt",
-        "communitytoolkit.maui.core.9.1.1.nupkg.sha512",
-        "communitytoolkit.maui.core.nuspec",
-        "icon.png",
-        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.xml",
-        "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0-ios18.0/CommunityToolkit.Maui.Core.xml",
-        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0-maccatalyst18.0/CommunityToolkit.Maui.Core.xml",
-        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.xml",
-        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
-        "lib/net8.0/CommunityToolkit.Maui.Core.dll",
-        "lib/net8.0/CommunityToolkit.Maui.Core.xml"
-      ]
-    },
-    "FontAwesome/4.7.0": {
-      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
-      "type": "package",
-      "path": "fontawesome/4.7.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Content/font-awesome.css",
-        "Content/Content/font-awesome.min.css",
-        "Content/fonts/FontAwesome.otf",
-        "Content/fonts/fontawesome-webfont.eot",
-        "Content/fonts/fontawesome-webfont.svg",
-        "Content/fonts/fontawesome-webfont.ttf",
-        "Content/fonts/fontawesome-webfont.woff",
-        "Content/fonts/fontawesome-webfont.woff2",
-        "fontawesome.4.7.0.nupkg.sha512",
-        "fontawesome.nuspec",
-        "tools/install.ps1"
       ]
     },
     "GoogleGson/2.10.1.4": {
@@ -37529,32 +36161,6 @@
         "version.txt"
       ]
     },
-    "System.Speech/8.0.0": {
-      "sha512": "CNuiA6vb95Oe5PRjClZEBiaju31vwB8OIeCgeSBXyZL6+MS4RVVB2X/C11z0xCkooHE3Vy91nM2z76emIzR+sg==",
-      "type": "package",
-      "path": "system.speech/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Speech.targets",
-        "lib/net462/_._",
-        "lib/net6.0/System.Speech.dll",
-        "lib/net7.0/System.Speech.dll",
-        "lib/net8.0/System.Speech.dll",
-        "lib/netstandard2.0/System.Speech.dll",
-        "runtimes/win/lib/net6.0/System.Speech.dll",
-        "runtimes/win/lib/net7.0/System.Speech.dll",
-        "runtimes/win/lib/net8.0/System.Speech.dll",
-        "system.speech.8.0.0.nupkg.sha512",
-        "system.speech.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "System.Text.Encodings.Web/4.5.0": {
       "sha512": "Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "type": "package",
@@ -39658,24 +38264,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexandre\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexandre Not\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
       "projectName": "OnlyGrennMobile",
-      "projectPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
-      "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\obj\\",
+      "projectPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
+      "packagesPath": "C:\\Users\\Alexandre Not\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexandre Not\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -39997,5 +38603,592 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-android34.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-android34.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-android34.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-ios18.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-ios18.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-ios18.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-ios18.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-maccatalyst18.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-maccatalyst18.0/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-maccatalyst18.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/android-arm'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/android-arm64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-arm64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/android-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/android-x86'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/android-x86"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/iossimulator-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/iossimulator-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/maccatalyst-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/maccatalyst-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'CommunityToolkit.Maui (>= 9.1.1)' para 'net8.0-windows10.0.19041/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "CommunityToolkit.Maui",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'FontAwesome (>= 4.7.0)' para 'net8.0-windows10.0.19041/win10-x64'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "FontAwesome",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Não foi possível resolver 'Microsoft.Windows.SDK.NET.Ref (= 10.0.19041.44)' para 'net8.0-windows10.0.19041'. O PackageSourceMapping está habilitado, as seguintes fontes não foram consideradas: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org.",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    }
+  ]
 }

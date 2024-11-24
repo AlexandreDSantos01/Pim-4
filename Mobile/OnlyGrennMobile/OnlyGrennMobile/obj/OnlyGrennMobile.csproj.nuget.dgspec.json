@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj": {}
+    "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj": {
+    "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
         "projectName": "OnlyGrennMobile",
-        "projectPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
-        "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandre\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\obj\\",
+        "projectPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\OnlyGrennMobile.csproj",
+        "packagesPath": "C:\\Users\\Alexandre Not\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandre Not\\Documents\\Pim-4\\Mobile\\OnlyGrennMobile\\OnlyGrennMobile\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alexandre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alexandre Not\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

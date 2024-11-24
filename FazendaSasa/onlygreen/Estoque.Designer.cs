@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estoque));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkEsgotado = new System.Windows.Forms.CheckBox();
             this.checkDisponivel = new System.Windows.Forms.CheckBox();
@@ -65,8 +66,6 @@
             this.txtValidade = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtValornutritivo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -462,8 +461,6 @@
             this.groupBox2.Controls.Add(this.txtValidade);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtPreco);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtValornutritivo);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label3);
@@ -484,7 +481,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(295, 44);
+            this.label9.Location = new System.Drawing.Point(295, 74);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(217, 25);
             this.label9.TabIndex = 20;
@@ -493,7 +490,7 @@
             // txtDregistroProducao
             // 
             this.txtDregistroProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDregistroProducao.Location = new System.Drawing.Point(301, 67);
+            this.txtDregistroProducao.Location = new System.Drawing.Point(300, 101);
             this.txtDregistroProducao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDregistroProducao.Mask = "00/00/0000";
             this.txtDregistroProducao.Name = "txtDregistroProducao";
@@ -504,7 +501,7 @@
             // txtValidade
             // 
             this.txtValidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtValidade.Location = new System.Drawing.Point(33, 290);
+            this.txtValidade.Location = new System.Drawing.Point(298, 250);
             this.txtValidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtValidade.Mask = "00/00/0000";
             this.txtValidade.Name = "txtValidade";
@@ -517,7 +514,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(29, 193);
+            this.label7.Location = new System.Drawing.Point(29, 223);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 25);
             this.label7.TabIndex = 17;
@@ -526,7 +523,7 @@
             // txtPreco
             // 
             this.txtPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPreco.Location = new System.Drawing.Point(35, 216);
+            this.txtPreco.Location = new System.Drawing.Point(34, 250);
             this.txtPreco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPreco.MaxLength = 10;
             this.txtPreco.Name = "txtPreco";
@@ -535,33 +532,11 @@
             this.txtPreco.Enter += new System.EventHandler(this.txtPreco_Enter);
             this.txtPreco.Leave += new System.EventHandler(this.txtPreco_Leave);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(295, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 25);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Valor nutritivo";
-            // 
-            // txtValornutritivo
-            // 
-            this.txtValornutritivo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtValornutritivo.Location = new System.Drawing.Point(299, 216);
-            this.txtValornutritivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtValornutritivo.MaxLength = 10;
-            this.txtValornutritivo.Name = "txtValornutritivo";
-            this.txtValornutritivo.Size = new System.Drawing.Size(186, 30);
-            this.txtValornutritivo.TabIndex = 5;
-            this.txtValornutritivo.Enter += new System.EventHandler(this.txtValornutritivo_Enter);
-            this.txtValornutritivo.Leave += new System.EventHandler(this.txtValornutritivo_Leave);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 267);
+            this.label4.Location = new System.Drawing.Point(294, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 25);
             this.label4.TabIndex = 13;
@@ -571,7 +546,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 44);
+            this.label5.Location = new System.Drawing.Point(29, 74);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(222, 25);
             this.label5.TabIndex = 11;
@@ -581,7 +556,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(295, 121);
+            this.label3.Location = new System.Drawing.Point(295, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 25);
             this.label3.TabIndex = 9;
@@ -591,7 +566,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 121);
+            this.label2.Location = new System.Drawing.Point(28, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 8;
@@ -600,7 +575,7 @@
             // txtQuantidade
             // 
             this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtQuantidade.Location = new System.Drawing.Point(299, 143);
+            this.txtQuantidade.Location = new System.Drawing.Point(298, 177);
             this.txtQuantidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuantidade.MaxLength = 10;
             this.txtQuantidade.Name = "txtQuantidade";
@@ -612,18 +587,18 @@
             // txtEstimativa
             // 
             this.txtEstimativa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEstimativa.Location = new System.Drawing.Point(28, 67);
+            this.txtEstimativa.Location = new System.Drawing.Point(34, 101);
             this.txtEstimativa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEstimativa.Mask = "00/00/0000";
             this.txtEstimativa.Name = "txtEstimativa";
             this.txtEstimativa.ReadOnly = true;
-            this.txtEstimativa.Size = new System.Drawing.Size(184, 30);
+            this.txtEstimativa.Size = new System.Drawing.Size(186, 30);
             this.txtEstimativa.TabIndex = 0;
             // 
             // txtNome
             // 
             this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNome.Location = new System.Drawing.Point(34, 143);
+            this.txtNome.Location = new System.Drawing.Point(33, 177);
             this.txtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNome.Name = "txtNome";
             this.txtNome.ReadOnly = true;
@@ -644,6 +619,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1536, 770);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -686,8 +662,6 @@
         private System.Windows.Forms.TextBox txtIdproducao;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPreco;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtValornutritivo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox txtValidade;
 

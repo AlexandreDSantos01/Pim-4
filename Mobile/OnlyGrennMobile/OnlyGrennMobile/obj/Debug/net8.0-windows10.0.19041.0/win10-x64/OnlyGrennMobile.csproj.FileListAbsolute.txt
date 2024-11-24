@@ -381,3 +381,6 @@ E:\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.190
 E:\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
 E:\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll
 C:\Users\Alexandre\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icons8.scale-100.png
+C:\Users\Alexandre Not\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.dll
+C:\Users\Alexandre Not\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\refint\OnlyGrennMobile.dll
+C:\Users\Alexandre Not\Documents\Pim-4\Mobile\OnlyGrennMobile\OnlyGrennMobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\OnlyGrennMobile.pdb

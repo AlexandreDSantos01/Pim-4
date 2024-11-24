@@ -30,7 +30,7 @@ namespace onlygreen
         {
             try
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -73,7 +73,7 @@ namespace onlygreen
         {
             try
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (SqlConnection conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -131,7 +131,7 @@ namespace onlygreen
         {
             DataTable retornarID = new DataTable();
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {

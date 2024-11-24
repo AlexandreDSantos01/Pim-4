@@ -15,7 +15,7 @@ namespace onlygreen
         {
             try
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (var conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
@@ -56,11 +56,12 @@ namespace onlygreen
         {
             try
             {
-                string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;"; 
+                string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
                 using (SqlConnection conectar = new SqlConnection(bdonlygreen))
                 {
                     conectar.Open();
 
+                    // Constrói a query dinamicamente
                     string sql = "UPDATE tb_Usuario SET " +
                                  "nome = @nome, " +
                                  "telefone = @telefone, " +
@@ -72,10 +73,15 @@ namespace onlygreen
                                  "estado = @estado, " +
                                  "cep = @cep, " +
                                  "tipousuario = @tipousuario, " +
-                                 "situacao = @situacao, " +
-                                 "senha = @senha " +
-                                 "WHERE ulogar = @ulogar;";
+                                 "situacao = @situacao";
 
+                    // Adiciona o campo de senha apenas se ele não for nulo ou vazio
+                    if (!string.IsNullOrEmpty(u.senha))
+                    {
+                        sql += ", senha = @senha";
+                    }
+
+                    sql += " WHERE ulogar = @ulogar;";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conectar))
                     {
@@ -90,13 +96,17 @@ namespace onlygreen
                         cmd.Parameters.AddWithValue("@estado", u.estado);
                         cmd.Parameters.AddWithValue("@cep", u.cep);
                         cmd.Parameters.AddWithValue("@ulogar", u.ulogar);
-                        cmd.Parameters.AddWithValue("@senha", u.senha);
                         cmd.Parameters.AddWithValue("@tipousuario", u.tipousuario);
                         cmd.Parameters.AddWithValue("@situacao", u.situacao);
 
+                        // Adiciona o parâmetro de senha apenas se necessário
+                        if (!string.IsNullOrEmpty(u.senha))
+                        {
+                            cmd.Parameters.AddWithValue("@senha", u.senha);
+                        }
+
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Usuário atualizado com sucesso.");
-
                     }
                 }
             }
@@ -108,8 +118,8 @@ namespace onlygreen
             {
                 MessageBox.Show("Erro: " + ex.Message);
             }
-
         }
+
 
         public override void DELETE()
         {
@@ -120,7 +130,7 @@ namespace onlygreen
         {
             DataTable retornarID = new DataTable();
 
-            string bdonlygreen = "Server=DESKTOP-CV8MG1N;Database=bdonlygreen;Integrated Security=True;";
+            string bdonlygreen = "Server=FEUERWOLF;Database=bdonlygreen;Integrated Security=True;";
 
             using (var conectar = new SqlConnection(bdonlygreen))
             {
