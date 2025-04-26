@@ -16,8 +16,6 @@
 - Gustavo Henrique O.P Domingues /  Scrum Team
 - Matheus Alves Pimenta /          Scrum Team
 
----
-## Sprint Pim-4
 
 ---
 
